@@ -26,5 +26,7 @@ Sapiens tập trung vào các quá trình quan trọng đã định hình loài 
     <string name="hoa_nguc">
         Hỏa ngục là phần tiếp theo của một loạt câu chuyện phiêu lưu xoay quanh nhân vật chính Robert Langdon – Giáo sư biểu tượng học của đại học Havard – Hoa Kỳ. Các câu chuyện trước là “Biểu Tượng Thất truyền” kể về cuộc phiêu lưu của Giáo sư đến điện Captital (Washington DC, Mỹ). Chuyến phiêu lưu tiếp theo là “Mật Mã Da Vinci”, câu chuyện kịch tính nhất và cũng nổi tiếng nhất trong các chuyến phiêu lưu. Và câu chuyện cuối cùng – “Thiên Thần và Ác Quỷ” một cuộc phiêu lưu bất ngờ chớp nhoáng đến Vatican – Ý.
     </string>
-    
+    <string name="suoi_nguon">
+        Trong lịch sử nhân loại, hiếm thấy ai phát biểu quan điểm này về con người. Ngày nay, quan điểm này hầu như không tồn tại. Tuy nhiên, chính quan điểm này - dù tồn tại ở các cấp độ khác nhau của sự khao khát, ao ước, đam mê và hoang mang đau khổ - là quan điểm khởi đầu cuộc sống của những người ưu tú nhất của nhân loại. Đối với đa số họ, đây thậm chí không phải là một quan điểm rõ ràng mà chỉ là một cảm giác mơ hồ, khó nắm bắt, nó được tạo thành từ những nỗi đau trần trụi và từ niềm hạnh phúc không thể diễn tả nổi. Nó là cảm giác về một kỳ vọng lớn, rằng cuộc sống của một người là quan trọng, rằng những thành tựu lớn lao có thể nằm trong khả năng, và rằng những điều vĩ đại còn nằm phía trước.
+    </string>
 </resources>
