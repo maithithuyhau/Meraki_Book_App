@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Meraki Book</string>
+
+    <string name="sach_moi_nhat">Sách mới nhất</string>
+    <string name="xem_tat_ca">XEM TẤT CẢ</string>
+
+    <string name="sach_moi">Sach mới</string>
+    <string name="sach_hot_nhat">Sách hot nhất</string>
+    <string name="bia_cung">Bìa cứng</string>
+    <string name="bia_mem">Bìa mềm</string>
+    <string name="size">14.5 x 20.5 cm</string>
+
+    //tac giả
+    <string name="nam_cao">Nam Cao</string>
+    <string name="vu_trong_phung"> Vũ Trọng Phụng</string>
+    <string name="van_tinh"> Vãn Tình</string>
+    <string name="dale_carnegie">Dale Carnegie</string>
+    <string name="richard_unger">RICHARD UNGER</string>
+    <string name="yuval_noah_harari">Yuval Noah Harari</string>
+
+
+    //trang
+    <string name="trang">150 trang</string>
+
+    <string name="title_activity_detail_book">DetailBookActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="chi_tiet_sach">Chi tiết sách</string>
+    <string name="dang_nhap">Đăng nhập</string>
+</resources>

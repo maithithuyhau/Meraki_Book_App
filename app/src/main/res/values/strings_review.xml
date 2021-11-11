@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="dat_nhan_tam">Đắc nhân tâm của Dale Carnegie là quyển sách của mọi thời đại và một hiện tượng đáng kinh ngạc trong ngành xuất bản Hoa Kỳ. Trong suốt nhiều thập kỷ tiếp theo và cho đến tận bây giờ, tác phẩm này vẫn chiếm vị trí số một trong danh mục sách bán chạy nhất và trở thành một sự kiện có một không hai trong lịch sử ngành xuất bản thế giới và được đánh giá là một quyển sách có tầm ảnh hưởng nhất mọi thời đại.
+Đây là cuốn sách độc nhất về thể loại self-help sở hữu một lượng lớn người hâm mộ. Ngoài ra cuốn sách có doanh số bán ra cao nhất được tờ báo The New York Times bình chọn trong nhiều năm. Cuốn sách này không còn là một tác phẩm về nghệ thuật đơn thuần nữa mà là một bước thay đổi lớn trong cuộc sống của mỗi người. </string>
+    <string name="ban_dat_gia_bao_nhieu">
+        Câu trả lời này do chính bạn quyết định, chính bạn “định giá”.
+Hơn bốn mươi câu chuyện trong sách xoay quanh các chủ đề tình yêu, hôn nhân, gia đình, sự nghiệp… đến từ chính cuộc sống của tác giả và những người xung quanh, vừa thực tế lại vừa gợi mở, dễ dàng giúp chúng ta liên hệ với tình huống của chính mình. Với những câu chuyện đó, Vãn Tình hi vọng có thể giúp các cô gái thoát khỏi tình cảnh khó khăn, tìm lại bản ngã, sống cuộc đời theo cách mà mình mong muốn.
+    </string>
+    <string name="sinh_trac_van_tay">
+        Có bao giờ bạn tự hỏi: “Tại sao có những người thành công đến với họ dường như dễ dàng hơn những người khác? Yếu tố gì giúp họ vượt lên nhanh và sớm như vậy trong khi đa số mọi người vẫn loay hoay ở phía sau?”
+Cuộc sống là một chuỗi những lựa chọn và hiểu bản thân là cách để bạn đưa ra những quyết định đúng đắn. Tuy nhiên, bạn sẽ không biết mình phù hợp hay không phù hợp với điều gì cho đến khi bạn trực tiếp thử nghiệm việc đó.
+    </string>
+    <string name="lao_hac">
+        Lão Hạc là một truyện ngắn của nhà văn Nam Cao được viết năm 1943. Tác phẩm được đánh giá là một trong những truyện ngắn tiêu biểu của dòng văn học hiện thực, nội dung truyện đã phần nào phản ánh được hiện trạng xã hội Việt Nam trong giai đoạn trước Cách mạng tháng Tám.
+    </string>
+    <string name="dut_tinh">
+        Năm 1934, Vũ Trọng Phụng có tiểu thuyết đầu tay Dứt tình (còn có tên khác là Bởi không duyên kiếp) đăng trên tờ Hải Phòng tuần báo. Với tiểu thuyết này, Vũ Trọng Phụng được khen là “ngòi bút tả chân thực đã khéo léo”."Dứt tình" là cuốn tiểu thuyết mang tư tưởng định mệnh siêu hình.
+Nàng thấy cái lò sưởi cũng giống với cuộc đời con người ta. Miệng lò là sân khấu mà ngọn lửa là những vai trò trong tấn bi kịch. Ngọn lửa trước to, sau nhỏ dần và sau cùng thì bao giờ cũng chỉ là một nắm gio tàn khói lạnh, và hình ảnh đích xác về cái cứu cánh cuộc đời con người ta!.
+    </string>
+    <string name="sapiens">
+        Sapiens, đưa chúng ta vào một chuyến đi kinh ngạc qua toàn bộ lịch sử loài người, từ những gốc rễ tiến hóa của nó đến thời đại của chủ nghĩa tư bản và kỹ thuật di truyền, để khám phá tại sao chúng ta đang trong những điều kiện sinh sống hiện tại.
+Sapiens tập trung vào các quá trình quan trọng đã định hình loài người và thế giới quanh nó, chẳng hạn như sự ra đời của sản xuất nông nghiệp, việc tạo ra tiền, sự lan truyền của những tôn giáo, và sự nổi lên của những nhà nước quốc gia. Không giống như những quyển sách khác cùng loại, Sapiens đã có một lối tiếp cận liên ngành học, bắc cầu qua những khoảng cách giữa lịch sử, sinh học, triết học và kinh tế theo một lối trước đây chưa từng có. Hơn nữa, lấy cả quan điểm vĩ mô và vi mô, Sapiens không chỉ đề cập đến những gì đã xảy ra và tại sao, mà còn đi sâu vào việc những cá nhân trong lịch sử đó đã cảm nhận nó như thế nào.
+    </string>
+
+    <string name="hoa_nguc">
+        Hỏa ngục là phần tiếp theo của một loạt câu chuyện phiêu lưu xoay quanh nhân vật chính Robert Langdon – Giáo sư biểu tượng học của đại học Havard – Hoa Kỳ. Các câu chuyện trước là “Biểu Tượng Thất truyền” kể về cuộc phiêu lưu của Giáo sư đến điện Captital (Washington DC, Mỹ). Chuyến phiêu lưu tiếp theo là “Mật Mã Da Vinci”, câu chuyện kịch tính nhất và cũng nổi tiếng nhất trong các chuyến phiêu lưu. Và câu chuyện cuối cùng – “Thiên Thần và Ác Quỷ” một cuộc phiêu lưu bất ngờ chớp nhoáng đến Vatican – Ý.
+    </string>
+    
+</resources>

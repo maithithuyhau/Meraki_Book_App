@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:clickable="true"
+    android:id="@+id/card_view_id"
+    android:background="@color/light_skin"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/light_skin">
+        <ImageView
+            android:id="@+id/imvBook"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="#6A6A6A"
+            />
+
+
+        <TextView
+            android:id="@+id/txtBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="tac gia"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
