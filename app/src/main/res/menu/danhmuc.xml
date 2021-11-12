@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/bangxephang" android:title="Bảng xếp hạng" />
+
+
+    <item android:id="@+id/tieuthuyet" android:title="Tiểu thuyết"
+        />
+    <item android:id="@+id/truyenngan" android:title="Truyện ngắn"/>
+    <item android:id="@+id/trinhtham" android:title="Trinh thám"/>
+    <item android:id="@+id/giatuong" android:title="Giả tưởng"/>
+    <item android:id="@+id/kinhdoanh" android:title="Kinh doanh"/>
+    <item android:id="@+id/kynang" android:title="Kỹ năng sống"
+        />
+    <item android:id="@+id/tamly" android:title="Tâm lý"/>
+    <item android:id="@+id/giaoduc" android:title="Giáo dục"/>
+
+</menu>

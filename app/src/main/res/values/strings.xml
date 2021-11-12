@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Meraki Book</string>
 
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
     <string name="sach_moi_nhat">Sách mới nhất</string>
     <string name="xem_tat_ca">XEM TẤT CẢ</string>
 
