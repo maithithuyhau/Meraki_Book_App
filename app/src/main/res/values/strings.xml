@@ -33,4 +33,34 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="chi_tiet_sach">Chi tiết sách</string>
     <string name="dang_nhap">Đăng nhập</string>
+
+    //Policy
+    <string name="tai_khoan_khach_hang">Khi sử dụng dịch vụ Meraki Book, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng Meraki Book. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp Meraki Book phục vụ quý khách tốt nhất.\nTrong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản tại Meraki Book.\nQuý khách phải giữ kín mật khẩu và tài khoản, hoàn toàn chịu trách nhiệm đối với tất cả các hoạt động diễn ra thông qua việc sử dụng mật khẩu hoặc tài khoản của mình. Quý khách nên đảm bảo thoát khỏi tài khoản tại Meraki Book sau mỗi lần sử dụng để bảo mật thông tin của mình.</string>
+    <string name="dieu_khoan_su_dung">Điều khoản sử dụng</string>
+    <string name="chinh_sach_bao_mat">Chính sách bảo mật</string>
+    <string name="chinh_sach_giao_hang">Chính sách giao hàng</string>
+    <string name="chinh_sach_cua_Meraki">Chính sách của Meraki</string>
+    <string name="tieu_de_tai_khoan_khach_hang">Tài khoản khách hàng</string>
+    <string name="tieu_de_quyen_loi">Quyền lợi bảo mật thông tin</string>
+    <string name="quyen_loi_bao_mat">Khi sử dụng dịch vụ tại Meraki Book, quý khách được đảm bảo rằng những thông tin cung cấp cho chúng tôi sẽ chỉ được dùng để nâng cao chất lượng dịch vụ dành cho khách hàng và sẽ không được chuyển giao cho một bên thứ ba nào khác vì mục đích thương mại. Thông tin của quý khách tại Meraki Book sẽ được chúng tôi bảo mật và chỉ trong trường hợp pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông tin này cho các cơ quan pháp luật.</string>
+    <string name="tieu_de_quyen_va_nghia_vu">Quyền và nghĩa vụ của Meraki Book</string>
+    <string name="quyen_va_nghia_vu">&#8226; Đảm bảo hệ thống kỹ thuật hoạt động ổn định, liên tục để cung cấp dịch vụ tới khách hàng theo đúng Thỏa thuận này, quy định của pháp luật liên quan.
+        &#8226; Thông báo kịp thời cho khách hàng về thời điểm tạm ngừng hoạt động của hệ thống. Meraki Book được miễn trừ trách nhiệm trong trường hợp hệ thống tạm ngừng hoạt động để bảo dưỡng, nâng cấp định kỳ, sửa chữa đột xuất hoặc các trường hợp bất khả kháng.\n
+        &#8226; Toàn quyền chủ động thay đổi giá cước, giá bán lẻ nội dung và danh mục nội dung trong mỗi gói cước tương ứng tùy vào khả năng và nhu cầu thực tế của Meraki Book tại từng thời điểm.\n
+        &#8226; Cung cấp, lưu trữ đầy đủ thông tin liên quan tới giao dịch của khách hàng.\n
+        &#8226; Hướng dẫn khách hàng sử dụng dịch vụ, giải đáp thắc mắc, xử lý khiếu nại của khách hàng trong quá trình đăng ký và sử dụng dịch vụ với điều kiện khách hàng cung cấp đầy đủ các thông tin liên quan đến giao dịch.\n
+        &#8226; Được miễn trừ toàn bộ trách nhiệm trong trường hợp khách hàng gây ra bất cứ thiệt hại nào cho một bên thứ ba và yêu cầu khách hàng bồi thường toàn bộ thiệt hại thực tế mà Khách hàng gây ra cho Meraki Book.\n
+        &#8226; Tuân thủ Thỏa thuận này và các quy định của pháp luật liên quan.\n
+        &#8226; Meraki Book có quyền xóa - ẩn - block các bình luận và tài khoản của khách hàng trên các nền tảng của Meraki Book khi có hành vi ảnh hưởng đến Meraki Book như giới thiệu, spam, gây kích động, cung cấp thông tin sai lệch, không chính xác, v.v…</string>
+    <string name="tieu_de_quyen_va_nghia_vu_khach_hang">Quyền và nghĩa vụ của khách hàng</string>
+    <string name="quyen_va_nghia_vu_khach_hang">
+        &#8226; Được sử dụng dịch vụ Meraki Book theo gói cước hoặc nội dung đã đăng ký/mua, quy định của Thỏa thuận này và pháp luật có liên quan. Khách hàng chỉ được sử dụng dịch vụ, không được cung cấp hoặc bán lại dịch vụ cho bên thứ ba dưới mọi hình thức.\n
+        &#8226; Được cung cấp các thông tin liên quan đến việc sử dụng dịch vụ và giải quyết khiếu nại, giải đáp thắc mắc trong quá trình sử dụng dịch vụ.\n
+        &#8226; Được bảo mật thông tin theo quy định tại Thỏa thuận này. Tuân thủ điều kiện, quy định liên quan đến việc đăng ký, sử dụng đối với từng Gói thuê bao và các tính năng của dịch vụ và quy định của Pháp luật có liên quan.\n
+        &#8226; Thanh toán đầy đủ và đúng hạn cho Meraki Book theo giá gói cước, giá bán lẻ của nội dung niêm yết.\n
+        &#8226; Đọc, hiểu và tuân thủ Thỏa thuận sử dụng dịch vụ, các quy định khác do Meraki Book đề ra liên quan đến việc sử dụng dịch vụ Meraki Book và các quy định pháp luật liên quan. Meraki Book không chịu trách nhiệm trong trường hợp Khách hàng sử dụng dịch vụ hoặc lựa chọn các tính năng mà không hiểu rõ các quy định của Thỏa thuận này cũng như quy định pháp luật liên quan.\n
+        &#8226; Chịu toàn bộ trách nhiệm trước pháp luật, Meraki Book và bên thứ ba (nếu có) đối với việc sử dụng dịch vụ Meraki Book và các hành vi Khách hàng thực hiện trên nền tảng Meraki Book. Khách hàng chịu toàn bộ trách nhiệm giải quyết và bồi thường toàn bộ thiệt hại thực tế phát sinh cho Meraki Book.\n
+        &#8226; Cung cấp thông tin cần thiết trong quá trình sử dụng dịch vụ hoặc khi Meraki Book có yêu cầu.\n
+        &#8226; Không thực hiện bất kỳ hành vi nào vi phạm quy định của pháp luật hoặc gây tổn hại Meraki Book bao gồm và không giới hạn việc sử dụng phần mềm, công cụ để can thiệp, truy cập trái phép vào tài khoản Meraki Book hoặc hệ thống của Meraki Book, sao chép, phổ biến, trình chiếu hoặc thực hiện bất cứ hành vi nào để phát tán, cung cấp, phân phối các nội dung của Meraki Book dưới bất kỳ hình thức, phạm vi nào hoặc gây tổn hại đến quyền và lợi ích hợp pháp của Meraki Book.\n
+        &#8226; Tuân thủ Thỏa thuận này và các quy định của pháp luật liên quan.</string>
 </resources>
