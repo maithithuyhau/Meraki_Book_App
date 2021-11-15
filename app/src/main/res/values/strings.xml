@@ -39,6 +39,7 @@
     <string name="dieu_khoan_su_dung">Điều khoản sử dụng</string>
     <string name="chinh_sach_bao_mat">Chính sách bảo mật</string>
     <string name="chinh_sach_giao_hang">Chính sách giao hàng</string>
+    <string name="chinh_sach_doi_tra_hoan_tien">Chính sách đổi trả, hoàn tiền</string>
     <string name="chinh_sach_cua_Meraki">Chính sách của Meraki</string>
     <string name="tieu_de_tai_khoan_khach_hang">Tài khoản khách hàng</string>
     <string name="tieu_de_quyen_loi">Quyền lợi bảo mật thông tin</string>
@@ -74,4 +75,7 @@
     <string name="cam_ket">Meraki Book cam đoan sẽ không bán, chia sẻ dẫn đến làm lộ thông tin cá nhân của quý khách vì bất cứ mục đích gì. Tất cả thông tin giao dịch giữa quý khách và Meraki Book sẽ được bảo mật bằng cách mã hóa tất cả thông tin quý khách nhập vào.\n Meraki Book cam kết không lưu lại bất kỳ thông tin tài khoản ngân hàng, thông tin thẻ tín dụng và thông tin tài chính của quý khách.</string>
     <string name="tieu_de_trach_nhiem">Trách nhiệm của khách hàng</string>
     <string name="trach_nhiem">Quý khách không nên trao đổi những thông tin tài khoản, thanh toán, giao nhận của mình cho 1 bên thứ 3 nào khác để tránh rò rỉ thông tin. Khi sử dụng chung máy tính với nhiều người, vui lòng thoát khỏi tài khoản mỗi khi không sử dụng dịch vụ của Meraki Book nữa để tự bảo vệ thông tin về mật khẩu truy cập của mình. \nNgoài ra, quý khách tuyệt đối không được sử dụng bất kỳ hình thức nào để can thiệp vào hệ thống hay làm thay đổi cấu trúc dữ liệu. Chúng tôi nghiêm cấm việc phát tán, truyền bá hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm nhập vào dữ liệu của hệ thống website. Mọi vi phạm sẽ bị tước bỏ mọi quyền lợi cũng như sẽ bị truy tố trước pháp luật nếu cần thiết. Mọi thông tin của quí khách tại Meraki Book sẽ được chúng tôi bảo mật nhưng trong trường hợp pháp luật yêu cầu, chúng tôi buộc phải cung cấp thông tin này cho cơ quan pháp luật</string>
+
+    //Delivery Policy
+    <string name="noi_dung_chinh_sach_giao_hang">Với đa phần đơn hàng, Meraki Book cần vài giờ làm việc để kiểm tra thông tin và đóng gói hàng. Nếu các sản phẩm đều có sẵn hàng, Meraki Book sẽ nhanh chóng bàn giao cho đối tác vận chuyển. Nếu đơn hàng có sản phẩm sắp phát hành, Meraki Book sẽ ưu tiên giao những sản phẩm có hàng trước cho khách hàng. Trong một số trường hợp, hàng nằm không có sẵn tại kho gần nhất, thời gian giao hàng có thể chậm hơn so với dự kiến do điều hàng. Các phí vận chuyển phát sinh, Meraki Book sẽ hỗ trợ hoàn toàn. Phí giao hàng dự kiến được hiển thị bên phải mỗi đơn vị vận chuyển để khách hàng lựa chọn phù hợp. Thời gian giao hàng không tính thứ 7, Chủ nhật, các ngày Lễ, Tết và không bao gồm tuyến huyện đảo xa.</string>
 </resources>

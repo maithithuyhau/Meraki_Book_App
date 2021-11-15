@@ -108,6 +108,31 @@
         android:layout_height="1dp"
         android:background="@android:color/black"
        />
+    <LinearLayout
+        android:id="@+id/lnCSDoiTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_skin">
+        <TextView
+            android:layout_marginStart="24dp"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="50dp"
+            android:text="@string/chinh_sach_doi_tra_hoan_tien"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward"
+            android:layout_weight="2"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
 
 
 

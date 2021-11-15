@@ -25,7 +25,7 @@
             android:layout_marginStart="24dp" />
 
         <TextView
-            android:id="@+id/txtHeaderThanhToan"
+            android:id="@+id/txtHeaderDieuKhoan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dieu_khoan_su_dung"

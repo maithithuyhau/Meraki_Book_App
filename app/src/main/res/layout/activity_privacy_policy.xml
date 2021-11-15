@@ -24,7 +24,7 @@
                 android:layout_marginStart="24dp" />
 
             <TextView
-                android:id="@+id/txtHeaderThanhToan"
+                android:id="@+id/txtHeaderChinhSach"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/chinh_sach_bao_mat"
