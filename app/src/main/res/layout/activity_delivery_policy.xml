@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryPolicyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_back"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/txtHeaderCSGiaoHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chinh_sach_giao_hang"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="24dp"
+            />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/txtChinhSachGiaoHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/noi_dung_chinh_sach_giao_hang"
+            />
+    </LinearLayout>
+
+</ScrollView>

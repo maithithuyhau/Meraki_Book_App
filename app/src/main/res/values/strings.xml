@@ -37,4 +37,81 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="chi_tiet_sach">Chi tiết sách</string>
     <string name="dang_nhap">Đăng nhập</string>
+
+    //Policy
+    <string name="tai_khoan_khach_hang">Khi sử dụng dịch vụ Meraki Book, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng Meraki Book. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp Meraki Book phục vụ quý khách tốt nhất.\nTrong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản tại Meraki Book.\nQuý khách phải giữ kín mật khẩu và tài khoản, hoàn toàn chịu trách nhiệm đối với tất cả các hoạt động diễn ra thông qua việc sử dụng mật khẩu hoặc tài khoản của mình. Quý khách nên đảm bảo thoát khỏi tài khoản tại Meraki Book sau mỗi lần sử dụng để bảo mật thông tin của mình.</string>
+    <string name="dieu_khoan_su_dung">Điều khoản sử dụng</string>
+    <string name="chinh_sach_bao_mat">Chính sách bảo mật</string>
+    <string name="chinh_sach_giao_hang">Chính sách giao hàng</string>
+    <string name="chinh_sach_doi_tra_hoan_tien">Chính sách đổi trả, hoàn tiền</string>
+    <string name="chinh_sach_cua_Meraki">Chính sách của Meraki</string>
+    <string name="tieu_de_tai_khoan_khach_hang">Tài khoản khách hàng</string>
+    <string name="tieu_de_quyen_loi">Quyền lợi bảo mật thông tin</string>
+    <string name="quyen_loi_bao_mat">Khi sử dụng dịch vụ tại Meraki Book, quý khách được đảm bảo rằng những thông tin cung cấp cho chúng tôi sẽ chỉ được dùng để nâng cao chất lượng dịch vụ dành cho khách hàng và sẽ không được chuyển giao cho một bên thứ ba nào khác vì mục đích thương mại. Thông tin của quý khách tại Meraki Book sẽ được chúng tôi bảo mật và chỉ trong trường hợp pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông tin này cho các cơ quan pháp luật.</string>
+    <string name="tieu_de_quyen_va_nghia_vu">Quyền và nghĩa vụ của Meraki Book</string>
+    <string name="quyen_va_nghia_vu">&#8226; Đảm bảo hệ thống kỹ thuật hoạt động ổn định, liên tục để cung cấp dịch vụ tới khách hàng theo đúng Thỏa thuận này, quy định của pháp luật liên quan.
+        &#8226; Thông báo kịp thời cho khách hàng về thời điểm tạm ngừng hoạt động của hệ thống. Meraki Book được miễn trừ trách nhiệm trong trường hợp hệ thống tạm ngừng hoạt động để bảo dưỡng, nâng cấp định kỳ, sửa chữa đột xuất hoặc các trường hợp bất khả kháng.\n
+        &#8226; Toàn quyền chủ động thay đổi giá cước, giá bán lẻ nội dung và danh mục nội dung trong mỗi gói cước tương ứng tùy vào khả năng và nhu cầu thực tế của Meraki Book tại từng thời điểm.\n
+        &#8226; Cung cấp, lưu trữ đầy đủ thông tin liên quan tới giao dịch của khách hàng.\n
+        &#8226; Hướng dẫn khách hàng sử dụng dịch vụ, giải đáp thắc mắc, xử lý khiếu nại của khách hàng trong quá trình đăng ký và sử dụng dịch vụ với điều kiện khách hàng cung cấp đầy đủ các thông tin liên quan đến giao dịch.\n
+        &#8226; Được miễn trừ toàn bộ trách nhiệm trong trường hợp khách hàng gây ra bất cứ thiệt hại nào cho một bên thứ ba và yêu cầu khách hàng bồi thường toàn bộ thiệt hại thực tế mà Khách hàng gây ra cho Meraki Book.\n
+        &#8226; Tuân thủ Thỏa thuận này và các quy định của pháp luật liên quan.\n
+        &#8226; Meraki Book có quyền xóa - ẩn - block các bình luận và tài khoản của khách hàng trên các nền tảng của Meraki Book khi có hành vi ảnh hưởng đến Meraki Book như giới thiệu, spam, gây kích động, cung cấp thông tin sai lệch, không chính xác, v.v…</string>
+    <string name="tieu_de_quyen_va_nghia_vu_khach_hang">Quyền và nghĩa vụ của khách hàng</string>
+    <string name="quyen_va_nghia_vu_khach_hang">
+        &#8226; Được sử dụng dịch vụ Meraki Book theo gói cước hoặc nội dung đã đăng ký/mua, quy định của Thỏa thuận này và pháp luật có liên quan. Khách hàng chỉ được sử dụng dịch vụ, không được cung cấp hoặc bán lại dịch vụ cho bên thứ ba dưới mọi hình thức.\n
+        &#8226; Được cung cấp các thông tin liên quan đến việc sử dụng dịch vụ và giải quyết khiếu nại, giải đáp thắc mắc trong quá trình sử dụng dịch vụ.\n
+        &#8226; Được bảo mật thông tin theo quy định tại Thỏa thuận này. Tuân thủ điều kiện, quy định liên quan đến việc đăng ký, sử dụng đối với từng Gói thuê bao và các tính năng của dịch vụ và quy định của Pháp luật có liên quan.\n
+        &#8226; Thanh toán đầy đủ và đúng hạn cho Meraki Book theo giá gói cước, giá bán lẻ của nội dung niêm yết.\n
+        &#8226; Đọc, hiểu và tuân thủ Thỏa thuận sử dụng dịch vụ, các quy định khác do Meraki Book đề ra liên quan đến việc sử dụng dịch vụ Meraki Book và các quy định pháp luật liên quan. Meraki Book không chịu trách nhiệm trong trường hợp Khách hàng sử dụng dịch vụ hoặc lựa chọn các tính năng mà không hiểu rõ các quy định của Thỏa thuận này cũng như quy định pháp luật liên quan.\n
+        &#8226; Chịu toàn bộ trách nhiệm trước pháp luật, Meraki Book và bên thứ ba (nếu có) đối với việc sử dụng dịch vụ Meraki Book và các hành vi Khách hàng thực hiện trên nền tảng Meraki Book. Khách hàng chịu toàn bộ trách nhiệm giải quyết và bồi thường toàn bộ thiệt hại thực tế phát sinh cho Meraki Book.\n
+        &#8226; Cung cấp thông tin cần thiết trong quá trình sử dụng dịch vụ hoặc khi Meraki Book có yêu cầu.\n
+        &#8226; Không thực hiện bất kỳ hành vi nào vi phạm quy định của pháp luật hoặc gây tổn hại Meraki Book bao gồm và không giới hạn việc sử dụng phần mềm, công cụ để can thiệp, truy cập trái phép vào tài khoản Meraki Book hoặc hệ thống của Meraki Book, sao chép, phổ biến, trình chiếu hoặc thực hiện bất cứ hành vi nào để phát tán, cung cấp, phân phối các nội dung của Meraki Book dưới bất kỳ hình thức, phạm vi nào hoặc gây tổn hại đến quyền và lợi ích hợp pháp của Meraki Book.\n
+        &#8226; Tuân thủ Thỏa thuận này và các quy định của pháp luật liên quan.</string>
+
+    //Privacy Policy
+    <string name="tieu_de_thong_tin_bao_mat">Thông tin bảo mật</string>
+    <string name="thong_tin_bao_mat">Bảo mật thông tin khách hàng là một trong những ưu tiên hàng đầu nhằm tạo điều kiện mua sắm tốt nhất cho quý khách tại Meraki Book. Chúng tôi hiểu sử dụng hợp lý và bảo mật thông tin sẽ thể hiện sự quan tâm của Meraki Book dành cho quí khách. Vì thế, Meraki Book cam kết việc sử dụng thông tin trên sẽ chỉ nhằm nâng cao chất lượng dịch vụ khách hàng và tạo môi trường mua sắm an tòan, tiện lợi tại Meraki Book. Cụ thể, thông tin cá nhân của quý khách chỉ dùng với các mục đích sau:\n
+        1. Số điện thoại và địa chỉ Email của quý khách được dùng nhằm nâng cao chất lượng dịch vụ hỗ trợ khách hàng.\n
+        2. Địa chỉ của quý khách chỉ được dùng để Meraki Book thực thiện việc giao hàng mà quý khách đã đặt trên ứng dụng Meraki Book.\n
+        3. Hành vị mua hàng của quý khách chỉ giúp Meraki Book tạo một trải nghiệm mua sắm tốt hơn cho quý khách.</string>
+    <string name="tieu_de_cam_ket">Cam kết của Meraki Book</string>
+    <string name="cam_ket">Meraki Book cam đoan sẽ không bán, chia sẻ dẫn đến làm lộ thông tin cá nhân của quý khách vì bất cứ mục đích gì. Tất cả thông tin giao dịch giữa quý khách và Meraki Book sẽ được bảo mật bằng cách mã hóa tất cả thông tin quý khách nhập vào.\n Meraki Book cam kết không lưu lại bất kỳ thông tin tài khoản ngân hàng, thông tin thẻ tín dụng và thông tin tài chính của quý khách.</string>
+    <string name="tieu_de_trach_nhiem">Trách nhiệm của khách hàng</string>
+    <string name="trach_nhiem">Quý khách không nên trao đổi những thông tin tài khoản, thanh toán, giao nhận của mình cho 1 bên thứ 3 nào khác để tránh rò rỉ thông tin. Khi sử dụng chung máy tính với nhiều người, vui lòng thoát khỏi tài khoản mỗi khi không sử dụng dịch vụ của Meraki Book nữa để tự bảo vệ thông tin về mật khẩu truy cập của mình. \nNgoài ra, quý khách tuyệt đối không được sử dụng bất kỳ hình thức nào để can thiệp vào hệ thống hay làm thay đổi cấu trúc dữ liệu. Chúng tôi nghiêm cấm việc phát tán, truyền bá hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm nhập vào dữ liệu của hệ thống website. Mọi vi phạm sẽ bị tước bỏ mọi quyền lợi cũng như sẽ bị truy tố trước pháp luật nếu cần thiết. Mọi thông tin của quí khách tại Meraki Book sẽ được chúng tôi bảo mật nhưng trong trường hợp pháp luật yêu cầu, chúng tôi buộc phải cung cấp thông tin này cho cơ quan pháp luật</string>
+
+    //Delivery Policy
+    <string name="noi_dung_chinh_sach_giao_hang">Với đa phần đơn hàng, Meraki Book cần vài giờ làm việc để kiểm tra thông tin và đóng gói hàng. Nếu các sản phẩm đều có sẵn hàng, Meraki Book sẽ nhanh chóng bàn giao cho đối tác vận chuyển. Nếu đơn hàng có sản phẩm sắp phát hành, Meraki Book sẽ ưu tiên giao những sản phẩm có hàng trước cho khách hàng. Trong một số trường hợp, hàng nằm không có sẵn tại kho gần nhất, thời gian giao hàng có thể chậm hơn so với dự kiến do điều hàng. Các phí vận chuyển phát sinh, Meraki Book sẽ hỗ trợ hoàn toàn. Phí giao hàng dự kiến được hiển thị bên phải mỗi đơn vị vận chuyển để khách hàng lựa chọn phù hợp. Thời gian giao hàng không tính thứ 7, Chủ nhật, các ngày Lễ, Tết và không bao gồm tuyến huyện đảo xa.</string>
+
+    //Return and Refund Policy
+    <string name="note_doi_tra_hoan_tien">Để việc mua sắm của quý khách tại Meraki Book là trải nghiệm dịch vụ thân thiện, chúng tôi hy vọng quý khách lúc nhận hàng kiểm tra kỹ lại:\n
+        &#8226; Số lượng.\n
+        &#8226; Tên sản phẩm và chất lượng sản phẩm.\n
+        &#8226; Thông tin sản phẩm, thông tin người nhận (Đối chiếu với thông tin trên phiếu giao hàng được bỏ trong hộp) trong lúc nhận hàng trước khi ký nhận và thanh toán tiền cho nhân viên giao nhận.\nTuy nhiên để quý khách yên tâm hơn trong việc mua sắm và trải nghiệm dịch vụ của Meraki Book, chúng tôi xây dựng chính sách đổi/ trả/ hoàn tiền trên tinh thần bảo vệ quyền lợi người tiêu dùng nhằm cam kết với quý khách về chất lượng sản phẩm và dịch vụ của chúng tôi.</string>
+    <string name="tieu_de_doi_tra">Thời gian và điều kiện đổi trả</string>
+    <string name="noi_dung_thoi_gian"><b>*Thời gian đăng ký đổi trả:</b> Trong vòng 2 ngày – kể từ ngày nhận hàng. Ví dụ Đơn vị vận chuyển giao hàng cho bạn vào ngày 26/10/2021, bạn sẽ được đăng ký đổi trả từ 26–28/10/2021.\n
+        <b>*Điều kiện đổi trả:</b> Tất cả các đơn hàng đổi trả cần được chụp hình và gửi email về merakibook@gmail.com với tiêu đề “Đổi Trả Đơn Hàng #100xxx” (Trong đó #100xxx là mã đơn hàng): Yêu cầu chụp hình về tình trạng sản phẩm, nêu rõ lỗi kỹ thuật nếu có.</string>
+    <string name="phuong_an">Phương án</string>
+    <string name="truong_hop">Trường hợp</string>
+    <string name="STT">STT</string>
+    <string name="STT_1">1</string>
+    <string name="TH_1">Lỗi kỹ thuật của sản phẩm (sách thiếu trang, sút gáy, trùng nội dung, sản phẩm điện tử không hoạt động..)</string>
+    <string name="PA_1">&#8226; Nhà cung cấp/Nhà phát hành có sản phẩm → đổi mới cùng sản phẩm \n
+        &#8226; Nhà cung cấp/Nhà phát hành hết hàng → Hoàn tiền (*)/ Quý khách có thể chọn mặt hàng khác tại Meraki Book</string>
+    <string name="STT_2">2</string>
+    <string name="TH_2">Sản phẩm hỏng do quý khách</string>
+    <string name="PA_2">Không hỗ trợ đổi/trả</string>
+    <string name="STT_3">3</string>
+    <string name="TH_3">Lý do đổi/trả sản phẩm như: khách đặt nhầm, sách có nội dung không hay, khách không thích sản phẩm đã đặt hoặc nhu cầu của khách thay đổi.</string>
+    <string name="STT_4">4</string>
+    <string name="TH_4">Giao nhầm/ giao thiếu ( thiếu sản phẩm đã đặt, thiếu phụ kiện, thiếu quà tặng kèm theo)</string>
+    <string name="PA_4">&#8226; Giao nhầm → Nhà cung cấp/Nhà phát hành đổi lại đúng sản phẩm đã đặt. \n&#8226; Giao thiếu → Nhà cung cấp/Nhà phát hành giao bù thêm số lượng còn thiếu theo đơn hàng</string>
+    <string name="STT_5">5</string>
+    <string name="TH_5">Chất lượng hàng hóa kém do vận chuyển</string>
+    <string name="PA_5">Khi quý khách hàng nhận gói hàng bị móp méo, ướt, chúng tôi khuyến cáo khách hàng nên kiểm tra thực tế hàng hóa bên trong ngay thời điểm nhận hàng, vui lòng phản ảnh hiện trang hàng hóa lên bill nhận hàng từ phía nhân viên giao nhận và liên lạc với chúng tôi về Hotline 1900636466 để được hỗ trợ giải quyết cụ thể.</string>
+    <string name="STT_6">6</string>
+    <string name="TH_6">Hình thức sản phẩm không giống mô tả ban đầu</string>
+    <string name="PA_6">Hãy liên hệ với chúng tôi qua số Hotline 1900636466, chúng tôi sẵn sàng lắng nghe và giải quyết cho bạn (cụ thể theo từng trường hợp)</string>
+    <string name="tieu_de_hoan_tien">Phương thức hoàn tiền</string>
+    <string name="noi_dung_hoan_tien">Meraki Book sẽ tiến hành hoàn tiền cho quý khách thông qua tài khoản ngân hàng từ 2–7 ngày làm việc (sau khi chúng tôi nhận được sản phẩm trả về).\n\nChúng tôi sẽ kiểm tra các trường hợp trên và giải quyết cho quý khách trong 7 ngày làm việc kể từ khi quý khách nhận được hàng, quá thời hạn trên rất tiếc chúng tôi không giải quyết khiếu nại.</string>
 </resources>
