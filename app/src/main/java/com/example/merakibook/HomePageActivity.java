@@ -10,11 +10,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.annotation.SuppressLint;
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 
 import com.example.adapter.BannerAdapter;
 import com.example.adapter.BookAdapterHorizontal;
@@ -47,6 +52,7 @@ public class HomePageActivity extends AppCompatActivity implements BookItemClick
 
         linkView();
         initData();
+        addEvent();
 
     }
 
@@ -61,45 +67,63 @@ public class HomePageActivity extends AppCompatActivity implements BookItemClick
         rcvDeXuat=findViewById(R.id.rcvDeXuat);
 
 
+
         Toolbar toolbar=(Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
 
         drawerLayout=(DrawerLayout) findViewById(R.id.drawDanhmuc);
-       danhmuc=(NavigationView) findViewById(R.id.danhmuc);
+        danhmuc=(NavigationView) findViewById(R.id.danhmuc);
         toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-      danhmuc.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+    }
+
+
+    private void addEvent() {
+        danhmuc.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.bangxephang:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.tieuthuyet:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.truyenngan:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.trinhtham:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.giatuong:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.kinhdoanh:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.kynang:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.tamly:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.giaoduc:
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                 }
-////                if (toggle.onOptionsItemSelected(item)){
-////                    return true;
-////                }
-////                return HomePageActivity.super.onOptionsItemSelected(item)
                 return true;
             }
         });
 
 
+
     }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        if (toggle.onOptionsItemSelected(item)){
-//                    return true;
-//                }
-//        return super.onOptionsItemSelected(item);
-//    }
 
     private void initData() {
         //list hình banner

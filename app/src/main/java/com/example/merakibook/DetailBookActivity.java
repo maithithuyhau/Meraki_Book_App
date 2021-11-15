@@ -6,8 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import com.example.adapter.BookAdapterHorizontal;
@@ -19,9 +24,10 @@ import java.util.List;
 
 public class DetailBookActivity extends AppCompatActivity implements BookItemClickListener {
     private TextView txtTenSach,txtDesc, txtTacGia,txtTacGia2,
-            txtPage,txtDateTime, txtPublisher,txtBia,txtBookSize;
+            txtPage,txtDateTime, txtPublisher,txtBia,txtBookSize, txtmenuDitailBook;
     private ImageView imvImages, imvHinh;
     private RecyclerView rcvcung_the_loai;
+    private Button btnMuaSach;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +35,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         linkView();
         loadData();
         initData();
+        addEvent();
     }
 
     private void linkView() {
@@ -43,9 +50,12 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         txtBia=findViewById(R.id.txtBia);
         txtPublisher=findViewById(R.id.txtPublisher);
         txtPage=findViewById(R.id.txtPage);
+        txtmenuDitailBook=findViewById(R.id.txtmenuDitailBook);
 
         imvImages=findViewById(R.id.imvDetail_Images);
         imvHinh=findViewById(R.id.imvHinh);
+
+        btnMuaSach=findViewById(R.id.btnMuaSach);
     }
 
     private void loadData() {
@@ -79,6 +89,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         txtBia.setText(loaiBia);
         txtDateTime.setText(dateTime);
         txtBookSize.setText(bookSize);
+        txtmenuDitailBook.setText(bookName);
 
     }
 
@@ -98,6 +109,35 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         BookAdapterHorizontal adapter2=new BookAdapterHorizontal(this, list_book1,this);
         rcvcung_the_loai.setAdapter(adapter2);
         rcvcung_the_loai.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
+
+    }
+
+    private void addEvent() {
+        btnMuaSach.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                PopupMenu popupMenu= new PopupMenu(DetailBookActivity.this,view);
+                popupMenu.getMenuInflater().inflate(R.menu.popup_muasach,popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        switch (menuItem.getItemId()){
+                            case R.id.muabook:
+
+                                return true;
+                            case R.id.muaebook:
+//
+                                return true;
+                            default:
+                                return false;
+                        }
+
+                    }
+                });
+                popupMenu.show();
+            }
+        });
 
     }
 
