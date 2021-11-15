@@ -82,4 +82,36 @@
 
     //Delivery Policy
     <string name="noi_dung_chinh_sach_giao_hang">Với đa phần đơn hàng, Meraki Book cần vài giờ làm việc để kiểm tra thông tin và đóng gói hàng. Nếu các sản phẩm đều có sẵn hàng, Meraki Book sẽ nhanh chóng bàn giao cho đối tác vận chuyển. Nếu đơn hàng có sản phẩm sắp phát hành, Meraki Book sẽ ưu tiên giao những sản phẩm có hàng trước cho khách hàng. Trong một số trường hợp, hàng nằm không có sẵn tại kho gần nhất, thời gian giao hàng có thể chậm hơn so với dự kiến do điều hàng. Các phí vận chuyển phát sinh, Meraki Book sẽ hỗ trợ hoàn toàn. Phí giao hàng dự kiến được hiển thị bên phải mỗi đơn vị vận chuyển để khách hàng lựa chọn phù hợp. Thời gian giao hàng không tính thứ 7, Chủ nhật, các ngày Lễ, Tết và không bao gồm tuyến huyện đảo xa.</string>
+
+    //Return and Refund Policy
+    <string name="note_doi_tra_hoan_tien">Để việc mua sắm của quý khách tại Meraki Book là trải nghiệm dịch vụ thân thiện, chúng tôi hy vọng quý khách lúc nhận hàng kiểm tra kỹ lại:\n
+        &#8226; Số lượng.\n
+        &#8226; Tên sản phẩm và chất lượng sản phẩm.\n
+        &#8226; Thông tin sản phẩm, thông tin người nhận (Đối chiếu với thông tin trên phiếu giao hàng được bỏ trong hộp) trong lúc nhận hàng trước khi ký nhận và thanh toán tiền cho nhân viên giao nhận.\nTuy nhiên để quý khách yên tâm hơn trong việc mua sắm và trải nghiệm dịch vụ của Meraki Book, chúng tôi xây dựng chính sách đổi/ trả/ hoàn tiền trên tinh thần bảo vệ quyền lợi người tiêu dùng nhằm cam kết với quý khách về chất lượng sản phẩm và dịch vụ của chúng tôi.</string>
+    <string name="tieu_de_doi_tra">Thời gian và điều kiện đổi trả</string>
+    <string name="noi_dung_thoi_gian"><b>*Thời gian đăng ký đổi trả:</b> Trong vòng 2 ngày – kể từ ngày nhận hàng. Ví dụ Đơn vị vận chuyển giao hàng cho bạn vào ngày 26/10/2021, bạn sẽ được đăng ký đổi trả từ 26–28/10/2021.\n
+        <b>*Điều kiện đổi trả:</b> Tất cả các đơn hàng đổi trả cần được chụp hình và gửi email về merakibook@gmail.com với tiêu đề “Đổi Trả Đơn Hàng #100xxx” (Trong đó #100xxx là mã đơn hàng): Yêu cầu chụp hình về tình trạng sản phẩm, nêu rõ lỗi kỹ thuật nếu có.</string>
+    <string name="phuong_an">Phương án</string>
+    <string name="truong_hop">Trường hợp</string>
+    <string name="STT">STT</string>
+    <string name="STT_1">1</string>
+    <string name="TH_1">Lỗi kỹ thuật của sản phẩm (sách thiếu trang, sút gáy, trùng nội dung, sản phẩm điện tử không hoạt động..)</string>
+    <string name="PA_1">&#8226; Nhà cung cấp/Nhà phát hành có sản phẩm → đổi mới cùng sản phẩm \n
+        &#8226; Nhà cung cấp/Nhà phát hành hết hàng → Hoàn tiền (*)/ Quý khách có thể chọn mặt hàng khác tại Meraki Book</string>
+    <string name="STT_2">2</string>
+    <string name="TH_2">Sản phẩm hỏng do quý khách</string>
+    <string name="PA_2">Không hỗ trợ đổi/trả</string>
+    <string name="STT_3">3</string>
+    <string name="TH_3">Lý do đổi/trả sản phẩm như: khách đặt nhầm, sách có nội dung không hay, khách không thích sản phẩm đã đặt hoặc nhu cầu của khách thay đổi.</string>
+    <string name="STT_4">4</string>
+    <string name="TH_4">Giao nhầm/ giao thiếu ( thiếu sản phẩm đã đặt, thiếu phụ kiện, thiếu quà tặng kèm theo)</string>
+    <string name="PA_4">&#8226; Giao nhầm → Nhà cung cấp/Nhà phát hành đổi lại đúng sản phẩm đã đặt. \n&#8226; Giao thiếu → Nhà cung cấp/Nhà phát hành giao bù thêm số lượng còn thiếu theo đơn hàng</string>
+    <string name="STT_5">5</string>
+    <string name="TH_5">Chất lượng hàng hóa kém do vận chuyển</string>
+    <string name="PA_5">Khi quý khách hàng nhận gói hàng bị móp méo, ướt, chúng tôi khuyến cáo khách hàng nên kiểm tra thực tế hàng hóa bên trong ngay thời điểm nhận hàng, vui lòng phản ảnh hiện trang hàng hóa lên bill nhận hàng từ phía nhân viên giao nhận và liên lạc với chúng tôi về Hotline 1900636466 để được hỗ trợ giải quyết cụ thể.</string>
+    <string name="STT_6">6</string>
+    <string name="TH_6">Hình thức sản phẩm không giống mô tả ban đầu</string>
+    <string name="PA_6">Hãy liên hệ với chúng tôi qua số Hotline 1900636466, chúng tôi sẵn sàng lắng nghe và giải quyết cho bạn (cụ thể theo từng trường hợp)</string>
+    <string name="tieu_de_hoan_tien">Phương thức hoàn tiền</string>
+    <string name="noi_dung_hoan_tien">Meraki Book sẽ tiến hành hoàn tiền cho quý khách thông qua tài khoản ngân hàng từ 2–7 ngày làm việc (sau khi chúng tôi nhận được sản phẩm trả về).\n\nChúng tôi sẽ kiểm tra các trường hợp trên và giải quyết cho quý khách trong 7 ngày làm việc kể từ khi quý khách nhận được hàng, quá thời hạn trên rất tiếc chúng tôi không giải quyết khiếu nại.</string>
 </resources>
