@@ -110,6 +110,7 @@
                 android:text="@string/mua_lai"
                 android:background="@drawable/custom_button"
                 android:layout_gravity="center"
+                android:textSize="12sp"
                 android:layout_marginEnd="10dp"
                 />
 

@@ -45,6 +45,7 @@
     <string name="chinh_sach_giao_hang">Chính sách giao hàng</string>
     <string name="chinh_sach_doi_tra_hoan_tien">Chính sách đổi trả, hoàn tiền</string>
     <string name="chinh_sach_cua_Meraki">Chính sách của Meraki</string>
+    <string name="hotline_1900636466">Hotline: 1900636466</string>
     <string name="tieu_de_tai_khoan_khach_hang">Tài khoản khách hàng</string>
     <string name="tieu_de_quyen_loi">Quyền lợi bảo mật thông tin</string>
     <string name="quyen_loi_bao_mat">Khi sử dụng dịch vụ tại Meraki Book, quý khách được đảm bảo rằng những thông tin cung cấp cho chúng tôi sẽ chỉ được dùng để nâng cao chất lượng dịch vụ dành cho khách hàng và sẽ không được chuyển giao cho một bên thứ ba nào khác vì mục đích thương mại. Thông tin của quý khách tại Meraki Book sẽ được chúng tôi bảo mật và chỉ trong trường hợp pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông tin này cho các cơ quan pháp luật.</string>
@@ -114,7 +115,8 @@
     <string name="PA_6">Hãy liên hệ với chúng tôi qua số Hotline 1900636466, chúng tôi sẵn sàng lắng nghe và giải quyết cho bạn (cụ thể theo từng trường hợp)</string>
     <string name="tieu_de_hoan_tien">Phương thức hoàn tiền</string>
     <string name="noi_dung_hoan_tien">Meraki Book sẽ tiến hành hoàn tiền cho quý khách thông qua tài khoản ngân hàng từ 2–7 ngày làm việc (sau khi chúng tôi nhận được sản phẩm trả về).\n\nChúng tôi sẽ kiểm tra các trường hợp trên và giải quyết cho quý khách trong 7 ngày làm việc kể từ khi quý khách nhận được hàng, quá thời hạn trên rất tiếc chúng tôi không giải quyết khiếu nại.</string>
-    <string name="hotline_1900636466">Hotline: 1900636466</string>
+
+    //Purchase Orders
     <string name="don_mua">Đơn mua</string>
     <string name="tong_cong">Tổng cộng: </string>
     <string name="ngay_giao_hang">Ngày giao hàng:</string>
@@ -123,4 +125,31 @@
     <string name="_1569a">1569A</string>
     <string name="giao_hang_thanh_cong">Giao hàng thành công</string>
     <string name="mua_lai">Mua lại</string>
+
+    //Become Vip
+    <string name="tro_thanh_vip">Trở thành Vip</string>
+    <string name="nhanh_tay">Nhanh tay chọn ngay một gói VIP dưới đây để truy cập vào kho sách Meraki không giới hạn nhé!</string>
+    <string name="price_99">99.000đ</string>
+    <string name="price_369">369.000đ</string>
+    <string name="price_45">45.000đ</string>
+
+    <string name="mot_thang">1 tháng</string>
+    <string name="ba_thang">3 tháng</string>
+    <string name="_12_thang">12 tháng</string>
+
+    <string name="doc_tron_bo">Đọc trọn bộ kho sách của Meraki</string>
+    <string name="Gia_Han">Tự động gia hạn</string>
+    <string name="btn_dang_ky">Đăng ký ngay</string>
+    <string name="quyen_loi">Quyền lợi gói VIP</string>
+    <string name="note1">*Các gói VIP đã bao gồm phí kênh thanh toán, chi tiết tại<font color="#F7BB34"> Điều khoản sử dụng</font></string>
+    <string name="note2">*Thanh toán sẽ được tính cho tài khoản Google Play của bạn khi bạn xác minh đăng kí.</string>
+    <string name="note3">*Gia hạn sẽ được thực hiện nếu bạn không hủy ít nhất 24h trước khi gói kết thúc</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="search">Tìm kiếm</string>
+    <string name="tim_gan_day">Tìm gần đây</string>
+    <string name="xoa_tat_ca">Xóa tất cả</string>
+    <string name="tu_dong_gia_han">Tự động gia hạn</string>
+    <string name="dang_ky_ngay">Đăng ký ngay</string>
+    <string name="hot">Hot</string>
 </resources>
