@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:text="@string/thong_tin_lien_he"
+                android:text="Thông tin liên hệ"
                 android:textColor="@color/green"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:text="@string/sdt"
+                android:text="1900636466"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -151,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:text="@string/merakibook_gmail_com"
+                android:text="merakibook@gmail.com"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -180,7 +180,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tim_hieu_thong_tin_meraki"
+            android:text="Tìm hiểu thêm thông tin về Meraki Book qua:"
             android:textColor="@color/green"
             android:textSize="16sp"
             android:textStyle="bold" />
