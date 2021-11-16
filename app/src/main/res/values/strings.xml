@@ -13,8 +13,16 @@
     <string name="bia_cung">Bìa cứng</string>
     <string name="bia_mem">Bìa mềm</string>
     <string name="size">14.5 x 20.5 cm</string>
-
+    //Giới thiệu
+    <string name="chao_mung">Chào mừng đến Meraki Book!</string>
+    <string name="the_gioi">Thế giới riêng của bạn</string>
+    <string name="Khep_minh">Khép mình và chìm đắm</string>
+    <string name="trong_kho">trong hko sách được cập nhật liên tục và đa dạng các thể loại.</string>
+    <string name="Ket_noi">Kết nối và chia sẻ</string>
+    <string name="cong_dong">các trải nghiệm thú vị của bạn với
+cộng đồng những người yêu sách khác</string>
     //tac giả
+    <string name="tac_gia">Tác giả</string>
     <string name="nam_cao">Nam Cao</string>
     <string name="vu_trong_phung"> Vũ Trọng Phụng</string>
     <string name="van_tinh"> Vãn Tình</string>
@@ -114,4 +122,11 @@
     <string name="PA_6">Hãy liên hệ với chúng tôi qua số Hotline 1900636466, chúng tôi sẵn sàng lắng nghe và giải quyết cho bạn (cụ thể theo từng trường hợp)</string>
     <string name="tieu_de_hoan_tien">Phương thức hoàn tiền</string>
     <string name="noi_dung_hoan_tien">Meraki Book sẽ tiến hành hoàn tiền cho quý khách thông qua tài khoản ngân hàng từ 2–7 ngày làm việc (sau khi chúng tôi nhận được sản phẩm trả về).\n\nChúng tôi sẽ kiểm tra các trường hợp trên và giải quyết cho quý khách trong 7 ngày làm việc kể từ khi quý khách nhận được hàng, quá thời hạn trên rất tiếc chúng tôi không giải quyết khiếu nại.</string>
+
+    <string name="tim_hieu_thong_tin_meraki">Tìm hiểu thêm thông tin về Meraki Book qua:</string>
+    <string name="thong_tin_lien_he">Thông tin liên hệ</string>
+    <string name="sdt">1900636466</string>
+    <string name="merakibook_gmail_com">merakibook@gmail.com</string>
+
+
 </resources>
