@@ -119,6 +119,51 @@
     <string name="thong_tin_lien_he">Thông tin liên hệ</string>
     <string name="sdt">1900636466</string>
     <string name="merakibook_gmail_com">merakibook@gmail.com</string>
+    <string name="hotline_1900636466">hotline:1900636466</string>
+    <string name="don_mua">Đơn mua</string>
+
+    //Vip
+    <string name="tim_kiem">Tìm kiếm</string>
+    <string name="xoa_tat_ca">Xóa tất cả</string>
+    <string name="tim_gan_day">Tìm gần đây</string>
+    <string name="tac_gia_tim_nhieu">Tác giả được tìm nhiều nhất</string>
+    <string name="sach_tim_nhieu">Được tìm kiếm nhiều nhất</string>
+    <string name="tro_thanh_vip">Trở thành VIP</string>
+    <string name="nhanh_tay">Nhanh tay chọn ngay một gói VIP dưới đây để truy cập vào kho sách Meraki không giới hạn nhé!</string>
+    <string name="price_99">99.000đ</string>
+    <string name="price_369">369.000đ</string>
+    <string name="price_45">45.000đ</string>
+
+    <string name="mot_thang">1 tháng</string>
+    <string name="ba_thang">3 tháng</string>
+    <string name="_12_thang">12 tháng</string>
+
+    <string name="doc_tron_bo">Đọc trọn bộ kho sách của Meraki</string>
+    <string name="Gia_Han">Tự động gia hạn</string>
+    <string name="btn_dang_ky">Đăng ký ngay</string>
+    <string name="quyen_loi">Quyền lợi gói VIP</string>
+    <string name="note1">*Các gói VIP đã bao gồm phí kênh thanh toán, chi tiết tại<font color="#F7BB34"> Điều khoản sử dụng</font></string>
+    <string name="note2">*Thanh toán sẽ được tính cho tài khoản Google Play của bạn khi bạn xác minh đăng kí.</string>
+    <string name="note3">*Gia hạn sẽ được thực hiện nếu bạn không hủy ít nhất 24h trước khi gói kết thúc</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="tu_dong_gia_han">Tự động gia hạn</string>
+    <string name="hot">Hot</string>
+    <string name="dang_ky_ngay">Đăng ký ngay</string>
+    <string name="tong_cong">Tổng cộng</string>
+    <string name="_135_000">135.000đ</string>
+    <string name="ngay_giao_hang">Ngày giao hàng</string>
+    <string name="_10_11_2021">10/11/2021</string>
+    <string name="ma_don_hang">Mã đơn hàng</string>
+    <string name="_1569a">1569A</string>
+    <string name="giao_hang_thanh_cong">Giao hàng thành công</string>
+    <string name="mua_lai">Mua lại</string>
+    <string name="harry_potter">Harry Potter</string>
+    <string name="J_K_Rowling">J.K Rowling</string>
+    <string name="thong_bao">Thông báo</string>
+    <string name="khuyen_mai">Khuyến mãi</string>
+    <string name="hoat_dong">Hoạt động</string>
+    <string name="cap_nhat_don_hang">Cập nhật đơn hàng</string>
 
 
 </resources>

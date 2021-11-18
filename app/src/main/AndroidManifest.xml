@@ -10,7 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MerakiBook">
         <activity
+            android:name=".NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VipActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".ReturnAndRefundPolicyActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".DeliveryPolicyActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".TermsOfUseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PolicyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,27 +42,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DeliveryPolicyActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".PrivacyPolicyActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".TermsOfUseActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PolicyActivity"
-            android:exported="true" />
-        <activity
             android:name=".DetailBookActivity"
             android:exported="true" />
         <activity
             android:name=".HomePageActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

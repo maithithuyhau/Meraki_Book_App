@@ -12,19 +12,22 @@
         android:layout_height="50dp"
         android:background="@color/green"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:weightSum="10">
 
         <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
-            android:layout_marginStart="24dp" />
+            android:layout_marginStart="24dp"
+            android:layout_weight="0.5"/>
 
         <TextView
             android:id="@+id/txtHeaderDoiTra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="9.5"
             android:text="@string/chinh_sach_doi_tra_hoan_tien"
             android:textSize="16sp"
             android:textStyle="bold"
