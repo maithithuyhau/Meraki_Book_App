@@ -13,18 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/green"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="10"
+        >
+
         <ImageButton
-            android:id="@+id/btnBackVip"
+            android:id="@+id/btnBack"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
-            android:layout_marginStart="24dp" />
+            android:layout_marginStart="24dp"
+            android:layout_weight="0.5"/>
+
         <TextView
-            android:id="@+id/txtHeaderTieuDeVip"
+            android:id="@+id/txtHeaderGiaoHang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="9.5"
             android:text="@string/tro_thanh_vip"
             android:textSize="16sp"
             android:textStyle="bold"

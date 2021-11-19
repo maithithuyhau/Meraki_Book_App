@@ -11,9 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.merakibook.R;
+import com.example.merakibook.SearchActivity;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHorizontal.MyViewHolder> {
@@ -27,6 +29,8 @@ public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHoriz
         this.data = data;
         this.bookItemClickListener = listener;
     }
+
+
 
     @NonNull
     @Override
