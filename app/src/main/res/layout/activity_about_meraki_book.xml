@@ -187,27 +187,30 @@
 
         <LinearLayout
             android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:weightSum="9">
 
             <ImageView
                 android:id="@+id/imvTwitter"
-                android:layout_marginLeft="53dp"
+              android:layout_weight="3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/twitter" />
             <ImageView
                 android:id="@+id/imvFB"
-                android:layout_marginLeft="53dp"
+
                 android:layout_width="40dp"
+                android:layout_weight="3"
                 android:layout_height="40dp"
                 android:src="@drawable/facebook" />
             <ImageView
                 android:id="@+id/imvInsta"
-                android:layout_marginLeft="53dp"
+
                 android:layout_width="40dp"
+                android:layout_weight="3"
                 android:layout_height="40dp"
                 android:src="@drawable/instagram" />
 

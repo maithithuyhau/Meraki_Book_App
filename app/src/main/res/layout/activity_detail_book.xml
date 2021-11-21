@@ -49,7 +49,7 @@
 
                 android:layout_width="110dp"
                 android:layout_height="170dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="28dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/sapiens"
                 android:transitionName="sharedName"
@@ -77,13 +77,13 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="321dp"
-                android:layout_height="61dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="24dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtTenSach"
-                app:srcCompat="@drawable/nen" />
+                app:srcCompat="@drawable/nen11" />
 
             <TextView
                 android:id="@+id/txtDesc"
@@ -186,7 +186,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/txtLuotCmt"
@@ -200,7 +201,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/txtLuotXem"
@@ -214,9 +216,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.014"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/txtMotaSP"
@@ -417,6 +420,69 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView4"
                 app:srcCompat="@drawable/icon_see" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sách In"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPriceEbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Sách giấy"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPriceBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -426,10 +492,11 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:background="@color/green"
         android:orientation="horizontal"
         android:padding="5dp"
+        android:weightSum="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -439,6 +506,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="5dp"
+            android:layout_weight="1"
             android:src="@drawable/icon_back" />
 
         <TextView
@@ -447,6 +515,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="6dp"
+            android:layout_weight="8"
             android:text="@string/chi_tiet_sach"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -456,7 +525,8 @@
             android:layout_width="30dp"
 
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="24dp"
             android:layout_marginTop="6dp"
             android:src="@drawable/icon_card_fontbar" />
 
@@ -494,6 +564,6 @@
 
 
 
-             />
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
