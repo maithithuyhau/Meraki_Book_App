@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MerakiBook">
         <activity
-            android:name=".ReturnAndRefundPolicyActivity"
-            android:exported="true">
+            android:name=".Authors"
+            android:exported="true" />
+        <activity
+            android:name=".Intro3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Intro2Activity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,15 +25,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DeliveryPolicyActivity"
+            android:name=".ReturnAndRefundPolicyActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".DeliveryPolicyActivity"
+            android:exported="true" />
+        <activity
             android:name=".PrivacyPolicyActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".TermsOfUseActivity"
             android:exported="true" />
