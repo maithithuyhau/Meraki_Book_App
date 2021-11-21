@@ -152,9 +152,9 @@
     <string name="dang_ky_ngay">Đăng ký ngay</string>
     <string name="tong_cong">Tổng cộng</string>
     <string name="_135_000">135.000đ</string>
-    <string name="ngay_giao_hang">Ngày giao hàng</string>
+    <string name="ngay_giao_hang">Ngày giao hàng: </string>
     <string name="_10_11_2021">10/11/2021</string>
-    <string name="ma_don_hang">Mã đơn hàng</string>
+    <string name="ma_don_hang">Mã đơn hàng: </string>
     <string name="_1569a">1569A</string>
     <string name="giao_hang_thanh_cong">Giao hàng thành công</string>
     <string name="mua_lai">Mua lại</string>
@@ -164,6 +164,13 @@
     <string name="khuyen_mai">Khuyến mãi</string>
     <string name="hoat_dong">Hoạt động</string>
     <string name="cap_nhat_don_hang">Cập nhật đơn hàng</string>
+    <string name="tp_lao_hac">Lão Hạc</string>
+    <string name="gia_lao_hac">45.000đ</string>
+    <string name="so_luong_lao_hac">x1</string>
+    <string name="tinh_trang_kien_hang">Giao kiện hàng thành công</string>
+    <string name="thoi_gian_lao_hac">12:00 22-10-2021</string>
+    <string name="thong_tin_khuyen_mai">Khuyến mãi lớn vào ngày 12.12</string>
+    <string name="thong_tin_thong_bao">Đơn hàng của bạn đã sẵn sàng được giao</string>
 
 
 </resources>
