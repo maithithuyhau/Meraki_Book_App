@@ -14,15 +14,63 @@
     <string name="bia_mem">Bìa mềm</string>
     <string name="size">14.5 x 20.5 cm</string>
 
+    //intro
+    <string name="chao_mung">Chào mừng đến Meraki Book!</string>
+    <string name="the_gioi">Thế giới riêng của bạn</string>
+    <string name="khep_minh">Khép mình và chìm đắm</string>
+    <string name="trong_kho">trong kho sách được cập nhật liên tục \n và đa dạng các thể loại.</string>
+    <string name="ket_noi">Kết nối và chia sẻ</string>
+    <string name="cong_dong">các trải nghiệm thú vị của bạn với \n cộng đồng những người yêu sách khác.</string>
     //tac giả
+    <string name="tac_gia">Tác giả</string>
     <string name="nam_cao">Nam Cao</string>
     <string name="vu_trong_phung"> Vũ Trọng Phụng</string>
     <string name="van_tinh"> Vãn Tình</string>
     <string name="dale_carnegie">Dale Carnegie</string>
     <string name="richard_unger">RICHARD UNGER</string>
     <string name="yuval_noah_harari">Yuval Noah Harari</string>
-
-
+    //Thong bao
+    <string name="thong_bao">Thông báo</string>
+    <string name="khuyen_mai">Khuyến mãi</string>
+    <string name="hoat_dong">Hoạt động</string>
+    <string name="cap_nhat_don_hang">Cập nhật đơn hàng</string>
+    <string name="hotline_1900636466">Hotline: 1900636466</string>
+    <string name="don_mua">dơnmua</string>
+    //Search
+    <string name="tim_kiem">Tìm kiếm</string>
+    <string name="sach_tim_nhieu">Sách tìm nhiều</string>
+    <string name="tac_gia_tim_nhieu">Tác giả tìm nhiều</string>
+    <string name="tim_gan_day">Tìm gần đây</string>
+    <string name="xoa_tat_ca">Xóa tất cả</string>
+    //VIP
+    <string name="tro_thanh_vip">Trở thành VIP</string>
+    <string name="nhanh_tay">Nhanh tay</string>
+    <string name="price_45">45 000</string>
+    <string name="mot_thang">1 tháng</string>
+    <string name="price_99">49 000</string>
+    <string name="ba_thang">1 tháng</string>
+    <string name="price_369">369 000</string>
+    <string name="_12_thang">12 tháng</string>
+    <string name="doc_tron_bo">Đọc trọn bộ</string>
+    <string name="tu_dong_gia_han">Tự động gia hạn</string>
+    <string name="dang_ky_ngay">Đăng ký ngay</string>
+    <string name="quyen_loi">Quyền lợi</string>
+    <string name="note1">Note 1</string>
+    <string name="note2">Note 1</string>
+    <string name="note3">Note 1</string>
+    <string name="hot">Hot</string>
+    //book item
+    <string name="harry_potter">Harry Potter</string>
+    <string name="J_K_Rowling">J_K_Rowling</string>
+    //order item
+    <string name="tong_cong">Tổng cộng</string>
+    <string name="_135_000">135 000</string>
+    <string name="ngay_giao_hang">Ngày giao hàng</string>
+    <string name="_10_11_2021">hh</string>
+    <string name="ma_don_hang">gggg</string>
+    <string name="_1569a">gdsg</string>
+    <string name="giao_hang_thanh_cong">Giao hàng thành công</string>
+    <string name="mua_lai">Mua lại</string>
     //trang
     <string name="trang">150 trang</string>
 

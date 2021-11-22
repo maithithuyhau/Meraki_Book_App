@@ -24,7 +24,8 @@ import java.util.List;
 
 public class DetailBookActivity extends AppCompatActivity implements BookItemClickListener {
     private TextView txtTenSach,txtDesc, txtTacGia,txtTacGia2,
-            txtPage,txtDateTime, txtPublisher,txtBia,txtBookSize, txtmenuDitailBook;
+            txtPage,txtDateTime, txtPublisher,txtBia,txtBookSize, txtmenuDitailBook,
+    txtPriceEbook, txtPriceBook ;
     private ImageView imvImages, imvHinh;
     private RecyclerView rcvcung_the_loai;
     private Button btnMuaSach;
@@ -51,6 +52,10 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         txtPublisher=findViewById(R.id.txtPublisher);
         txtPage=findViewById(R.id.txtPage);
         txtmenuDitailBook=findViewById(R.id.txtmenuDitailBook);
+        txtPriceEbook=findViewById(R.id.txtPriceEbook);
+        txtPriceBook=findViewById(R.id.txtPriceBook);
+
+
 
         imvImages=findViewById(R.id.imvDetail_Images);
         imvHinh=findViewById(R.id.imvHinh);
@@ -90,6 +95,8 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         txtDateTime.setText(dateTime);
         txtBookSize.setText(bookSize);
         txtmenuDitailBook.setText(bookName);
+        txtPriceEbook.setText(ebookPrice);
+        txtPriceBook.setText(bookPrice);
 
     }
 
