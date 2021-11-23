@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/background_book" />
+
+        <CheckBox
+            android:id="@+id/chkCheckItem"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:checked="false" />
+
+        <ImageView
+            android:id="@+id/imvSach"
+            android:layout_width="98dp"
+            android:layout_height="135dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/chkCheckItem"
+            android:src="@drawable/harrypotter" />
+
+        <LinearLayout
+            android:id="@+id/lvSachInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvSach">
+            <TextView
+                android:id="@+id/txtTenSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/harry_potter"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTacGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/J_K_Rowling"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/txtGiaSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/gia_harry_potter"
+                android:textColor="@color/red"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvSachInfo"
+            android:layout_toEndOf="@+id/imvSach"
+            android:layout_marginTop="5dp">
+            <ImageButton
+                android:id="@+id/btnTru"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_minus"
+                android:backgroundTint="@color/green"/>
+            <EditText
+                android:id="@+id/edtSoLuong"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:textSize="14sp"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+            <ImageButton
+                android:id="@+id/btnCong"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_plus"
+                android:backgroundTint="@color/green"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnTrash"
+            android:layout_width="24dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_trash"
+            android:backgroundTint="@color/green" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
