@@ -9,9 +9,11 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.adapter.AuthorSearchAdapter;
 import com.example.adapter.BookAdapterHorizontal;
 import com.example.adapter.Search_BookList_Adapter;
 import com.example.model.Book;
+import com.example.model.Author;
 
 import java.util.ArrayList;
 
@@ -26,6 +28,8 @@ public class SearchActivity extends AppCompatActivity {
     TextView txtName, txtTacGia, txtTacGiaView;
     RecyclerView rcvTacGia;
     ArrayList<Book> books;
+    ArrayList<Author>authors;
+    private AuthorSearchAdapter authorSearchAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,10 +67,15 @@ public class SearchActivity extends AppCompatActivity {
         books.add(new Book("Đắc nhân tâm","Dale Carnegie","320","15,000","45,000","First News - Trí Việt","2016-03-18","Bìa cứng","14.5 x 20.5 cm",R.string.sach_moi,R.drawable.datnhantam,R.string.dat_nhan_tam,R.drawable.icon_heart,R.drawable.icon_fivestar));
         books.add(new Book("Dứt Tình","Vũ Trọng Phụng","162","15,000","45,000","NXB Văn Học","2016-03-18","Bìa cứng","13 x 20.5 cm",R.string.sach_moi,R.drawable.duttinh,R.string.dut_tinh,R.drawable.icon_heart,R.drawable.icon_fivestar));
 
+        authors = new ArrayList<>();
+
     }
 
     private void loadData() {
         adapter = new Search_BookList_Adapter(SearchActivity.this, R.layout.bookitem, books);
         gvBookItem.setAdapter(adapter);
+
+        authorSearchAdapter = new AuthorSearchAdapter(getApplicationContext(), authors);
+        rcvTacGia.setAdapter(authorSearchAdapter);
     }
 }
