@@ -176,7 +176,7 @@
     <string name="thong_tin_thong_bao">Đơn hàng của bạn đã sẵn sàng được giao</string>
     <string name="thong_tin_khuyen_mai">Giảm giá sách vào ngày 12.12</string>
     <string name="ngay_giao_harry_potter">12:00 22/11/2021</string>
-    //Purchase Order
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="gia_lao_hac">45.000đ</string>
     <string name="so_luong_lao_hac">1</string>
@@ -185,19 +185,6 @@
     <string name="so_luong_mua_don_1">2</string>
     <string name="so_tien_don_1">125.000đ</string>
     <string name="xem_chi_tiet">Xem chi tiết</string>
-    //CartActivity
-    <string name="header_Gio_Hang">Giỏ hàng</string>
-    <string name="mua_hang">Mua hàng</string>
-    <string name="gia_harry_potter">109.000đ</string>
-    //Account
-    <string name="header_tai_khoan">Tài khoản</string>
-    <string name="xin_chao">Xin chào</string>
-    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>
-    <string name="chinh_sach">Chính sách của Meraki Book</string>
-    <string name="gioi_thieu">Giới thiệu về Meraki Book</string>
-    <string name="btn_don_mua">Đơn mua</string>
-    <string name="btn_xem_gan_day"> Gần đây</string>
-    <string name="btn_danh_gia_cua_toi">My rate</string>
 
 
 
