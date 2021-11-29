@@ -210,6 +210,9 @@
     <string name="btn_danh_gia_cua_toi">Đánh giá</string>
     <string name="chinh_sach">Chính sách của Meraki Book</string>
     <string name="gioi_thieu">Giới thiệu về Meraki Book</string>
+    <string name="header_Gio_Hang">Giỏ hàng</string>
+    <string name="mua_hang">mua hàng</string>
+    <string name="gia_harry_potter">109,000đ</string>
 
 
 </resources>
