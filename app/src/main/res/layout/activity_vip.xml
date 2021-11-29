@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".VipActivity">
 
     <LinearLayout
         android:id="@+id/TieuDeVip"
@@ -207,6 +207,7 @@
         app:layout_constraintEnd_toEndOf="@id/txtKhung"
         app:layout_constraintBottom_toTopOf="@id/txtQuyenLoi"
         android:layout_marginBottom="10dp"
+        android:onClick="openPopUp"
         />
     <TextView
         android:id="@+id/txtQuyenLoi"
