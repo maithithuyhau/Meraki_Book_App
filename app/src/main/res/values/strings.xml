@@ -202,6 +202,14 @@
     <string name="so_tien_don_1">125.000đ</string>
     <string name="xem_chi_tiet">Xem chi tiết</string>
 
+    //Fragment account
+    <string name="header_tai_khoan">Tài khoản</string>
+    <string name="xin_chao">Xin chào</string>
+    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>
+    <string name="btn_xem_gan_day">Gần đây</string>
+    <string name="btn_danh_gia_cua_toi">Đánh giá</string>
+    <string name="chinh_sach">Chính sách của Meraki Book</string>
+    <string name="gioi_thieu">Giới thiệu về Meraki Book</string>
 
 
 </resources>
