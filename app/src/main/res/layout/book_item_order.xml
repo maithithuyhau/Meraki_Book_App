@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/background_book" />
+
+        <ImageView
+            android:id="@+id/imvSach"
+            android:layout_width="98dp"
+            android:layout_height="135dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/laohac" />
+
+        <LinearLayout
+            android:id="@+id/lvSachInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvSach">
+            <TextView
+                android:id="@+id/txtTenSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tp_lao_hac"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTacGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nam_cao"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/txtGiaSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/gia_lao_hac"
+
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtSoLuong"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:text="@string/so_luong_lao_hac"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
 
 </LinearLayout>
