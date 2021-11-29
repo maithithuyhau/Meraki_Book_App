@@ -22,6 +22,22 @@
     <string name="ket_noi">Kết nối và chia sẻ</string>
     <string name="cong_dong">các trải nghiệm thú vị của bạn với \n cộng đồng những người yêu sách khác.</string>
     //tac giả
+    <string name="nha_van_nam_cao">Nhà văn Nam Cao</string>
+    <string name="ten_that">Tên thật: </string>
+    <string name="tran_huu_tri">Trần Hữu Trí</string>
+    <string name="nam_sinh">Năm sinh: </string>
+    <string name="_29_10_1915">29/10/1915</string>
+    <string name="nam_mat">Năm mất: </string>
+    <string name="_28_11_1951">28/11/1951</string>
+    <string name="que_quan">Quê quán</string>
+    <string name="ha_nam">Hà Nam</string>
+    <string name="so_luong_tp">Số lượng tác phẩm: </string>
+    <string name="tren_50">trên 50</string>
+    <string name="thong_tin">Thông tin, tiểu sử</string>
+    <string name="thong_tin_nam_cao">Nam Cao là một trong những nhà văn tiêu biểu nhất của trào lưu hiện thực phê phán thời kỳ 1940-1945, là một trong những cây bút tiêu biểu của văn xuôi Việt Nam thời kỳ kháng chiến chống Pháp 1945-1954.</string>
+    <string name="cac_tac_pham">Các tác phẩm</string>
+    <string name="xem_tat_ca_tac_pham">XEM TẤT CẢ</string>
+
     <string name="tac_gia">Tác giả</string>
     <string name="nam_cao">Nam Cao</string>
     <string name="vu_trong_phung"> Vũ Trọng Phụng</string>
@@ -44,6 +60,10 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="chi_tiet_sach">Chi tiết sách</string>
     <string name="dang_nhap">Đăng nhập</string>
+
+    //Sách của tôi
+    <string name="btn_read">Đọc</string>
+
 
     //Policy
     <string name="tai_khoan_khach_hang">Khi sử dụng dịch vụ Meraki Book, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng Meraki Book. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp Meraki Book phục vụ quý khách tốt nhất.\nTrong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản tại Meraki Book.\nQuý khách phải giữ kín mật khẩu và tài khoản, hoàn toàn chịu trách nhiệm đối với tất cả các hoạt động diễn ra thông qua việc sử dụng mật khẩu hoặc tài khoản của mình. Quý khách nên đảm bảo thoát khỏi tài khoản tại Meraki Book sau mỗi lần sử dụng để bảo mật thông tin của mình.</string>
@@ -176,7 +196,7 @@
     <string name="thong_tin_thong_bao">Đơn hàng của bạn đã sẵn sàng được giao</string>
     <string name="thong_tin_khuyen_mai">Giảm giá sách vào ngày 12.12</string>
     <string name="ngay_giao_harry_potter">12:00 22/11/2021</string>
-    //Purchase Order
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="gia_lao_hac">45.000đ</string>
     <string name="so_luong_lao_hac">1</string>
@@ -185,6 +205,24 @@
     <string name="so_luong_mua_don_1">2</string>
     <string name="so_tien_don_1">125.000đ</string>
     <string name="xem_chi_tiet">Xem chi tiết</string>
+
+    //Fragment account
+    <string name="header_tai_khoan">Tài khoản</string>
+    <string name="xin_chao">Xin chào</string>
+    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>
+    <string name="btn_xem_gan_day">Gần đây</string>
+    <string name="btn_danh_gia_cua_toi">Đánh giá</string>
+    <string name="chinh_sach">Chính sách của Meraki Book</string>
+    <string name="gioi_thieu">Giới thiệu về Meraki Book</string>
+    <string name="header_Gio_Hang">Giỏ hàng</string>
+    <string name="mua_hang">mua hàng</string>
+    <string name="gia_harry_potter">109,000đ</string>
+    <string name="chuc_mung">Xin chúc mừng! Bạn đã là VIP</string>
+    <string name="Giang">Giang</string>
+    <string name="hay_doc_sach">Hãy tận hưởng và đọc sách thả ga tại Meraki Book bạn nhé!</string>
+    <string name="bat_dau">Bắt đầu ngay</string>
+
+    //VIP
 
 
 
