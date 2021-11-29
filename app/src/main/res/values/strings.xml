@@ -22,6 +22,22 @@
     <string name="ket_noi">Kết nối và chia sẻ</string>
     <string name="cong_dong">các trải nghiệm thú vị của bạn với \n cộng đồng những người yêu sách khác.</string>
     //tac giả
+    <string name="nha_van_nam_cao">Nhà văn Nam Cao</string>
+    <string name="ten_that">Tên thật: </string>
+    <string name="tran_huu_tri">Trần Hữu Trí</string>
+    <string name="nam_sinh">Năm sinh: </string>
+    <string name="_29_10_1915">29/10/1915</string>
+    <string name="nam_mat">Năm mất: </string>
+    <string name="_28_11_1951">28/11/1951</string>
+    <string name="que_quan">Quê quán</string>
+    <string name="ha_nam">Hà Nam</string>
+    <string name="so_luong_tp">Số lượng tác phẩm: </string>
+    <string name="tren_50">trên 50</string>
+    <string name="thong_tin">Thông tin, tiểu sử</string>
+    <string name="thong_tin_nam_cao">Nam Cao là một trong những nhà văn tiêu biểu nhất của trào lưu hiện thực phê phán thời kỳ 1940-1945, là một trong những cây bút tiêu biểu của văn xuôi Việt Nam thời kỳ kháng chiến chống Pháp 1945-1954.</string>
+    <string name="cac_tac_pham">Các tác phẩm</string>
+    <string name="xem_tat_ca_tac_pham">XEM TẤT CẢ</string>
+
     <string name="tac_gia">Tác giả</string>
     <string name="nam_cao">Nam Cao</string>
     <string name="vu_trong_phung"> Vũ Trọng Phụng</string>
