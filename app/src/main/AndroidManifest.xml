@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MerakiBook">
         <activity
+            android:name=".PaymentOptionActivity"
+            android:exported="true" />
+        <activity
             android:name=".AccountActivity"
             android:exported="true">
             <intent-filter>
@@ -20,29 +23,25 @@
         </activity>
         <activity
             android:name=".CartActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Authors"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Intro3Activity"
             android:exported="true" />
         <activity
             android:name=".PurchaseOrderActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".AboutMerakiBook"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Intro2Activity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ReturnAndRefundPolicyActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".DeliveryPolicyActivity"
             android:exported="true" />

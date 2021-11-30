@@ -14,6 +14,7 @@
     <color name="light_skin">#FBF1E1</color>
     <color name="green">#487B72</color>
     <color name="yellow">#F7BB34</color>
+    <color name="light_grey">#C4C4C4</color>
 
     <color name="red">#EA0013</color>
 </resources>
