@@ -46,6 +46,11 @@
     <string name="richard_unger">RICHARD UNGER</string>
     <string name="yuval_noah_harari">Yuval Noah Harari</string>
 
+    //các tác phẩm của tác giả
+    <string name="txt_lao_hac">Lão Hạc</string>
+    <string name="txt_nam_cao">Nam Cao</string>
+    <string name="so_trang_150">150 trang</string>
+    <string name="btn_read">Đọc</string>
     //trang
     <string name="trang">150 trang</string>
 
@@ -287,6 +292,5 @@
     <string name="dat_hang">Đặt hàng</string>
 
     //VIP
-
 
 </resources>

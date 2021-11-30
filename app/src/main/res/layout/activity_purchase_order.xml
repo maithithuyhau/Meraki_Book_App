@@ -41,15 +41,16 @@
         android:background="@drawable/ic_search"
         android:layout_marginEnd="24dp" />
 </LinearLayout>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/TabPurchaseOrder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lnPurchaseOrder"
-        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-        app:tabSelectedTextColor="@color/green"
-        app:tabTextColor="@android:color/black"
         android:background="@drawable/tab_line"
+        app:tabSelectedTextColor="@color/green"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@android:color/black"
 
         />
 
@@ -57,8 +58,7 @@
         android:id="@+id/PurchaseOrderView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/TabPurchaseOrder"
-        />
+        android:layout_below="@id/TabPurchaseOrder" />
 
 
 </RelativeLayout>
