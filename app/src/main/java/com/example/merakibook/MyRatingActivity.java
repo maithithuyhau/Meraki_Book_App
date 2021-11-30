@@ -76,17 +76,7 @@ public class MyRatingActivity extends AppCompatActivity {
 
             transaction.replace(R.id.linearLayoutContainer,fragment);
             transaction.commit();
-//            if(view.getId() == R.id.btnAllStar){
-//                fragment = new AllStarRatingFragment();
-//            }
-//
-//            if(view.getId() == R.id.btnFiveStar){
-//                fragment = new FiveStarRatingFragment();
-//            }
-//
-//            if(view.getId() == R.id.btnFourStar){
-//                fragment =
-//            }
+
         }
     };
 }

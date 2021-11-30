@@ -46,22 +46,20 @@
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="160dp"
             android:src="@drawable/background_dropshadow"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/navBar"
             android:layout_below="@id/navBar"/>
 
+
         <ImageView
             android:id="@+id/imvAvatar"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:src="@color/light_skin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/navBar"
-            android:layout_below="@id/navBar"/>
+            android:layout_height="150dp"
+            android:layout_below="@id/navBar"
+            android:background="@drawable/taikhoan_bg" />
 
         <GridLayout
             android:id="@+id/gridLayoutRating"
