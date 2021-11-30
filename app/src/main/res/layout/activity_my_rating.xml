@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRatingActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:id="@+id/navBar">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/txtTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="@string/txt_tittle_my_rating"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_search"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="24dp"/>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/background_dropshadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navBar"
+            android:layout_below="@id/navBar"/>
+
+
+        <ImageView
+            android:id="@+id/imvAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/navBar"
+            android:background="@drawable/taikhoan_bg" />
+
+        <GridLayout
+            android:id="@+id/gridLayoutRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:columnCount="3"
+            android:padding="5dp"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_below="@id/imvAvatar">
+
+            <Button
+                android:id="@+id/btnAllStar"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_all_star"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnFiveStar"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_5_star"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnFourStar"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_4_star"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnThreeStar"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_3_star"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnTwoStar"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_2_star"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnOneStar"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_1_star"
+                android:textSize="14sp" />
+
+        </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gridLayoutRating"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -66,6 +66,56 @@
     <string name="chi_tiet_sach">Chi tiết sách</string>
     <string name="dang_nhap">Đăng nhập</string>
 
+    //Sách của tôi
+    <string name="btn_read">Đọc</string>
+
+
+    //Payment Option
+    <string name="txt_payment_option">Phương thức thanh toán</string>
+    <string name="txt_payment_option_tittle">Lựa chọn phương thức thanh toán</string>
+    <string name="rdo_cod">Thanh toán tiền mặt khi nhận hàng</string>
+    <string name="rdo_atm">Thẻ ATM nội địa</string>
+    <string name="rdo_visa">Thẻ quốc tế (Visa, Master,...)</string>
+
+    <string name="txt_qrcode_tittle">Thanh toán qua mã QR</string>
+    <string name="txt_atm">Sử dụng ứng dụng trên di động của ngân hàng (mobile banking) quét mã QR bên dưới để thanh toán.</string>
+    <string name="txt_visa">Sử dụng ứng dụng thẻ ghi nợ trên thiết bị di động quét mã QR bên dưới để thanh toán.</string>
+    <string name="txt_qrpay">QR PAY</string>
+    <string name="txt_time">Thời gian mã QR còn hiệu lực</string>
+    <string name="txt_countdown">00:00</string>
+    <string name="btn_check">Kiểm tra trạng thái giao dịch</string>
+    <string name="btn_backHome">Trở về trang chủ</string>
+
+    <string name="txt_order_successful_tittle">ĐẶT HÀNG THÀNH CÔNG</string>
+    <string name="txt_thankyou">Cảm ơn bạn đã mua sách tại Meraki Book. </string>
+    <string name="txt_thankyou2">Chúng tôi sẽ chuyển đơn hàng đến bạn sớm nhất có thể. </string>
+    <string name="txt_thankyou3">Xin chân thành cảm ơn. </string>
+    <string name="txt_detail">Mọi thông tin thắc mắc về đơn hàng, bạn vui lòng liên hệ đến Hotline 0166 45 45 450 vào giờ hành chính.</string>
+    <string name="btn_order_detail">XEM CHI TIẾT ĐƠN HÀNG</string>
+
+    //Sách của tôi
+    <string name="txt_my_book">Sách của tôi</string>
+
+    //Danh mục sách
+    <string name="txt_tittle_horror">Trinh thám</string>
+    <string name="txt_sort">Sắp xếp</string>
+    <string-array name="sp_sort">
+        <item>Mới nhất</item>
+        <item>Cũ nhất</item>
+        <item>Bán chạy</item>
+        <item>Miễn phí</item>
+    </string-array>
+
+    //Đánh giá của tôi
+    <string name="txt_tittle_my_rating">Đánh giá của tôi</string>
+    <string name="btn_all_star">Tất cả (n)</string>
+    <string name="btn_5_star">5 sao (1)</string>
+    <string name="btn_4_star">4 sao (1)</string>
+    <string name="btn_3_star">3 sao (1)</string>
+    <string name="btn_2_star">2 sao (1)</string>
+    <string name="btn_1_star">1 sao (1)</string>
+
+
     //Policy
     <string name="tai_khoan_khach_hang">Khi sử dụng dịch vụ Meraki Book, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng Meraki Book. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp Meraki Book phục vụ quý khách tốt nhất.\nTrong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản tại Meraki Book.\nQuý khách phải giữ kín mật khẩu và tài khoản, hoàn toàn chịu trách nhiệm đối với tất cả các hoạt động diễn ra thông qua việc sử dụng mật khẩu hoặc tài khoản của mình. Quý khách nên đảm bảo thoát khỏi tài khoản tại Meraki Book sau mỗi lần sử dụng để bảo mật thông tin của mình.</string>
     <string name="dieu_khoan_su_dung">Điều khoản sử dụng</string>
@@ -207,5 +257,37 @@
     <string name="so_tien_don_1">125.000đ</string>
     <string name="xem_chi_tiet">Xem chi tiết</string>
 
+    //Fragment account
+    <string name="header_tai_khoan">Tài khoản</string>
+    <string name="xin_chao">Xin chào</string>
+    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>
+    <string name="btn_xem_gan_day">Gần đây</string>
+    <string name="btn_danh_gia_cua_toi">Đánh giá</string>
+    <string name="chinh_sach">Chính sách của Meraki Book</string>
+    <string name="gioi_thieu">Giới thiệu về Meraki Book</string>
+    <string name="header_Gio_Hang">Giỏ hàng</string>
+    <string name="mua_hang">mua hàng</string>
+    <string name="gia_harry_potter">109,000đ</string>
+    <string name="chuc_mung">Xin chúc mừng! Bạn đã là VIP</string>
+    <string name="Giang">Giang</string>
+    <string name="hay_doc_sach">Hãy tận hưởng và đọc sách thả ga tại Meraki Book bạn nhé!</string>
+    <string name="bat_dau">Bắt đầu ngay</string>
+
+    //Thanh toan
+    <string name="header_thanh_toan">Thanh toán</string>
+    <string name="dia_chi_nhan_hang">Địa chỉ nhận hàng</string>
+    <string name="dia_chi">365 Thủ đức, Hồ Chính Minh</string>
+    <string name="don_vi_van_chuyen">Đơn vị vận chuyển</string>
+    <string name="don_vi">Giao hàng nhanh  30/10 - 3/11</string>
+    <string name="phuong_thuc_thanh_toan">Phương thức thanh toán</string>
+    <string name="phuong_thuc">Thanh toán khi nhận hàng</string>
+    <string name="tam_tinh">Tạm tính</string>
+    <string name="tien_tam_tinh">100.000đ</string>
+    <string name="phi_van_chuyen">Phí vận chuyển</string>
+    <string name="tien_van_chuyen">20.000đ</string>
+    <string name="tien_tong_cong">120.000đ</string>
+    <string name="dat_hang">Đặt hàng</string>
+
+    //VIP
 
 </resources>

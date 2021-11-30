@@ -2,29 +2,49 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
+=======
+    android:orientation="vertical"
+>>>>>>> origin/master
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="172dp"
         android:layout_marginTop="32dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:src="@drawable/drop_shadow_item_book"
+=======
+        android:layout_height="170dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/background_book_dropshadow"
+>>>>>>> origin/master
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+<<<<<<< HEAD
         android:id="@+id/imvbackground"
+=======
+        android:id="@+id/imvBackground"
+>>>>>>> origin/master
         android:layout_width="match_parent"
         android:layout_height="165dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+<<<<<<< HEAD
         android:src="@drawable/bg_item_book_vertical"
+=======
+        android:src="@drawable/background_book"
+>>>>>>> origin/master
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +52,7 @@
 
     <ImageView
         android:id="@+id/imvBookVer"
+<<<<<<< HEAD
         android:layout_width="126dp"
         android:layout_height="176dp"
         android:layout_marginTop="10dp"
@@ -42,11 +63,25 @@
         app:layout_constraintStart_toStartOf="@id/imvbackground"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+=======
+        android:layout_width="115dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_skin"
+        app:layout_constraintBottom_toBottomOf="@id/imvBackground"
+        app:layout_constraintEnd_toEndOf="@id/imvBackground"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@id/imvBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/laohac"/>
+>>>>>>> origin/master
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="@id/imvbackground"
         app:layout_constraintEnd_toEndOf="@id/imvbackground"
         app:layout_constraintStart_toEndOf="@id/imvBookVer"
@@ -55,6 +90,15 @@
         android:layout_marginEnd="10dp">
 
         <LinearLayout
+=======
+        app:layout_constraintBottom_toBottomOf="@id/imvBackground"
+        app:layout_constraintEnd_toEndOf="@id/imvBackground"
+        app:layout_constraintStart_toEndOf="@id/imvBookVer"
+        app:layout_constraintTop_toTopOf="@id/imvBackground"
+        android:padding="10dp">
+
+        <RelativeLayout
+>>>>>>> origin/master
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -62,9 +106,15 @@
 
             <TextView
                 android:id="@+id/txtNameVer"
+<<<<<<< HEAD
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_lao_hac"
+=======
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lão Hạc"
+>>>>>>> origin/master
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -72,8 +122,15 @@
                 android:id="@+id/imvFavorite"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
+<<<<<<< HEAD
                 android:src="@drawable/icon_heart" />
         </LinearLayout>
+=======
+                android:src="@drawable/icon_heart"
+                android:layout_gravity="end"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+>>>>>>> origin/master
 
 
         <TextView
@@ -81,7 +138,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+<<<<<<< HEAD
             android:text="@string/txt_nam_cao"
+=======
+            android:text="Nam Cao"
+>>>>>>> origin/master
             android:textSize="14sp" />
 
         <TextView
@@ -89,7 +150,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+<<<<<<< HEAD
             android:text="@string/so_trang_150"
+=======
+            android:text="150 trang"
+>>>>>>> origin/master
             android:textSize="12sp" />
 
         <LinearLayout
@@ -110,10 +175,21 @@
                 android:layout_width="85dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="30dp"
+<<<<<<< HEAD
                 android:background="@drawable/bg_button_read"
                 android:text="@string/btn_read"
                 android:textAllCaps="false"/>
 
         </LinearLayout>
     </LinearLayout>
+=======
+                android:background="@drawable/background_btn_corner"
+                android:text="@string/btn_read"
+                android:textAllCaps="false"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+>>>>>>> origin/master
 </androidx.constraintlayout.widget.ConstraintLayout>

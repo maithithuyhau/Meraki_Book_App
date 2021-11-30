@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".CartActivity"
     android:orientation="vertical"
-    android:weightSum="10">
+    android:weightSum="10"
+    android:id="@+id/ActivityCartContainer">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -99,8 +100,8 @@
         android:layout_marginBottom="20dp"/>
     <Button
         android:id="@+id/btnMuaHang"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
         android:background="@drawable/background_btn"
         android:text="@string/mua_hang"
         android:layout_gravity="center_horizontal"
