@@ -80,6 +80,13 @@
     <string name="txt_countdown">00:00</string>
     <string name="btn_check">Kiểm tra trạng thái giao dịch</string>
     <string name="btn_backHome">Trở về trang chủ</string>
+    
+    <string name="txt_order_successful_tittle">ĐẶT HÀNG THÀNH CÔNG</string>
+    <string name="txt_thankyou">Cảm ơn bạn đã mua sách tại Meraki Book. </string>
+    <string name="txt_thankyou2">Chúng tôi sẽ chuyển đơn hàng đến bạn sớm nhất có thể. </string>
+    <string name="txt_thankyou3">Xin chân thành cảm ơn. </string>
+    <string name="txt_detail">Mọi thông tin thắc mắc về đơn hàng, bạn vui lòng liên hệ đến Hotline 0166 45 45 450 vào giờ hành chính.</string>
+    <string name="btn_order_detail">XEM CHI TIẾT ĐƠN HÀNG</string>
 
 
     //Policy
