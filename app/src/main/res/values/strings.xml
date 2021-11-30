@@ -72,6 +72,15 @@
     <string name="rdo_atm">Thẻ ATM nội địa</string>
     <string name="rdo_visa">Thẻ quốc tế (Visa, Master,...)</string>
 
+    <string name="txt_qrcode_tittle">Thanh toán qua mã QR</string>
+    <string name="txt_atm">Sử dụng ứng dụng trên di động của ngân hàng (mobile banking) quét mã QR bên dưới để thanh toán.</string>
+    <string name="txt_visa">Sử dụng ứng dụng thẻ ghi nợ trên thiết bị di động quét mã QR bên dưới để thanh toán.</string>
+    <string name="txt_qrpay">QR PAY</string>
+    <string name="txt_time">Thời gian mã QR còn hiệu lực</string>
+    <string name="txt_countdown">00:00</string>
+    <string name="btn_check">Kiểm tra trạng thái giao dịch</string>
+    <string name="btn_backHome">Trở về trang chủ</string>
+
 
     //Policy
     <string name="tai_khoan_khach_hang">Khi sử dụng dịch vụ Meraki Book, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng Meraki Book. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp Meraki Book phục vụ quý khách tốt nhất.\nTrong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản tại Meraki Book.\nQuý khách phải giữ kín mật khẩu và tài khoản, hoàn toàn chịu trách nhiệm đối với tất cả các hoạt động diễn ra thông qua việc sử dụng mật khẩu hoặc tài khoản của mình. Quý khách nên đảm bảo thoát khỏi tài khoản tại Meraki Book sau mỗi lần sử dụng để bảo mật thông tin của mình.</string>
@@ -231,7 +240,6 @@
     <string name="bat_dau">Bắt đầu ngay</string>
 
     //VIP
-
 
 
 </resources>
