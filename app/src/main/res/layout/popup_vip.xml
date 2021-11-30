@@ -11,7 +11,7 @@
         android:layout_gravity="center">
         <LinearLayout
             android:layout_width="320dp"
-            android:layout_height="350dp"
+            android:layout_height="380dp"
             android:background="@color/light_skin"
             android:orientation="vertical"
             android:padding="10dp">
@@ -62,8 +62,8 @@
 
             <Button
                 android:id="@+id/btnBatDau"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
+                android:layout_width="155dp"
+                android:layout_height="50dp"
                 android:background="@drawable/background_btn"
                 android:text="@string/bat_dau"
                 android:layout_gravity="center_horizontal"
