@@ -225,6 +225,13 @@
     <string name="header_Gio_Hang">Giỏ hàng</string>
     <string name="mua_hang">mua hàng</string>
     <string name="gia_harry_potter">109,000đ</string>
+    <string name="chuc_mung">Xin chúc mừng! Bạn đã là VIP</string>
+    <string name="Giang">Giang</string>
+    <string name="hay_doc_sach">Hãy tận hưởng và đọc sách thả ga tại Meraki Book bạn nhé!</string>
+    <string name="bat_dau">Bắt đầu ngay</string>
+
+    //VIP
+
 
 
 </resources>

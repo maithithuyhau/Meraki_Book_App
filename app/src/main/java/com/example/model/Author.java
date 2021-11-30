@@ -3,11 +3,10 @@ package com.example.model;
 import java.util.Date;
 
 public class Author {
-    private String authorName, authorPlaceOfBirth, authorTotalBook;
-    private Date authorBirth, authorDeath;
-    private int authorImage, authorSummary;
+    private String authorName, authorPlaceOfBirth, authorTotalBook, authorSummary, authorBirth, authorDeath;
+    private int authorImage;
 
-    public Author(String authorName, String authorPlaceOfBirth, String authorTotalBook, Date authorBirth, Date authorDeath, int authorImage, int authorSummary) {
+    public Author(String authorName, String authorPlaceOfBirth, String authorTotalBook, String authorBirth, String authorDeath, int authorImage, String authorSummary) {
         this.authorName = authorName;
         this.authorPlaceOfBirth = authorPlaceOfBirth;
         this.authorTotalBook = authorTotalBook;
@@ -41,19 +40,19 @@ public class Author {
         this.authorTotalBook = authorTotalBook;
     }
 
-    public Date getAuthorBirth() {
+    public String getAuthorBirth() {
         return authorBirth;
     }
 
-    public void setAuthorBirth(Date authorBirth) {
+    public void setAuthorBirth(String authorBirth) {
         this.authorBirth = authorBirth;
     }
 
-    public Date getAuthorDeath() {
+    public String getAuthorDeath() {
         return authorDeath;
     }
 
-    public void setAuthorDeath(Date authorDeath) {
+    public void setAuthorDeath(String authorDeath) {
         this.authorDeath = authorDeath;
     }
 
@@ -65,11 +64,11 @@ public class Author {
         this.authorImage = authorImage;
     }
 
-    public int getAuthorSummary() {
+    public String getAuthorSummary() {
         return authorSummary;
     }
 
-    public void setAuthorSummary(int authorSummary) {
+    public void setAuthorSummary(String authorSummary) {
         this.authorSummary = authorSummary;
     }
 }
