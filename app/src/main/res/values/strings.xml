@@ -67,7 +67,6 @@
     <string name="dang_nhap">Đăng nhập</string>
 
     //Sách của tôi
-    <string name="btn_read">Đọc</string>
 
 
     //Payment Option
@@ -290,7 +289,31 @@
     <string name="tien_van_chuyen">20.000đ</string>
     <string name="tien_tong_cong">120.000đ</string>
     <string name="dat_hang">Đặt hàng</string>
+    <string name="dong_y_dieu_khoan">Bằng việc tiến hành đặt mua, bạn đồng ý với Điều khoản dịch vụ</string>
 
-    //VIP
+
+    //DIA CHI
+    <string name="header_dia_chi">Địa chỉ nhận hàng</string>
+    <string name="DC_thong_tin">Sửa thông tin</string>
+    <string name="ho_ten">Họ tên</string>
+    <string name="ten">Nguyễn Thị A</string>
+    <string name="so_dien_thoai">Số điện thoại</string>
+    <string name="dia_chi_nha">Địa chỉ</string>
+    <string name="chon_dia_chi">Chọn địa chỉ cụ thể</string>
+    <string name="luu_thong_tin">Lưu thông tin</string>
+
+    //VAN CHUYEN
+    <string name="header_van_chuyen">Đơn vị vận chuyển</string>
+    <string name="DC_van_chuyen">Lựa chọn đơn vị vận chuyển</string>
+    <string name="giao_hang_nhanh">Giao hàng nhanh</string>
+    <string name="gia_giao_hang_nhanh">20.000đ</string>
+    <string name="ngay_nhan_nhanh">Ngày nhận 30/11 - 1/12</string>
+    <string name="giao_hang_tietkiem">Giao hàng tiết kiệm</string>
+    <string name="gia_giao_hang_tietkiem">18.000đ</string>
+    <string name="ngay_nhan_tietkiem">Ngày nhận 30/11 - 4/12</string>
+    <string name="giao_hang_Viettel">Viettel Post</string>
+    <string name="gia_giao_hang_Viettel">19.000đ</string>
+    <string name="ngay_nhan_Viettel">Ngày nhận 30/11 - 3/12</string>
+    <string name="dong_y">Đồng ý</string>
 
 </resources>

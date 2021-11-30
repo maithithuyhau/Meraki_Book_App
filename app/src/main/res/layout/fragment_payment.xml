@@ -20,10 +20,7 @@
             android:layout_height="wrap_content"
             android:background="@color/green"
             android:orientation="horizontal"
-            android:padding="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:padding="5dp">
             <ImageButton
                 android:id="@+id/btnBack"
                 android:layout_width="0dp"
@@ -33,7 +30,7 @@
                 android:layout_weight="0.5"/>
 
             <TextView
-                android:id="@+id/txtHeaderGioHang"
+                android:id="@+id/txtHeaderThanhToan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9.5"
@@ -213,6 +210,13 @@
                 android:textColor="@color/red"
                 android:textSize="16sp" />
         </GridLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dong_y_dieu_khoan"
+            android:textSize="16sp"
+            android:background="@color/light_skin"
+            android:layout_marginTop="10dp"/>
         <Button
             android:id="@+id/btnTtDatHang"
             android:layout_width="155dp"
