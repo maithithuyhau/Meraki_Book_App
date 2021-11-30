@@ -112,7 +112,7 @@
                 android:layout_width="85dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="30dp"
-                android:background="@drawable/background_btn"
+                android:background="@drawable/background_btn_corner"
                 android:text="@string/btn_read"
                 android:textAllCaps="false"
                 android:textSize="12sp"/>
