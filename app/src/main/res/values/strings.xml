@@ -91,6 +91,9 @@
     //Sách của tôi
     <string name="txt_my_book">Sách của tôi</string>
 
+    //Xem gần đây
+    <string name="txt_recently_book">Xem gần đây</string>
+
     //Danh mục sách
     <string name="txt_tittle_horror">Trinh thám</string>
     <string name="txt_sort">Sắp xếp</string>
