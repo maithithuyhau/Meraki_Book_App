@@ -69,6 +69,9 @@ public class MyRatingActivity extends AppCompatActivity {
                 case R.id.btnOneStar:
                     fragment = new OneStarRatingFragment();
                     break;
+                default:
+                    fragment = new AllStarRatingFragment();
+                    break;
             }
 
             transaction.replace(R.id.linearLayoutContainer,fragment);
