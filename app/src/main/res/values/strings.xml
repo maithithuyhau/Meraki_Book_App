@@ -88,6 +88,8 @@
     <string name="txt_detail">Mọi thông tin thắc mắc về đơn hàng, bạn vui lòng liên hệ đến Hotline 0166 45 45 450 vào giờ hành chính.</string>
     <string name="btn_order_detail">XEM CHI TIẾT ĐƠN HÀNG</string>
 
+    //Sách của tôi
+    <string name="txt_my_book">Sách của tôi</string>
 
     //Danh mục sách
     <string name="txt_tittle_horror">Trinh thám</string>

@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment=new HomePageFragment();
                     break;
                 case R.id.TuSach:
-//            selectedFragment=new HomePageFragment();
+                selectedFragment=new MyBookActivity();
                     break;
                 case R.id.ThongBao:
-                    selectedFragment=new AccountActivity();
+                    selectedFragment=new NotificationActivity();
                     break;
                 case R.id.TaiKhoan:
-                    selectedFragment=new NotificationActivity();
+                    selectedFragment=new AccountActivity();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.NavContent, selectedFragment).commit();

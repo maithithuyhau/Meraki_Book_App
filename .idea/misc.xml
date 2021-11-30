@@ -65,15 +65,22 @@
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/drawable/spinner_list.xml" value="0.240625" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_book_list_catogory.xml" value="0.22" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_home_page.xml" value="0.22447916666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_my_book.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_my_rating.xml" value="0.25" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_payment_option.xml" value="0.25" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_qrcode.xml" value="0.25" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_return_and_refund_policy.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_all_star_rating.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_delivering_.xml" value="0.22447916666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_favorite_book.xml" value="0.21041666666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_five_star_rating.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_four_star_rating.xml" value="0.21041666666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_home_page.xml" value="0.22447916666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_my_ebook.xml" value="0.21041666666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_one_star_rating.xml" value="0.22447916666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_readed_book.xml" value="0.21041666666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_reading_book.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_three_star_rating.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_two_star_rating.xml" value="0.21041666666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/item_book_horizontal.xml" value="0.5" />
