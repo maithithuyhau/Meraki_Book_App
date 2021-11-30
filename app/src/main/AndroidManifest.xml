@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MerakiBook">
         <activity
+            android:name=".BookListCatogoryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".QRcodeActivity"
             android:exported="true" />
         <activity
@@ -17,7 +26,7 @@
             android:exported="true" />
         <activity
             android:name=".AccountActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".CartActivity"
             android:exported="true" />
@@ -53,22 +62,18 @@
             android:exported="true" />
         <activity
             android:name=".DetailBookActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".HomePageActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".VipActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
