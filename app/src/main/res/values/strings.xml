@@ -239,6 +239,21 @@
     <string name="hay_doc_sach">Hãy tận hưởng và đọc sách thả ga tại Meraki Book bạn nhé!</string>
     <string name="bat_dau">Bắt đầu ngay</string>
 
+    //Thanh toan
+    <string name="header_thanh_toan">Thanh toán</string>
+    <string name="dia_chi_nhan_hang">Địa chỉ nhận hàng</string>
+    <string name="dia_chi">365 Thủ đức, Hồ Chính Minh</string>
+    <string name="don_vi_van_chuyen">Đơn vị vận chuyển</string>
+    <string name="don_vi">Giao hàng nhanh  30/10 - 3/11</string>
+    <string name="phuong_thuc_thanh_toan">Phương thức thanh toán</string>
+    <string name="phuong_thuc">Thanh toán khi nhận hàng</string>
+    <string name="tam_tinh">Tạm tính</string>
+    <string name="tien_tam_tinh">100.000đ</string>
+    <string name="phi_van_chuyen">Phí vận chuyển</string>
+    <string name="tien_van_chuyen">20.000đ</string>
+    <string name="tien_tong_cong">120.000đ</string>
+    <string name="dat_hang">Đặt hàng</string>
+
     //VIP
 
 
