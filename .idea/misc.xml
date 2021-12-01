@@ -116,6 +116,7 @@
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_about_meraki_book.xml" value="0.1" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_author.xml" value="0.1" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_authors.xml" value="0.1" />
+        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_book_list_catogory.xml" value="0.1" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_delivery_policy.xml" value="0.22" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_detail_book.xml" value="0.25" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_home_page.xml" value="0.15" />
@@ -125,8 +126,9 @@
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_notification.xml" value="0.2796296296296296" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_policy.xml" value="0.22" />
-        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_privacy_policy.xml" value="0.22" />
-        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_purchase_order.xml" value="0.1" />
+        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_privacy_policy.xml" value="0.16033755274261605" />
+        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_purchase_order.xml" value="0.22" />
+        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_qrcode.xml" value="0.1" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_return_and_refund_policy.xml" value="0.20532741398446172" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_search.xml" value="0.16" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/activity_terms_of_use.xml" value="0.33" />
@@ -140,10 +142,11 @@
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_author_horizontal.xml" value="0.5" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_book_horizontal.xml" value="0.18" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_delivered.xml" value="0.25" />
-        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_notification.xml" value="0.75" />
+        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_notification.xml" value="0.5" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_policy.xml" value="0.25" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/notification_item.xml" value="0.33" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/order_item.xml" value="0.42407407407407405" />
+        <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/popup_order_successful.xml" value="0.1" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/menu/danhmuc.xml" value="0.18802083333333333" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/menu/menu_bottom.xml" value="0.67" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/menu/popup_muasach.xml" value="0.18802083333333333" />
