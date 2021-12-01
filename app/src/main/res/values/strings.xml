@@ -21,6 +21,14 @@
     <string name="trong_kho">trong kho sách được cập nhật liên tục \n và đa dạng các thể loại.</string>
     <string name="ket_noi">Kết nối và chia sẻ</string>
     <string name="cong_dong">các trải nghiệm thú vị của bạn với \n cộng đồng những người yêu sách khác.</string>
+
+    //login-signup
+    <string name="hint_email_sdt">Email hoặc SĐT</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_password_again">Nhập lại mật khẩu</string>
+    <string name="edt_forgot_password">Quên mật khẩu?</string>
+    <string name="btn_dang_nhap">Đăng nhập</string>
+    <string name="btn_dang_ki">Đăng kí</string>
     //tac giả
     <string name="nha_van_nam_cao">Nhà văn Nam Cao</string>
     <string name="ten_that">Tên thật: </string>
@@ -47,10 +55,10 @@
     <string name="yuval_noah_harari">Yuval Noah Harari</string>
 
     //các tác phẩm của tác giả
+    <string name="cac_tac_pham_cua_nam_cao">Các tác phẩm của Nam Cao</string>
     <string name="txt_lao_hac">Lão Hạc</string>
     <string name="txt_nam_cao">Nam Cao</string>
     <string name="so_trang_150">150 trang</string>
-    <string name="btn_read">Đọc</string>
     //trang
     <string name="trang">150 trang</string>
 
