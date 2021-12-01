@@ -2,8 +2,7 @@ package com.example.model;
 
 public class Book {
     private String bookName, bookAuthor,bookPage, ebookPrice,bookPrice,bookPublisher, dateTime,loaiBia, bookSize;
-    private int bookCategory, bookImage,bookSummary, bookFavorite;
-    private float  bookStar;
+    private int bookCategory, bookImage,bookSummary;
 
     public void setBookName(String bookName) {
         this.bookName = bookName;
@@ -51,14 +50,6 @@ public class Book {
 
     public void setBookSummary(int bookSummary) {
         this.bookSummary = bookSummary;
-    }
-
-    public void setBookFavorite(int bookFavorite) {
-        this.bookFavorite = bookFavorite;
-    }
-
-    public void setBookStar(float bookStar) {
-        this.bookStar = bookStar;
     }
 
     public String getBookName() {
@@ -109,15 +100,7 @@ public class Book {
         return bookSummary;
     }
 
-    public int getBookFavorite() {
-        return bookFavorite;
-    }
-
-    public float getBookStar() {
-        return bookStar;
-    }
-
-    public Book(String bookName, String bookAuthor, String bookPage, String ebookPrice, String bookPrice, String bookPublisher, String dateTime, String loaiBia, String bookSize, int bookCategory, int bookImage, int bookSummary, int bookFavorite, float bookStar) {
+    public Book(String bookName, String bookAuthor, String bookPage, String ebookPrice, String bookPrice, String bookPublisher, String dateTime, String loaiBia, String bookSize, int bookCategory, int bookImage, int bookSummary) {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         this.bookPage = bookPage;
@@ -130,7 +113,5 @@ public class Book {
         this.bookCategory = bookCategory;
         this.bookImage = bookImage;
         this.bookSummary = bookSummary;
-        this.bookFavorite = bookFavorite;
-        this.bookStar = bookStar;
     }
 }

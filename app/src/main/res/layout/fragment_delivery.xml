@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DeliveryFragment"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_back"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/txtHeaderVanChuyen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9.5"
+                android:text="@string/header_van_chuyen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginEnd="24dp"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/DC_van_chuyen"
+        android:background="@color/light_skin"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/giao_hang_nhanh"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gia_giao_hang_nhanh"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_gravity="end"/>
+        <TextView
+            android:id="@+id/txtNgayNhanNhanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ngay_nhan_nhanh"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/chkNgayNhanNhanh"
+            android:layout_gravity="end"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/giao_hang_tietkiem"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gia_giao_hang_tietkiem"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_gravity="end"/>
+        <TextView
+            android:id="@+id/txtNgayNhanTietKiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ngay_nhan_tietkiem"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/chkNgayNhanTietKiem"
+            android:layout_gravity="end"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/giao_hang_Viettel"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gia_giao_hang_Viettel"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_gravity="end"/>
+        <TextView
+            android:id="@+id/txtNgayNhanViettel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ngay_nhan_Viettel"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/chkNgayNhanViettel"
+            android:layout_gravity="end"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black" />
+    </GridLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnDvDongY"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_btn"
+            android:text="@string/dong_y"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

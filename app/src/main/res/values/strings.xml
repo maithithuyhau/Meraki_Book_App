@@ -46,6 +46,11 @@
     <string name="richard_unger">RICHARD UNGER</string>
     <string name="yuval_noah_harari">Yuval Noah Harari</string>
 
+    //các tác phẩm của tác giả
+    <string name="txt_lao_hac">Lão Hạc</string>
+    <string name="txt_nam_cao">Nam Cao</string>
+    <string name="so_trang_150">150 trang</string>
+    <string name="btn_read">Đọc</string>
     //trang
     <string name="trang">150 trang</string>
 
@@ -62,7 +67,55 @@
     <string name="dang_nhap">Đăng nhập</string>
 
     //Sách của tôi
-    <string name="btn_read">Đọc</string>
+
+
+    //Payment Option
+    <string name="txt_payment_option">Phương thức thanh toán</string>
+    <string name="txt_payment_option_tittle">Lựa chọn phương thức thanh toán</string>
+    <string name="rdo_cod">Thanh toán tiền mặt khi nhận hàng</string>
+    <string name="rdo_atm">Thẻ ATM nội địa</string>
+    <string name="rdo_visa">Thẻ quốc tế (Visa, Master,...)</string>
+
+    <string name="txt_qrcode_tittle">Thanh toán qua mã QR</string>
+    <string name="txt_atm">Sử dụng ứng dụng trên di động của ngân hàng (mobile banking) quét mã QR bên dưới để thanh toán.</string>
+    <string name="txt_visa">Sử dụng ứng dụng thẻ ghi nợ trên thiết bị di động quét mã QR bên dưới để thanh toán.</string>
+    <string name="txt_qrpay">QR PAY</string>
+    <string name="txt_time">Thời gian mã QR còn hiệu lực</string>
+    <string name="txt_countdown">00:00</string>
+    <string name="btn_check">Kiểm tra trạng thái giao dịch</string>
+    <string name="btn_backHome">Trở về trang chủ</string>
+
+    <string name="txt_order_successful_tittle">ĐẶT HÀNG THÀNH CÔNG</string>
+    <string name="txt_thankyou">Cảm ơn bạn đã mua sách tại Meraki Book. </string>
+    <string name="txt_thankyou2">Chúng tôi sẽ chuyển đơn hàng đến bạn sớm nhất có thể. </string>
+    <string name="txt_thankyou3">Xin chân thành cảm ơn. </string>
+    <string name="txt_detail">Mọi thông tin thắc mắc về đơn hàng, bạn vui lòng liên hệ đến Hotline 0166 45 45 450 vào giờ hành chính.</string>
+    <string name="btn_order_detail">XEM CHI TIẾT ĐƠN HÀNG</string>
+
+    //Sách của tôi
+    <string name="txt_my_book">Sách của tôi</string>
+
+    //Xem gần đây
+    <string name="txt_recently_book">Xem gần đây</string>
+
+    //Danh mục sách
+    <string name="txt_tittle_horror">Trinh thám</string>
+    <string name="txt_sort">Sắp xếp</string>
+    <string-array name="sp_sort">
+        <item>Mới nhất</item>
+        <item>Cũ nhất</item>
+        <item>Bán chạy</item>
+        <item>Miễn phí</item>
+    </string-array>
+
+    //Đánh giá của tôi
+    <string name="txt_tittle_my_rating">Đánh giá của tôi</string>
+    <string name="btn_all_star">Tất cả (n)</string>
+    <string name="btn_5_star">5 sao (1)</string>
+    <string name="btn_4_star">4 sao (1)</string>
+    <string name="btn_3_star">3 sao (1)</string>
+    <string name="btn_2_star">2 sao (1)</string>
+    <string name="btn_1_star">1 sao (1)</string>
 
 
     //Policy
@@ -222,8 +275,45 @@
     <string name="hay_doc_sach">Hãy tận hưởng và đọc sách thả ga tại Meraki Book bạn nhé!</string>
     <string name="bat_dau">Bắt đầu ngay</string>
 
-    //VIP
+    //Thanh toan
+    <string name="header_thanh_toan">Thanh toán</string>
+    <string name="dia_chi_nhan_hang">Địa chỉ nhận hàng</string>
+    <string name="dia_chi">365 Thủ đức, Hồ Chính Minh</string>
+    <string name="don_vi_van_chuyen">Đơn vị vận chuyển</string>
+    <string name="don_vi">Giao hàng nhanh  30/10 - 3/11</string>
+    <string name="phuong_thuc_thanh_toan">Phương thức thanh toán</string>
+    <string name="phuong_thuc">Thanh toán khi nhận hàng</string>
+    <string name="tam_tinh">Tạm tính</string>
+    <string name="tien_tam_tinh">100.000đ</string>
+    <string name="phi_van_chuyen">Phí vận chuyển</string>
+    <string name="tien_van_chuyen">20.000đ</string>
+    <string name="tien_tong_cong">120.000đ</string>
+    <string name="dat_hang">Đặt hàng</string>
+    <string name="dong_y_dieu_khoan">Bằng việc tiến hành đặt mua, bạn đồng ý với Điều khoản dịch vụ</string>
 
 
+    //DIA CHI
+    <string name="header_dia_chi">Địa chỉ nhận hàng</string>
+    <string name="DC_thong_tin">Sửa thông tin</string>
+    <string name="ho_ten">Họ tên</string>
+    <string name="ten">Nguyễn Thị A</string>
+    <string name="so_dien_thoai">Số điện thoại</string>
+    <string name="dia_chi_nha">Địa chỉ</string>
+    <string name="chon_dia_chi">Chọn địa chỉ cụ thể</string>
+    <string name="luu_thong_tin">Lưu thông tin</string>
+
+    //VAN CHUYEN
+    <string name="header_van_chuyen">Đơn vị vận chuyển</string>
+    <string name="DC_van_chuyen">Lựa chọn đơn vị vận chuyển</string>
+    <string name="giao_hang_nhanh">Giao hàng nhanh</string>
+    <string name="gia_giao_hang_nhanh">20.000đ</string>
+    <string name="ngay_nhan_nhanh">Ngày nhận 30/11 - 1/12</string>
+    <string name="giao_hang_tietkiem">Giao hàng tiết kiệm</string>
+    <string name="gia_giao_hang_tietkiem">18.000đ</string>
+    <string name="ngay_nhan_tietkiem">Ngày nhận 30/11 - 4/12</string>
+    <string name="giao_hang_Viettel">Viettel Post</string>
+    <string name="gia_giao_hang_Viettel">19.000đ</string>
+    <string name="ngay_nhan_Viettel">Ngày nhận 30/11 - 3/12</string>
+    <string name="dong_y">Đồng ý</string>
 
 </resources>

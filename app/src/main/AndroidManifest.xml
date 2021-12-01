@@ -22,22 +22,23 @@
         <activity
             android:name=".Authors"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".Intro3Activity"
             android:exported="true" />
         <activity
             android:name=".PurchaseOrderActivity"
-            android:exported="true"/>
+            android:exported="true"></activity>
         <activity
             android:name=".AboutMerakiBook"
-            android:exported="true"/>
+            android:exported="true"></activity>
         <activity
             android:name=".Intro2Activity"
-            android:exported="true"/>
+            android:exported="true"></activity>
         <activity
             android:name=".ReturnAndRefundPolicyActivity"
-            android:exported="true"/>
+            android:exported="true"></activity>
         <activity
             android:name=".DeliveryPolicyActivity"
             android:exported="true" />
@@ -49,8 +50,7 @@
             android:exported="true" />
         <activity
             android:name=".PolicyActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".DetailBookActivity"
             android:exported="true" >
@@ -62,21 +62,15 @@
         <activity
             android:name=".VipActivity"
             android:exported="true">
-
-        </activity>
-        <activity android:name=".NotificationActivity"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" >
-        </activity>
-        <activity android:name=".SearchActivity"
-            android:exported="true">
 
         </activity>
     </application>

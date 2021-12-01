@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -12,7 +11,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:src="@drawable/background_book_dropshadow"
+        android:src="@drawable/drop_shadow_item_book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +24,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:src="@drawable/background_book"
+        android:src="@drawable/bg_item_book_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +32,7 @@
 
     <ImageView
         android:id="@+id/imvBookVer"
-        android:layout_width="122dp"
+        android:layout_width="126dp"
         android:layout_height="176dp"
         android:layout_marginTop="10dp"
         android:background="@color/light_skin"
@@ -42,8 +41,7 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="@id/imvbackground"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:src="@drawable/laohac"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -66,7 +64,7 @@
                 android:id="@+id/txtNameVer"
                 android:layout_width="165dp"
                 android:layout_height="wrap_content"
-                android:text="Lão Hạc"
+                android:text="@string/txt_lao_hac"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -83,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Nam Cao"
+            android:text="@string/txt_nam_cao"
             android:textSize="14sp" />
 
         <TextView
@@ -91,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="150 trang"
+            android:text="@string/so_trang_150"
             android:textSize="12sp" />
 
         <LinearLayout
@@ -112,12 +110,10 @@
                 android:layout_width="85dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="30dp"
-                android:background="@drawable/background_btn"
+                android:background="@drawable/bg_button_read"
                 android:text="@string/btn_read"
-                android:textAllCaps="false"
-                android:textSize="12sp"/>
+                android:textAllCaps="false"/>
 
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

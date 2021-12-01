@@ -454,7 +454,7 @@
                         android:layout_marginTop="3dp"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/red"
+                        android:textColor="@color/yellow"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -479,7 +479,7 @@
                         android:layout_marginTop="3dp"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/red"
+                        android:textColor="@color/yellow"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -549,6 +549,7 @@
             android:background="@drawable/custom_button"
             android:drawableStart="@drawable/ic_cart"
             android:text="Mua sách"
+            android:padding="15dp"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
@@ -556,9 +557,11 @@
             android:id="@+id/btnDoc"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_button"
+           android:backgroundTint="@color/yellow"
             android:drawableStart="@drawable/ic_baseline_menu_book_24"
             android:text="Đọc"
+            android:background="@drawable/custom_button"
+            android:padding="15dp"
             android:textColor="@color/black"
             android:textStyle="bold"
 

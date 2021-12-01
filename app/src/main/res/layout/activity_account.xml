@@ -18,10 +18,7 @@
             android:layout_height="wrap_content"
             android:background="@color/green"
             android:orientation="horizontal"
-            android:padding="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:padding="5dp">
 
             <ImageButton
                 android:id="@+id/btnBack"
@@ -31,7 +28,7 @@
                 android:layout_weight="0.5"
                 android:background="@drawable/icon_back" />
             <TextView
-                android:id="@+id/txtHeaderGioHang"
+                android:id="@+id/txtHeaderTaiKhoan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
@@ -43,7 +40,7 @@
                 android:layout_marginEnd="24dp"
                 />
             <ImageButton
-                android:id="@+id/btnGear"
+                android:id="@+id/btnCaiDat"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:background="@drawable/ic_gear"
@@ -262,24 +259,20 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/menu_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/white"
-            app:itemBackground="@color/white"
-            app:itemIconTint="@color/green"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/menu_bottom"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom"
+        tools:ignore="MissingConstraints" />
+
 
 </LinearLayout>
