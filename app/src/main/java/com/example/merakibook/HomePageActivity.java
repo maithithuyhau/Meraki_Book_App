@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class HomePageActivity extends AppCompatActivity implements BookItemClickListener {
+public abstract class HomePageActivity extends AppCompatActivity implements BookItemClickListener {
 //    private List<Banner> list_banner;
 //    private ViewPager banner_page;
 //    private TabLayout indicator;
@@ -46,7 +46,7 @@ public class HomePageActivity extends AppCompatActivity implements BookItemClick
 //    NavigationView danhmuc;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 

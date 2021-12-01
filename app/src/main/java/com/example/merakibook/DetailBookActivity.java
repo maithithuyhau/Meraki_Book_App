@@ -8,8 +8,10 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -30,13 +32,18 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     private RecyclerView rcvcung_the_loai;
     private Button btnMuaSach;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_book);
         linkView();
         loadData();
         initData();
         addEvent();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return null;
     }
 
     private void linkView() {
@@ -169,5 +176,10 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         //Animation
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(DetailBookActivity.this, bookImageView,"sharedName");
         startActivity(intent,options.toBundle());
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

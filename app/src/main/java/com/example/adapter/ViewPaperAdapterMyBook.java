@@ -16,6 +16,7 @@ public class ViewPaperAdapterMyBook extends FragmentPagerAdapter {
         super(fragmentManager,behavior);
     }
 
+
     @NonNull
     @Override
     public Fragment getItem(int position) {

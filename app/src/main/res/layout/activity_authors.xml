@@ -223,7 +223,7 @@
     <LinearLayout
         android:id="@+id/linearAuthor"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:background="@color/green"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -239,7 +239,7 @@
             android:src="@drawable/icon_back" />
 
         <TextView
-            android:id="@+id/txtmenuDitailBook"
+            android:id="@+id/txtAuthorTitle"
             android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:gravity="center"
