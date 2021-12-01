@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.merakibook.R;
 import com.example.model.Author;
-import com.example.model.Author;
+
 
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapte
     Context context;
     ArrayList<Author> authors;
 
-    public AuthorSearchAdapter(Context context, ArrayList<Author> tacGias) {
+    public AuthorSearchAdapter(Context context, ArrayList<Author> authors) {
         this.context = context;
         this.authors = authors;
     }

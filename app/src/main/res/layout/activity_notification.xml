@@ -47,23 +47,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@color/white"
             >
             <LinearLayout
                 android:id="@+id/lnKhuyenMai"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:weightSum="10">
+                android:weightSum="10"
+                >
                 <ImageView
                     android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
-                    android:layout_weight="3"
+                    android:layout_weight="0.5"
                     android:layout_marginStart="24dp"
+
                     android:src="@drawable/ic_sale" />
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="6.5"
+                    android:layout_weight="9"
                     android:orientation="vertical"
                     android:gravity="center"
                     >
@@ -82,7 +85,7 @@
                         android:layout_gravity="center"
                         android:gravity="center_vertical"
                         android:text="@string/thong_tin_khuyen_mai"
-                        android:maxLength="29" />
+                        android:maxLength="40" />
                 </LinearLayout>
 
                 <ImageView
@@ -102,18 +105,20 @@
                 android:id="@+id/lnHoatDong"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:weightSum="10">
+                android:weightSum="10"
+                android:textColor="@color/white">
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:layout_weight="3"
+                    android:layout_weight="0.5"
                     android:layout_marginStart="24dp"
+
                     android:src="@drawable/icon_notify" />
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="6.5"
+                    android:layout_weight="9"
                     android:orientation="vertical"
                     android:gravity="center"
                     >
@@ -132,7 +137,7 @@
                         android:layout_gravity="center"
                         android:gravity="center_vertical"
                         android:text="@string/thong_tin_thong_bao"
-                        android:maxLength="29" />
+                        android:maxLength="40" />
                 </LinearLayout>
 
                 <ImageView
@@ -155,7 +160,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical"
-                android:background="@color/light_skin"/>
+                android:background="@color/background"/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcvThongBao"
                 android:layout_width="match_parent"

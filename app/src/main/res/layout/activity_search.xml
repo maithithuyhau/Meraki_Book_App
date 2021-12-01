@@ -79,9 +79,81 @@
             android:text="@string/xoa_tat_ca"
             android:gravity="end"/>
     </LinearLayout>
-
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/container_bg"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tp_lao_hac"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                 />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_close"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/container_bg"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/harry_potter"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_close"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/container_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhà giả kim"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_close"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -118,6 +190,8 @@
               android:layout_marginTop="20dp"
               android:layout_marginStart="24dp"
               android:layout_marginEnd="24dp"
-              android:orientation="horizontal"/>
+              android:orientation="horizontal"
+
+              />
 
 </LinearLayout>
