@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.adapter.BookAdapterVertical;
@@ -22,7 +24,7 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
     BookAdapterVertical bookAdapterVertical;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recently_book);
 
@@ -33,6 +35,11 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
         rcvRecentlyBook.setLayoutManager(new LinearLayoutManager(this));
         rcvRecentlyBook.setAdapter(bookAdapterVertical);
 
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return null;
     }
 
     private void linkView() {
