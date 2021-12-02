@@ -255,7 +255,7 @@
     <string name="tp_lao_hac">Lão Hạc</string>
     <string name="thoi_gian_giao_Lao_Hac">12:00 22/10/2021</string>
     <string name="thong_tin_thong_bao">Đơn hàng của bạn đã sẵn sàng được giao</string>
-    <string name="thong_tin_khuyen_mai">Giảm giá sách vào ngày 12.12</string>
+    <string name="thong_tin_khuyen_mai">Giảm giá sách siêu khủng vào ngày 12.12! Ấn vào xem ngau!</string>
     <string name="ngay_giao_harry_potter">12:00 22/11/2021</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -307,7 +307,7 @@
     <string name="ten">Nguyễn Thị A</string>
     <string name="so_dien_thoai">Số điện thoại</string>
     <string name="dia_chi_nha">Địa chỉ</string>
-    <string name="chon_dia_chi">Chọn địa chỉ cụ thể</string>
+    <string name="chon_dia_chi"> Địa chỉ cụ thể</string>
     <string name="luu_thong_tin">Lưu thông tin</string>
 
     //VAN CHUYEN

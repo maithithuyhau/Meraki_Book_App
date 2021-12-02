@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MerakiBook">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" >
+            android:name=".Reviews"
+            android:exported="true" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".AddressActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,38 +25,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MyRatingActivity"
-            android:exported="true">
-        </activity>
-        <!--<activity
-            android:name=".BooksOfAuthorActivity"
-            android:exported="true" />-->
+            android:name=".PaymentActivity"
+            android:exported="true"/>
         <activity
-            android:name=".CartActivity"
-            android:exported="true" />
+            android:name=".DeliveryActivity"
+            android:exported="true"/>
         <activity
             android:name=".Authors"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".Intro1Activity"
-            android:exported="true" />
-        <activity
-            android:name=".Intro2Activity"
-            android:exported="true" />
+            android:exported="true"/>
         <activity
             android:name=".Intro3Activity"
             android:exported="true" />
         <activity
             android:name=".PurchaseOrderActivity"
-            android:exported="true" />
+            android:exported="true"/>
         <activity
             android:name=".AboutMerakiBook"
-            android:exported="true" />
+            android:exported="true"/>
+        <activity
+            android:name=".Intro2Activity"
+            android:exported="true"/>
         <activity
             android:name=".ReturnAndRefundPolicyActivity"
-            android:exported="true" />
+            android:exported="true"/>
         <activity
             android:name=".DeliveryPolicyActivity"
             android:exported="true" />
@@ -66,13 +63,12 @@
         <activity
             android:name=".DetailBookActivity"
             android:exported="true" />
-        <activity
-            android:name=".HomePageActivity"
-            android:exported="true">
-        </activity>
+
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
     </application>
 
 </manifest>

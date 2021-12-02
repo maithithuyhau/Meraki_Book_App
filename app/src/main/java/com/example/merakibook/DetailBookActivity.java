@@ -28,7 +28,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     private TextView txtTenSach,txtDesc, txtTacGia,txtTacGia2,
             txtPage,txtDateTime, txtPublisher,txtBia,txtBookSize, txtmenuDitailBook,
     txtPriceEbook, txtPriceBook ;
-    private ImageView imvImages, imvHinh;
+    private ImageView imvImages, imvHinh, imvComment;
     private RecyclerView rcvcung_the_loai;
     private Button btnMuaSach;
     @Override
@@ -66,6 +66,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
 
         imvImages=findViewById(R.id.imvDetail_Images);
         imvHinh=findViewById(R.id.imvHinh);
+        imvComment=findViewById(R.id.imvComment);
 
         btnMuaSach=findViewById(R.id.btnMuaSach);
     }
@@ -91,6 +92,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
 
         imvImages.setImageResource(bookImage);
         imvHinh.setImageResource(bookImage);
+
 
         txtTenSach.setText(bookName);
         txtDesc.setText(Summary);
@@ -152,7 +154,13 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                 popupMenu.show();
             }
         });
-
+imvComment.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent=new Intent(DetailBookActivity.this,Reviews.class);
+        startActivity(intent);
+    }
+});
     }
 
     @Override

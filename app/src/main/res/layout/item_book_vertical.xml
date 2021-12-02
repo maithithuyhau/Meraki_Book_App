@@ -111,7 +111,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="30dp"
                 android:background="@drawable/bg_button_read"
-                android:text="@string/btn_read"
+                android:text="Đọc"
                 android:textAllCaps="false"/>
 
         </LinearLayout>
