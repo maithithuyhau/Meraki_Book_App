@@ -26,7 +26,8 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="24dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/icon_back" />
+                android:background="@drawable/icon_back"
+                android:layout_gravity="center_vertical"/>
             <TextView
                 android:id="@+id/txtHeaderTaiKhoan"
                 android:layout_width="0dp"
@@ -37,15 +38,15 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"
-                android:layout_marginEnd="24dp"
-                />
+                android:layout_gravity="center_vertical"/>
             <ImageButton
                 android:id="@+id/btnCaiDat"
-                android:layout_width="24dp"
+                android:layout_width="15dp"
+                android:layout_weight="0.5"
                 android:layout_height="24dp"
                 android:background="@drawable/ic_gear"
                 android:layout_marginEnd="24dp"
-                />
+                android:layout_gravity="center_vertical" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,7 +55,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="143dp"
             android:background="@drawable/taikhoan_bg"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="0dp" />
@@ -83,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/xin_chao"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@color/green"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
@@ -157,15 +158,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:weightSum="3">
             <Button
                 android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:id="@+id/btnAcCart"
-                android:layout_width="110dp"
-                android:layout_height="115dp"
+                android:layout_width="97dp"
+                android:layout_weight="1"
+                android:layout_height="97dp"
                 android:elevation="4dp"
-                android:text="Đơn mua"
+                android:text="@string/don_mua"
                 android:textSize="14sp"
                 android:textColor="@color/white"
                 android:background="@drawable/background_btn_account"
@@ -174,8 +177,9 @@
                 android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:id="@+id/btnAcSaw"
-                android:layout_width="110dp"
-                android:layout_height="115dp"
+                android:layout_width="97dp"
+                android:layout_weight="1"
+                android:layout_height="97dp"
                 android:text="@string/btn_xem_gan_day"
                 android:textSize="14sp"
                 android:textColor="@color/white"
@@ -186,8 +190,9 @@
 
             <Button
                 android:id="@+id/btnAcRate"
-                android:layout_width="110dp"
-                android:layout_height="115dp"
+                android:layout_width="97dp"
+                android:layout_height="97dp"
+                android:layout_weight="1"
                 android:background="@drawable/background_btn_account"
                 android:drawableTop="@drawable/ic_rate"
                 android:paddingTop="20dp"
@@ -205,7 +210,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:background="@color/light_skin"
             android:layout_marginTop="10dp">
 
@@ -234,7 +239,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:background="@color/light_skin"
             android:layout_marginTop="10dp">
 
@@ -263,18 +268,6 @@
 
 
     </LinearLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/menu_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:itemBackground="@color/white"
-        app:itemIconTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottom"
-        tools:ignore="MissingConstraints" />
 
 
 </LinearLayout>
