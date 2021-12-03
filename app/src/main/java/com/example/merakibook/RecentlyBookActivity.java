@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.adapter.BookAdapterVertical;
@@ -33,6 +35,11 @@ public abstract class RecentlyBookActivity extends AppCompatActivity implements 
         rcvRecentlyBook.setLayoutManager(new LinearLayoutManager(this));
         rcvRecentlyBook.setAdapter(bookAdapterVertical);
 
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return null;
     }
 
     private void linkView() {

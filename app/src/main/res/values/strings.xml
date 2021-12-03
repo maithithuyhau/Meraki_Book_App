@@ -297,7 +297,9 @@
     <string name="tien_van_chuyen">20.000đ</string>
     <string name="tien_tong_cong">120.000đ</string>
     <string name="dat_hang">Đặt hàng</string>
-    <string name="dong_y_dieu_khoan">Bằng việc tiến hành đặt mua, bạn đồng ý với Điều khoản dịch vụ</string>
+    <string name="dong_y_dieu_khoan">Bằng việc tiến hành đặt mua, bạn đồng ý với </string>
+    <string name="dieu_khoan"><u>Điều khoản dịch vụ</u></string>
+
 
 
     //DIA CHI
@@ -323,5 +325,6 @@
     <string name="gia_giao_hang_Viettel">19.000đ</string>
     <string name="ngay_nhan_Viettel">Ngày nhận 30/11 - 3/12</string>
     <string name="dong_y">Đồng ý</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

@@ -77,9 +77,9 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="321dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="24dp"
-                android:scaleType="centerCrop"
+                android:layout_height="150dp"
+                android:layout_marginTop="4dp"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtTenSach"
@@ -133,19 +133,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <RatingBar
+            <ImageView
                 android:id="@+id/ratingBar"
-                style="?android:attr/ratingBarStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:src="@drawable/saovang"
 
-                android:layout_marginStart="16dp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="45dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="@+id/imageView4"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.228" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -178,7 +179,7 @@
                 android:id="@+id/txtStar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="44dp"
                 android:layout_marginTop="5dp"
                 android:text="5 sao"
                 android:textColor="#FAB829"
@@ -187,13 +188,13 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.047" />
 
             <TextView
                 android:id="@+id/txtLuotCmt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="148dp"
+                android:layout_marginStart="156dp"
                 android:layout_marginTop="5dp"
                 android:text="150"
                 android:textColor="#FAB829"
@@ -202,7 +203,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.07" />
 
             <TextView
                 android:id="@+id/txtLuotXem"
@@ -216,10 +217,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.014"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.07" />
 
             <TextView
                 android:id="@+id/txtMotaSP"
@@ -264,7 +265,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:text="Tác giả: "
-
+                        android:textColor="@color/black"
                         />
 
                     <TextView
@@ -274,6 +275,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"
                         android:text="Tac giả "
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent" />
                 </LinearLayout>
 
@@ -287,6 +289,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
                         android:text="Số trang:"
 
                         />
@@ -298,6 +301,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"
                         android:text="378 trang"
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent" />
                 </LinearLayout>
 
@@ -312,6 +316,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:text="Ngày phát hành"
+                        android:textColor="@color/black"
 
                         />
 
@@ -322,6 +327,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"
                         android:text="20/10/2008"
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent" />
                 </LinearLayout>
                 <LinearLayout
@@ -335,6 +341,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:text="Nhà sản xuất:"
+                        android:textColor="@color/black"
 
                         />
 
@@ -346,6 +353,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"
                         android:text=""
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent" />
                 </LinearLayout>
 
@@ -360,6 +368,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:text="Loại bìa:"
+                        android:textColor="@color/black"
 
                         />
 
@@ -371,6 +380,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"
                         android:text=""
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent" />
                 </LinearLayout>
                 <LinearLayout
@@ -384,6 +394,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:text="Kích thước:"
+                        android:textColor="@color/black"
 
                         />
 
@@ -395,6 +406,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"
                         android:text=""
+                        android:textColor="@color/black"
                         app:layout_constraintStart_toStartOf="parent" />
                 </LinearLayout>
             </LinearLayout>
@@ -403,19 +415,20 @@
                 android:id="@+id/imvComment"
                 android:layout_width="42dp"
                 android:layout_height="28dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="24dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                app:layout_constraintHorizontal_bias="0.234"
+                app:layout_constraintHorizontal_bias="0.257"
                 app:layout_constraintStart_toEndOf="@+id/ratingBar"
                 app:layout_constraintTop_toTopOf="@+id/imageView4"
                 app:srcCompat="@drawable/icon_comment" />
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="40dp"
-                android:layout_height="37dp"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                app:layout_constraintHorizontal_bias="0.71"
+                app:layout_constraintHorizontal_bias="0.685"
                 app:layout_constraintStart_toEndOf="@+id/imvComment"
                 app:layout_constraintTop_toTopOf="@+id/imageView4"
                 app:srcCompat="@drawable/icon_see" />
@@ -454,7 +467,7 @@
                         android:layout_marginTop="3dp"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/yellow"
+                        android:textColor="@color/red"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -479,7 +492,7 @@
                         android:layout_marginTop="3dp"
                         android:gravity="center"
                         android:text=""
-                        android:textColor="@color/yellow"
+                        android:textColor="@color/red"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -497,6 +510,7 @@
         android:orientation="horizontal"
         android:padding="5dp"
         android:weightSum="10"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -506,7 +520,7 @@
             android:layout_width="15dp"
             android:layout_height="25dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="5dp"
+
             android:layout_weight="1"
             android:src="@drawable/icon_back" />
 
@@ -528,7 +542,7 @@
             android:layout_height="30dp"
             android:layout_weight="1"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="6dp"
+
             android:src="@drawable/icon_card_fontbar" />
 
     </LinearLayout>
@@ -537,30 +551,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
+        android:weightSum="2"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnMuaSach"
-            android:layout_width="170dp"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
+            android:drawableTint="@color/black"
             android:layout_marginEnd="20dp"
             android:background="@drawable/custom_button"
             android:drawableStart="@drawable/ic_cart"
             android:text="Mua sách"
             android:padding="15dp"
+            android:layout_weight="1"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnDoc"
-            android:layout_width="170dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
            android:backgroundTint="@color/yellow"
             android:drawableStart="@drawable/ic_baseline_menu_book_24"
             android:text="Đọc"
+            android:drawableTint="@color/black"
+            android:layout_weight="1"
             android:background="@drawable/custom_button"
             android:padding="15dp"
             android:textColor="@color/black"
