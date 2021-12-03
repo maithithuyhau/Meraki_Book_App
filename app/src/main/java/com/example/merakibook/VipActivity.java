@@ -56,15 +56,7 @@ public class VipActivity extends AppCompatActivity {
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
                 Button btnBatDau = dialog.findViewById(R.id.btnBatDau);
-                btnBatDau.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(VipActivity.this, HomePageActivity.class);
-                        startActivity(intent);
 
-                        finish();
-                    }
-                });
                 dialog.setCanceledOnTouchOutside(false);
                 dialog.show();
             }

@@ -4,74 +4,104 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <androidx.cardview.widget.CardView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        android:layout_gravity="center">
-        <LinearLayout
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="320dp"
-            android:layout_height="380dp"
-            android:background="@color/light_skin"
-            android:orientation="vertical"
-            android:padding="10dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chuc_mung"
-                android:textSize="22sp"
-                android:textColor="@color/yellow"
-                android:textStyle="bold"
-                android:gravity="center_horizontal"
-                android:paddingTop="10dp"/>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp">
-                <ImageView
-                    android:id="@+id/imvPopUpVipPhoto"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/profile"/>
-            </androidx.cardview.widget.CardView>
-            <TextView
-                android:id="@+id/txtPopUpVipName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Giang"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:gravity="center_horizontal"
-                android:paddingTop="10dp"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/black"
-                android:layout_marginTop="10dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hay_doc_sach"
-                android:textSize="16sp"
-                android:textColor="@color/green"
-                android:textStyle="bold"
-                android:gravity="center_horizontal"
-                android:paddingTop="10dp"/>
+            android:layout_height="320dp"
+            android:background="@drawable/background_dropshadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"/>
 
-            <Button
-                android:id="@+id/btnBatDau"
-                android:layout_width="155dp"
-                android:layout_height="50dp"
-                android:background="@drawable/background_btn"
-                android:text="@string/bat_dau"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:background="@color/light_skin"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:text="@string/chuc_mung"
+                    android:textColor="@color/yellow"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/imvPopUpVipPhoto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profile" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtPopUpVipName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:text="@string/Giang"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:text="@string/hay_doc_sach"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnBatDau"
+                    android:layout_width="200dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/bat_dau"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </LinearLayout>
