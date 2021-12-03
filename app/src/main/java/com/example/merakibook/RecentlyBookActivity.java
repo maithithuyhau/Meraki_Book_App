@@ -14,7 +14,7 @@ import com.example.model.BookItemClickListener;
 
 import java.util.ArrayList;
 
-public class RecentlyBookActivity extends AppCompatActivity implements BookItemClickListener {
+public abstract class RecentlyBookActivity extends AppCompatActivity implements BookItemClickListener {
 
     View view;
     RecyclerView rcvRecentlyBook;
@@ -22,7 +22,7 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
     BookAdapterVertical bookAdapterVertical;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recently_book);
 
