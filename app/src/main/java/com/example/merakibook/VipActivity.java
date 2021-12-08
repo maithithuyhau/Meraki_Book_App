@@ -47,19 +47,19 @@ public class VipActivity extends AppCompatActivity {
         });
     }
 
-    public void openPopUp(View view) {
-        btnDangKyNgay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Dialog dialog = new Dialog(VipActivity.this);
-                dialog.setContentView(R.layout.popup_vip);
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-                Button btnBatDau = dialog.findViewById(R.id.btnBatDau);
-
-                dialog.setCanceledOnTouchOutside(false);
-                dialog.show();
-            }
-        });
-    }
+//    public void openPopUp(View view) {
+//        btnDangKyNgay.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Dialog dialog = new Dialog(VipActivity.this);
+//                dialog.setContentView(R.layout.popup_vip);
+//                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//
+//                Button btnBatDau = dialog.findViewById(R.id.btnBatDau);
+//
+//                dialog.setCanceledOnTouchOutside(false);
+//                dialog.show();
+//            }
+//        });
+//    }
 }
