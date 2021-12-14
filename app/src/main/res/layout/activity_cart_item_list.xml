@@ -9,7 +9,6 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/txtContainer"
             android:layout_width="match_parent"
             android:layout_height="123dp"
             android:layout_alignParentBottom="true"
@@ -20,19 +19,15 @@
             android:id="@+id/chkCheckItem"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="3dp"
-            android:layout_marginBottom="49.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
             android:checked="false" />
 
         <ImageView
             android:id="@+id/imvSach"
             android:layout_width="98dp"
             android:layout_height="135dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="7dp"
             android:layout_toEndOf="@+id/chkCheckItem"
             android:src="@drawable/harrypotter" />
 
@@ -70,47 +65,40 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lvSachInfo"
             android:layout_toEndOf="@+id/imvSach"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="20dp"
-            android:weightSum="5">
+            android:layout_marginTop="5dp">
             <ImageButton
                 android:id="@+id/btnTru"
                 android:layout_width="20dp"
-                android:layout_weight="1"
                 android:layout_height="20dp"
                 android:background="@drawable/ic_minus"
                 android:backgroundTint="@color/green"/>
             <EditText
                 android:id="@+id/edtSoLuong"
-                android:layout_width="20dp"
-                android:layout_weight="1"
-                android:layout_height="18dp"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
                 android:textSize="14sp"
-                android:layout_gravity="center_vertical"
                 android:background="@color/white"
                 android:textColor="@color/black"/>
             <ImageButton
                 android:id="@+id/btnCong"
                 android:layout_width="20dp"
-                android:layout_weight="1"
                 android:layout_height="20dp"
                 android:background="@drawable/ic_plus"
                 android:backgroundTint="@color/green"/>
-            <ImageButton
-                android:id="@+id/btnTrash"
-                android:layout_width="20dp"
-                android:layout_weight="1"
-                android:layout_height="20dp"
-                android:layout_marginStart="120dp"
-                android:background="@drawable/ic_trash"
-                android:backgroundTint="@color/green" />
         </LinearLayout>
 
-
+        <ImageButton
+            android:id="@+id/btnTrash"
+            android:layout_width="24dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_trash"
+            android:backgroundTint="@color/green" />
 
 
     </RelativeLayout>

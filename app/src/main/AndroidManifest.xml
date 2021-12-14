@@ -27,11 +27,7 @@
         <activity
             android:name=".VipActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
@@ -47,16 +43,23 @@
         </activity>
         <activity
             android:name=".Authors"
-            android:exported="true"/>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Intro3Activity"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".PurchaseOrderActivity"
-            android:exported="true"/>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".AboutMerakiBook"
-            android:exported="true"/>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Intro2Activity"
             android:exported="true"/>
@@ -74,7 +77,9 @@
             android:exported="true" />
         <activity
             android:name=".PolicyActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".DetailBookActivity"
             android:exported="true" />
@@ -82,7 +87,15 @@
             android:name=".MainActivity"
             android:exported="true" >
 
+        </activity>
+        <activity
+            android:name=".QRcodeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
