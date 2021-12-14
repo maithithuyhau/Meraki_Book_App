@@ -15,7 +15,7 @@
         android:gravity="center_vertical"
         android:weightSum="10">
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackDelivery"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
@@ -51,6 +51,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="24dp"
             android:text="@string/noi_dung_chinh_sach_giao_hang"
+android:textColor="@color/black"
             />
     </LinearLayout>
     </ScrollView>

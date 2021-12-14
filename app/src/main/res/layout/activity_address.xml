@@ -142,13 +142,14 @@
             android:textSize="18sp"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"/>
+
         <Button
             android:id="@+id/btnDcLuuThongTin"
             android:layout_width="155dp"
             android:layout_height="50dp"
-            android:background="@drawable/background_btn"
-            android:text="@string/luu_thong_tin"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn"
+            android:text="@string/luu_thong_tin" />
     </LinearLayout>
 </LinearLayout>

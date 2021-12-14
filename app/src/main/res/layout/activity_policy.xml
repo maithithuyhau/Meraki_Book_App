@@ -14,7 +14,7 @@
         android:gravity="center_vertical"
         android:weightSum="10">
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackPolicy"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
@@ -49,16 +49,18 @@
             <LinearLayout
                 android:id="@+id/lnDieuKhoan"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/light_skin">
+                android:layout_height="60dp"
+                android:background="@color/light_skin"
+                android:weightSum="10">
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="24dp"
                     android:layout_weight="8"
                     android:gravity="center_vertical"
                     android:text="@string/dieu_khoan_su_dung"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -76,17 +78,19 @@
             <LinearLayout
                 android:id="@+id/lnCSBaoMat"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/light_skin">
+                android:layout_height="60dp"
+                android:background="@color/light_skin"
+                android:weightSum="10">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="24dp"
                     android:layout_weight="8"
                     android:gravity="center_vertical"
                     android:text="@string/chinh_sach_bao_mat"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -104,23 +108,26 @@
             <LinearLayout
                 android:id="@+id/lnCSGiaoHang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/light_skin">
+                android:layout_height="60dp"
+                android:background="@color/light_skin"
+                android:weightSum="10"
+                >
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="24dp"
-                    android:layout_weight="8"
+                    android:layout_weight="7.9"
                     android:gravity="center_vertical"
                     android:text="@string/chinh_sach_giao_hang"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2"
+                    android:layout_weight="2.1"
                     android:src="@drawable/ic_forward" />
             </LinearLayout>
 
@@ -132,23 +139,25 @@
             <LinearLayout
                 android:id="@+id/lnCSDoiTra"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/light_skin">
+                android:layout_height="60dp"
+                android:background="@color/light_skin"
+                android:weightSum="10">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_marginStart="24dp"
-                    android:layout_weight="8"
+                    android:layout_weight="7.3"
                     android:gravity="center_vertical"
                     android:text="@string/chinh_sach_doi_tra_hoan_tien"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="2"
+                    android:layout_weight="2.7"
                     android:src="@drawable/ic_forward" />
             </LinearLayout>
 

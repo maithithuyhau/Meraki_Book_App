@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -11,6 +12,7 @@ public class PrivacyPolicyActivity extends AppCompatActivity {
     LinearLayout lnThongTinBaoMat, lnCamKet, lnTrachNhiem;
     TextView txtThongTinBaoMat, txtCamKet, txtTrachNhiem;
     View viewCamKet, viewTrachNhiem;
+    ImageButton imbBackPrivacy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class PrivacyPolicyActivity extends AppCompatActivity {
         txtTrachNhiem = findViewById(R.id.txtTrachNhiem);
         viewCamKet = findViewById(R.id.viewCamKet);
         viewTrachNhiem = findViewById(R.id.viewTrachNhiem);
+        imbBackPrivacy = findViewById(R.id.imbBackPrivate);
     }
 
     private void addEvents() {
@@ -51,6 +54,12 @@ public class PrivacyPolicyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtTrachNhiem.setVisibility(txtTrachNhiem.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+            }
+        });
+        imbBackPrivacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

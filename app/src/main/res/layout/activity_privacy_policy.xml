@@ -15,7 +15,7 @@
         android:gravity="center_vertical"
         android:weightSum="10">
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackPrivate"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
@@ -57,7 +57,8 @@
                     android:layout_weight="9"
                     android:gravity="center"
                     android:text="@string/tieu_de_thong_tin_bao_mat"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -81,7 +82,8 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/thong_tin_bao_mat"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:textColor="@color/black"/>
 
             <View
                 android:id="@+id/viewCamKet"
@@ -104,7 +106,8 @@
                     android:layout_weight="9"
                     android:gravity="center"
                     android:text="@string/tieu_de_cam_ket"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -128,7 +131,8 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/cam_ket"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:textColor="@color/black"/>
 
             <View
                 android:id="@+id/viewTrachNhiem"
@@ -151,7 +155,8 @@
                     android:layout_weight="9"
                     android:gravity="center"
                     android:text="@string/tieu_de_trach_nhiem"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -175,7 +180,8 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="24dp"
                 android:text="@string/trach_nhiem"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </ScrollView>
     </LinearLayout>
