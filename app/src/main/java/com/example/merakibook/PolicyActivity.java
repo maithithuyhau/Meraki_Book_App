@@ -3,6 +3,7 @@ package com.example.merakibook;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 public class PolicyActivity extends AppCompatActivity {
 LinearLayout lnDieuKhoan, lnCSBaoMat, lnCSGiaoHang, lnCSDoiTra;
 ImageButton imbBackPolicy;
+Button btnCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ ImageButton imbBackPolicy;
         lnCSGiaoHang = findViewById(R.id.lnCSGiaoHang);
         lnCSDoiTra = findViewById(R.id.lnCSDoiTra);
         imbBackPolicy = findViewById(R.id.imbBackPolicy);
+        btnCall = findViewById(R.id.btnCall);
     }
 
     private void addEvents() {
@@ -69,6 +72,14 @@ ImageButton imbBackPolicy;
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+        btnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:1900636466"));
+                startActivity(callIntent);
             }
         });
     }
