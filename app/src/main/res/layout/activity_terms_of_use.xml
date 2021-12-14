@@ -16,7 +16,7 @@
         android:weightSum="10">
 
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackTermOfUse"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
@@ -56,7 +56,9 @@
             android:layout_height="match_parent"
             android:text="@string/tieu_de_tai_khoan_khach_hang"
             android:textSize="16sp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -79,7 +81,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
-        android:text="@string/tai_khoan_khach_hang"/>
+        android:text="@string/tai_khoan_khach_hang"
+        android:textColor="@color/black"
+        />
     <View
         android:id="@+id/viewTaiKhoan"
         android:layout_width="match_parent"
@@ -100,7 +104,8 @@
             android:layout_height="match_parent"
             android:text="@string/tieu_de_quyen_loi"
             android:textSize="16sp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/black"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -123,7 +128,8 @@
         android:layout_marginTop="10dp"
         android:visibility="gone"
         android:text="@string/quyen_loi_bao_mat"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
         <View
             android:id="@+id/viewQuyenVaNghiaVu"
             android:layout_width="match_parent"
@@ -144,7 +150,8 @@
                 android:layout_height="match_parent"
                 android:text="@string/tieu_de_quyen_va_nghia_vu"
                 android:textSize="16sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/black"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
@@ -166,7 +173,9 @@
             android:layout_marginTop="10dp"
             android:visibility="gone"
             android:text="@string/quyen_va_nghia_vu"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            />
         <View
             android:id="@+id/viewQuyenKhachHang"
             android:layout_width="match_parent"
@@ -187,7 +196,8 @@
                 android:layout_height="match_parent"
                 android:text="@string/tieu_de_quyen_va_nghia_vu_khach_hang"
                 android:textSize="16sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/black"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
@@ -210,7 +220,9 @@
             android:layout_marginTop="10dp"
             android:visibility="gone"
             android:text="@string/quyen_va_nghia_vu_khach_hang"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/black"
+            />
     </LinearLayout>
     </ScrollView>
 

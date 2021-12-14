@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ public class TermsOfUseActivity extends AppCompatActivity {
     LinearLayout lnTaiKhoanKH, lnQuyenLoi, lnQuyenVaNghiaVu, lnQuyenKhachHang;
     TextView txtTaiKhoanKH, txtQuyenLoi, txtQuyenLoiVaNghiaVu, txtQuyenKhachHang;
     View viewTaiKhoan, viewQuyenLoiVaNghiaVu, viewQuyenKhachHang;
+    ImageButton imbBackTurnOfUse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,7 @@ public class TermsOfUseActivity extends AppCompatActivity {
         viewTaiKhoan = findViewById(R.id.viewTaiKhoan);
         viewQuyenLoiVaNghiaVu = findViewById(R.id.viewQuyenVaNghiaVu);
         viewQuyenKhachHang = findViewById(R.id.viewQuyenKhachHang);
+        imbBackTurnOfUse = findViewById(R.id.imbBackTermOfUse);
     }
 
     private void addEvents() {
@@ -63,6 +66,12 @@ public class TermsOfUseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtQuyenKhachHang.setVisibility(txtQuyenKhachHang.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+            }
+        });
+        imbBackTurnOfUse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

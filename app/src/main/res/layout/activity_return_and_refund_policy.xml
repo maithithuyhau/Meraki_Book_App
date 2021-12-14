@@ -16,7 +16,7 @@
         android:weightSum="10">
 
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackReturn"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:background="@drawable/icon_back"
@@ -48,7 +48,9 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginTop="10dp"
-            android:text="@string/note_doi_tra_hoan_tien"/>
+            android:text="@string/note_doi_tra_hoan_tien"
+            android:textColor="@color/black"
+            />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -68,7 +70,8 @@
                 android:layout_height="match_parent"
                 android:text="@string/tieu_de_doi_tra"
                 android:textSize="16sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/black"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
@@ -90,7 +93,8 @@
             android:layout_marginEnd="24dp"
             android:layout_marginTop="10dp"
             android:text="@string/noi_dung_thoi_gian"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:textColor="@color/black"/>
         <TableLayout
             android:id="@+id/tbThoiGian"
             android:layout_width="match_parent"
@@ -106,7 +110,9 @@
                 android:layout_height="wrap_content"
                 android:background="@color/black"
                 android:layout_margin="1dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+
+                >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -117,6 +123,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -127,7 +134,8 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -137,6 +145,7 @@
                     android:layout_column="2"
                     android:gravity="center"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
 
             </TableRow>
@@ -159,6 +168,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -169,6 +179,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -177,7 +188,9 @@
                     android:layout_weight="2"
                     android:text="@string/PA_1"
                     android:gravity="center"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -196,6 +209,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -206,6 +220,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -214,7 +229,8 @@
                     android:layout_weight="2"
                     android:text="@string/PA_2"
                     android:gravity="center"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -233,6 +249,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -243,6 +260,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -251,7 +269,8 @@
                     android:layout_weight="2"
                     android:text="@string/PA_2"
                     android:gravity="center"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -270,6 +289,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -280,6 +300,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -288,7 +309,8 @@
                     android:layout_weight="2"
                     android:text="@string/PA_4"
                     android:gravity="center"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -307,6 +329,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -317,6 +340,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -325,7 +349,8 @@
                     android:layout_weight="2"
                     android:text="@string/PA_5"
                     android:gravity="center"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -344,6 +369,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -354,6 +380,7 @@
                     android:gravity="center"
                     android:layout_marginEnd="1dp"
                     android:background="@color/white"
+                    android:textColor="@color/black"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -362,7 +389,8 @@
                     android:layout_weight="2"
                     android:text="@string/PA_6"
                     android:gravity="center"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
             </TableRow>
         </TableLayout>
         <View
@@ -386,13 +414,15 @@
                 android:layout_height="match_parent"
                 android:text="@string/tieu_de_hoan_tien"
                 android:textSize="16sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/black"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_expand"
                 android:layout_weight="1"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <View
@@ -409,7 +439,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="24dp"
             android:text="@string/noi_dung_hoan_tien"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     </ScrollView>

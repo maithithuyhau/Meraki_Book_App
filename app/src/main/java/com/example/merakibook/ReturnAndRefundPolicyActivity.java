@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
@@ -13,6 +14,7 @@ public class ReturnAndRefundPolicyActivity extends AppCompatActivity {
     TextView txtThoiGian, txtHoanTien;
     View viewHoanTien;
     TableLayout tbThoiGian;
+    ImageButton imbBackReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class ReturnAndRefundPolicyActivity extends AppCompatActivity {
         txtHoanTien = findViewById(R.id.txtHoanTien);
         viewHoanTien = findViewById(R.id.viewHoanTien);
         tbThoiGian = findViewById(R.id.tbThoiGian);
+        imbBackReturn = findViewById(R.id.imbBackReturn);
     }
     private void addEvents() {
         lnThoiGian.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +49,12 @@ public class ReturnAndRefundPolicyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtHoanTien.setVisibility(txtHoanTien.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+            }
+        });
+        imbBackReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }
