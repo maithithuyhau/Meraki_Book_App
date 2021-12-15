@@ -33,13 +33,8 @@ public class Authors extends AppCompatActivity implements BookItemClickListener 
 
         linkViews();
         loadData();
-        initData();
     }
 
-    private void initData() {
-        List<Book>listCacTacPham = new ArrayList<>();
-        listCacTacPham.add(new Book("Lão Hạc", "Nam Cao", "150", "15,000", "76,000", "NXB Văn Học", "26-06-1996", "Bìa mềm", "14.5 x 20.5 cm", R.string.sach_moi, R.drawable.laohac, R.string.lao_hac));
-    }
 
     private void loadData() {
         Intent intent= getIntent();
