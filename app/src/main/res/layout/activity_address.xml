@@ -75,7 +75,7 @@
                     android:textStyle="bold"/>
 
                 <EditText
-                    android:id="@+id/txtDcName"
+                    android:id="@+id/edtDcName"
                     android:layout_width="208dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -100,7 +100,7 @@
                     android:textColor="@color/green"
                     android:textStyle="bold"/>
                 <EditText
-                    android:id="@+id/txtDcPhone"
+                    android:id="@+id/edtDcPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -127,7 +127,7 @@
                     android:textStyle="bold"/>
 
                 <EditText
-                    android:id="@+id/txtDcAddress"
+                    android:id="@+id/edtDcAddress"
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
