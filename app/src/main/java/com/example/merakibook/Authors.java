@@ -1,18 +1,26 @@
 package com.example.merakibook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
 
-public class Authors extends AppCompatActivity implements BookItemClickListener {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Authors extends AppCompatActivity implements BookItemClickListener {
+    private TextView txtTenTacGia1, txtTenTacGia2, txtNamSinh, txtNamMat, txtSoLuongTacPham, txtQueQuan, txtTomTat;
+    private ImageView imvAuthor;
+    private RecyclerView rcvCacTacPham;
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
 
@@ -22,6 +30,45 @@ public class Authors extends AppCompatActivity implements BookItemClickListener 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authors);
+
+        linkViews();
+        loadData();
+    }
+
+
+    private void loadData() {
+        Intent intent= getIntent();
+        String authorName=intent.getExtras().getString("AuthorName");
+        String authorPlaceOfBirth= intent.getExtras().getString("PlaceOfBirth");
+        String authorBirth=intent.getExtras().getString("AuthorBirth");
+        String authorDeath= intent.getExtras().getString("AuthorDeath");
+        String authorTotalBook= intent.getExtras().getString("TotalBook");
+
+        int authorSummary= intent.getExtras().getInt("AuthorSummary");
+        int authorImage =intent.getExtras().getInt("AuthorImage");
+
+        imvAuthor.setImageResource(authorImage);
+
+        txtTenTacGia1.setText(authorName);
+        txtNamSinh.setText(authorBirth);
+        txtNamMat.setText(authorDeath);
+        txtQueQuan.setText(authorPlaceOfBirth);
+        txtSoLuongTacPham.setText(authorTotalBook);
+        txtTomTat.setText(authorSummary);
+    }
+
+    private void linkViews() {
+        txtTenTacGia1=findViewById(R.id.txtTenTacGia1);
+        txtTenTacGia2=findViewById(R.id.txtTenTacGia2);
+        txtNamSinh=findViewById(R.id.txtNamSinh);
+        txtNamMat=findViewById(R.id.txtNamMat);
+        txtQueQuan=findViewById(R.id.txtQueQuan);
+        txtSoLuongTacPham=findViewById(R.id.txtSoLuongTacPham);
+        txtTomTat=findViewById(R.id.txtTomTat);
+
+        rcvCacTacPham=findViewById(R.id.rcvCacTacPham);
+
+        imvAuthor=findViewById(R.id.imvAuthor);
     }
 
     @Override

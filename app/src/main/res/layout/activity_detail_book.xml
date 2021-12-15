@@ -46,7 +46,6 @@
 
             <ImageView
                 android:id="@+id/imvDetail_Images"
-
                 android:layout_width="110dp"
                 android:layout_height="170dp"
                 android:layout_marginTop="28dp"

@@ -22,7 +22,7 @@ public class ViewPaperAdapterLogin extends FragmentStatePagerAdapter {
     private LoginFragment loginFragment;
     private SignUpFragment signupFragment;
 
-    public ViewPaperAdapterLogin(FragmentManager supportFragmentManager) {
+    public ViewPaperAdapterLogin(FragmentManager supportFragmentManager, int behaviorResumeOnlyCurrentFragment) {
         super(supportFragmentManager);
         loginFragment = new LoginFragment();
         signupFragment = new SignUpFragment();
