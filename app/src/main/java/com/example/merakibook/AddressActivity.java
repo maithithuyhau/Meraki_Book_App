@@ -53,8 +53,8 @@ public class AddressActivity extends AppCompatActivity {
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             String nameData = edtDcName.getText().toString().trim();
-            String phoneData = edtDcName.getText().toString().trim();
-            String addressData = edtDcName.getText().toString().trim();
+            String phoneData = edtDcPhone.getText().toString().trim();
+            String addressData = edtDcAddress.getText().toString().trim();
 
             if(!nameData.isEmpty() && !phoneData.isEmpty() && ! addressData.isEmpty()){
                 btnDcLuuThongTin.setEnabled(true);
