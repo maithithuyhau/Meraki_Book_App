@@ -24,6 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="39dp"
             android:hint="@string/hint_email_sdt"
+            android:inputType="phone|textEmailAddress"
+            android:textSize="14sp"
             android:paddingStart="50dp" />
 
     </LinearLayout>
@@ -46,6 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="39dp"
             android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
             android:paddingStart="50dp"/>
     </LinearLayout>
     <TextView
@@ -53,6 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/edt_forgot_password"
+        android:textSize="14sp"
+        android:textColor="@color/black"
         android:layout_marginTop="120dp"
         android:layout_gravity="center_horizontal"/>
     <Button
@@ -60,6 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_dang_nhap"
+        android:textSize="16sp"
         android:textColor="@color/white"
         android:background="@drawable/bg_item_login"
         android:layout_marginTop="160dp"

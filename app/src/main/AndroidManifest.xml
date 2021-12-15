@@ -23,7 +23,11 @@
         <activity
             android:name=".AddressActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".VipActivity"
@@ -56,7 +60,9 @@
             android:exported="true"/>
         <activity
             android:name=".Intro2Activity"
-            android:exported="true"/>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".ReturnAndRefundPolicyActivity"
             android:exported="true"/>
@@ -80,27 +86,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" >
-
-
-        </activity>
-        <activity
-            android:name=".QRcodeActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".PaymentOptionActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".BookListCatogoryActivity"
-            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
