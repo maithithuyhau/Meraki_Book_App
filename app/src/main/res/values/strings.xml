@@ -110,6 +110,7 @@
     <string name="txt_tittle_horror">Trinh thám</string>
     <string name="txt_sort">Sắp xếp</string>
     <string-array name="sp_sort">
+        <item>Tất cả</item>
         <item>Mới nhất</item>
         <item>Cũ nhất</item>
         <item>Bán chạy</item>
