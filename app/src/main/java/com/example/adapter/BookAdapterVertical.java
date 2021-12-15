@@ -70,7 +70,7 @@ public class BookAdapterVertical extends RecyclerView.Adapter<BookAdapterVertica
             itemView.findViewById(R.id.btnRead).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    bookItemClickListener.onBookClick(books.get(getAdapterPosition()),imvBookVer);
                 }
             });
         }
