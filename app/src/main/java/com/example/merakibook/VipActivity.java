@@ -12,11 +12,13 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class VipActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnDangKyNgay;
     TextView txtKhungGia3, txtKhungGia2, txtKhungGia1;
-    Drawable bgKhung1, bgKhung2, bgKhung3;
+    private FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +45,6 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
     }
     @Override
     public void onClick(View view) {
-//        bgKhung1 = txtKhungGia1.getBackground();
-//        bgKhung2 = txtKhungGia2.getBackground();
-//        bgKhung3 = txtKhungGia3.getBackground();
         switch (view.getId()){
             case R.id.txtKhungGia1:
                 txtKhungGia1.setBackgroundResource(R.drawable.vip_border);
@@ -73,28 +72,30 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
                 Dialog dialog = new Dialog(VipActivity.this);
                 dialog.setContentView(R.layout.popup_vip);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//                Button btnBatDau = dialog.findViewById(R.id.btnBatDau);
-//                btnBatDau.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        Intent intent = new Intent(VipActivity.this, HomePageActivity.class);
-//                        startActivity(intent);
-//
-//                        finish();
-//
-//                    }
-//                });
+                Button btnBatDau = dialog.findViewById(R.id.btnBatDau);
+                btnBatDau.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        toHomePage();
+                        dialog.dismiss();
+
+                    }
+                });
                 dialog.setCanceledOnTouchOutside(false);
                 dialog.show();
             }
         });
-//        txtKhungGia1.setOnClickListener(new View.OnClickListener() {
-//            Drawable background = txtKhungGia1.getBackground();
-//            @Override
-//            public void onClick(View view) {
-//                txtKhungGia1.setBackgroundResource(R.drawable.vip_border);
-//            }
-//        });
+
+    }
+
+    private void toHomePage() {
+//        manager = getSupportFragmentManager();
+//        FragmentTransaction transaction = manager.beginTransaction();
+//        transaction.replace(R.id.layoutVip, new HomePageFragment());
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+        Intent intent = new Intent(VipActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 
 

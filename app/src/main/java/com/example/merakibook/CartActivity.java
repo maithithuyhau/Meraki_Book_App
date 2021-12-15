@@ -30,6 +30,7 @@ public class CartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
         linkView();
         initData();
+        addEvent();
 
     }
 
@@ -53,6 +54,16 @@ public class CartActivity extends AppCompatActivity {
 
         rcvGioHang.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
 
+    }
+
+    private void addEvent() {
+        btnMuaHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CartActivity.this, AddressActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
