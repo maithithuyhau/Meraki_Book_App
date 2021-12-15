@@ -81,6 +81,16 @@
             android:name=".MainActivity"
             android:exported="true" >
 
+
+        </activity>
+        <activity
+            android:name=".QRcodeActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".PaymentOptionActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

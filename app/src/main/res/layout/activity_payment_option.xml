@@ -207,11 +207,12 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/txtPricePayment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:gravity="end"
-            android:text="23.000đ"
+            android:text="68.000đ"
             android:textColor="@color/red"
             android:textSize="16sp"
             android:textStyle="bold"/>
