@@ -20,7 +20,7 @@ public class Author {
         return authorName;
     }
 
-    public void setAuthorName(String authorName) {
+    public void setAuthorName(String authorName1) {
         this.authorName = authorName;
     }
 

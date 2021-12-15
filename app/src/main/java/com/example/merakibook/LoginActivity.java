@@ -20,29 +20,31 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.zip.Inflater;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Fragment {
 
+    View view;
     ViewPaperAdapterLogin viewPaperAdapterLogin;
     TabLayout tabLayout;
     ViewPager viewPager;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.activity_my_book,container,false);
 
-        initView();
-        viewPaperAdapterLogin= new ViewPaperAdapterLogin(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        linkView();
+
+        viewPaperAdapterLogin = new ViewPaperAdapterLogin(getChildFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(viewPaperAdapterLogin);
         tabLayout.setupWithViewPager(viewPager);
 
+        return view;
     }
 
-    private void initView() {
-        viewPager = findViewById(R.id.vp_login);
-
-        tabLayout = findViewById(R.id.tl_login);
-
+    private void linkView() {
+        viewPager = view.findViewById(R.id.vp_login);
+        tabLayout = view.findViewById(R.id.tl_login);
     }
+
 }
 

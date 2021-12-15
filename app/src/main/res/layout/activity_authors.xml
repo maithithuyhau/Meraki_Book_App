@@ -29,6 +29,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
+                    android:id="@+id/imvAuthor"
                     android:layout_width="153dp"
                     android:layout_height="198dp"
                     android:src="@drawable/namcao" />
@@ -41,6 +42,7 @@
                     android:gravity="center_vertical">
 
                     <TextView
+                        android:id="@+id/txtTenTacGia1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nha_van_nam_cao"
@@ -62,6 +64,7 @@
                             android:textColor="@color/black"/>
 
                         <TextView
+                            android:id="@+id/txtTenTacGia2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/tran_huu_tri"
@@ -83,6 +86,7 @@
                             android:textColor="@color/black"/>
 
                         <TextView
+                            android:id="@+id/txtNamSinh"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_29_10_1915"
@@ -102,6 +106,7 @@
                             android:textSize="14sp"
                             android:textColor="@color/black"/>
                         <TextView
+                            android:id="@+id/txtNamMat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_28_11_1951"
@@ -121,6 +126,7 @@
                             android:textSize="14sp"
                             android:textColor="@color/black"/>
                         <TextView
+                            android:id="@+id/txtQueQuan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/ha_nam"
@@ -139,6 +145,7 @@
                             android:textSize="14sp"
                             android:textColor="@color/black"/>
                         <TextView
+                            android:id="@+id/txtSoLuongTacPham"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/tren_50"
@@ -172,7 +179,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/txtTomTat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -214,8 +221,8 @@
                     android:gravity="end"/>
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvCacTacPham"
                 android:layout_width="356dp"
-
                 android:layout_height="198dp"
                 android:layout_marginTop="17dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -239,7 +246,7 @@
         <ImageView
             android:id="@+id/btnBack"
             android:layout_width="15dp"
-            android:layout_height="20dp"
+            android:layout_height="25dp"
             android:layout_marginStart="24dp"
             android:layout_weight="0.5"
             android:src="@drawable/icon_back" />
