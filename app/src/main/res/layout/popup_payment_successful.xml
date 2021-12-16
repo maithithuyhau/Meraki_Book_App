@@ -52,6 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:text="Mọi thông tin thắc mắc về đơn hàng, bạn vui lòng
 liên hệ đến Hotline 0166 45 45 450 vào giờ hành chính."
             android:textColor="@color/black"
@@ -66,7 +68,7 @@ liên hệ đến Hotline 0166 45 45 450 vào giờ hành chính."
             android:textSize="14sp" />
 
         <Button
-            android:id="@+id/btnMuaSach"
+            android:id="@+id/btnDocNgay"
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:layout_marginStart="24dp"

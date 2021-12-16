@@ -5,7 +5,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ActivityOptions;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -30,7 +33,9 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     txtPriceEbook, txtPriceBook ;
     private ImageView imvImages, imvHinh, imvComment;
     private RecyclerView rcvcung_the_loai;
-    private Button btnMuaSach;
+    private Button btnMuaSach, btnDocNgay, btnDoc;
+    Dialog dialog;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +44,8 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         loadData();
         initData();
         addEvent();
+
+
     }
 
     @Override
@@ -68,7 +75,9 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         imvHinh=findViewById(R.id.imvHinh);
         imvComment=findViewById(R.id.imvComment);
 
-        btnMuaSach=findViewById(R.id.btnMuaSach);
+        btnMuaSach=findViewById(R.id.btnDocNgay);
+        btnDocNgay=findViewById(R.id.btnDocNgay);
+        btnDoc=findViewById(R.id.btnDoc);
     }
 
     private void loadData() {
@@ -129,6 +138,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     }
 
     private void addEvent() {
+        dialog=new Dialog(this);
         btnMuaSach.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -140,9 +150,10 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         switch (menuItem.getItemId()){
                             case R.id.muabook:
-
+                            ShowPopup();
                                 return true;
                             case R.id.muaebook:
+
 //
                                 return true;
                             default:
@@ -161,7 +172,28 @@ imvComment.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
+        btnDoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
+                startActivity(intent);
+            }
+        });
     }
+    public void ShowPopup(){
+        dialog.setContentView(R.layout.popup_payment_successful);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.show();
+        btnDocNgay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
+                startActivity(intent);
+            }
+        });
+
+    }
+
 
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
