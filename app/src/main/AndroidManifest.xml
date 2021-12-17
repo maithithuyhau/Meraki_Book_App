@@ -41,6 +41,7 @@
             android:name=".PaymentActivity"
             android:exported="true">
 
+
         </activity>
         <activity
             android:name=".DeliveryActivity"
@@ -79,6 +80,7 @@
             android:exported="true">
 
         </activity>
+
         <activity
             android:name=".DetailBookActivity"
             android:exported="true" />
@@ -90,7 +92,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
