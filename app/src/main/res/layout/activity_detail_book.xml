@@ -558,7 +558,7 @@ android:background="@drawable/backgroudshadow"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btnMuaSach"
+            android:id="@+id/btnDocNgay"
             android:layout_width="130dp"
             android:layout_height="50dp"
             android:drawableTint="@color/black"
