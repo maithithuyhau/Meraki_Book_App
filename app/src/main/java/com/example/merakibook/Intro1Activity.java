@@ -19,6 +19,8 @@ public class Intro1Activity extends AppCompatActivity {
         addEvent();
     }
 
+    private void linkViews() { btnIntro1Next=findViewById(R.id.btnIntro1Next); }
+
     private void addEvent() {
         btnIntro1Next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +30,4 @@ public class Intro1Activity extends AppCompatActivity {
             }
         });
     }
-
-    private void linkViews() { btnIntro1Next=findViewById(R.id.btnIntro1Next); }
 }

@@ -28,16 +28,6 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
     private RecyclerView rcvCacTacPham;
 
     @Override
-    public void onBookClick(Book book, ImageView bookImageView) {
-
-    }
-
-    @Override
-    public void onAuthorClick(Author author, CircleImageView authorImage) {
-
-    }
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authors);
@@ -45,6 +35,22 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
         linkViews();
         loadData();
         addEvent();
+    }
+
+
+    private void linkViews() {
+        txtTenTacGia1=findViewById(R.id.txtTenTacGia1);
+        txtTenTacGia2=findViewById(R.id.txtTenTacGia2);
+        txtNamSinh=findViewById(R.id.txtNamSinh);
+        txtNamMat=findViewById(R.id.txtNamMat);
+        txtQueQuan=findViewById(R.id.txtQueQuan);
+        txtSoLuongTacPham=findViewById(R.id.txtSoLuongTacPham);
+        txtTomTat=findViewById(R.id.txtTomTat);
+        txtXemTatCa=findViewById(R.id.txtXemTatCa);
+
+        rcvCacTacPham=findViewById(R.id.rcvCacTacPham);
+
+        imvAuthor=findViewById(R.id.imvAuthor);
     }
 
     private void addEvent() {
@@ -56,7 +62,6 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
             }
         });
     }
-
 
     private void loadData() {
         Intent intent= getIntent();
@@ -79,18 +84,14 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
         txtTomTat.setText(authorSummary);
     }
 
-    private void linkViews() {
-        txtTenTacGia1=findViewById(R.id.txtTenTacGia1);
-        txtTenTacGia2=findViewById(R.id.txtTenTacGia2);
-        txtNamSinh=findViewById(R.id.txtNamSinh);
-        txtNamMat=findViewById(R.id.txtNamMat);
-        txtQueQuan=findViewById(R.id.txtQueQuan);
-        txtSoLuongTacPham=findViewById(R.id.txtSoLuongTacPham);
-        txtTomTat=findViewById(R.id.txtTomTat);
+    @Override
+    public void onBookClick(Book book, ImageView bookImageView) {
 
-        rcvCacTacPham=findViewById(R.id.rcvCacTacPham);
+    }
 
-        imvAuthor=findViewById(R.id.imvAuthor);
+    @Override
+    public void onAuthorClick(Author author, CircleImageView authorImage) {
+
     }
 
     @Override
