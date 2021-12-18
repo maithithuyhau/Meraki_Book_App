@@ -12,27 +12,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.merakibook.R;
 import com.example.model.Author;
-
+import com.example.model.AuthorItemClickListener;
+import com.example.model.BookItemClickListener;
 
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapter.ViewHolder> {
     Context context;
     ArrayList<Author> authors;
+    AuthorItemClickListener authorItemClickListener;
 
-    public AuthorSearchAdapter(Context context, ArrayList<Author> authors) {
+    public AuthorSearchAdapter(Context context, ArrayList<Author> authors, AuthorItemClickListener authorItemClickListener) {
         this.context = context;
         this.authors = authors;
+        this.authorItemClickListener = authorItemClickListener;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View customView = inflater.inflate(R.layout.item_author_horizontal, parent, false);
+        View view= LayoutInflater.from(context).inflate(R.layout.item_author_horizontal,parent,false);
 
-        return new ViewHolder((customView));
+        return new ViewHolder((view));
     }
 
     @Override
@@ -47,7 +51,7 @@ public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imvTacGiaImage;
+        CircleImageView imvTacGiaImage;
         TextView txtTacGiaView;
 
         public ViewHolder(@NonNull View itemView) {
@@ -55,6 +59,13 @@ public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapte
 
             imvTacGiaImage = itemView.findViewById(R.id.imvTacGiaImage);
             txtTacGiaView = itemView.findViewById(R.id.txtTacGiaView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    authorItemClickListener.onAuthorClick(authors.get(getAdapterPosition()),imvTacGiaImage);
+                }
+            });
         }
     }
 }

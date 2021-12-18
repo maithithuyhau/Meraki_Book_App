@@ -47,214 +47,225 @@
                 />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcvItemThanhToan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp">
-        </androidx.recyclerview.widget.RecyclerView>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="13">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/dia_chi_nhan_hang"
-                android:textColor="@color/green"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtTtDiaChi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:textColor="@color/black"
-                android:text="@string/dia_chi"
-                android:textSize="14sp" />
-
-            <ImageButton
-                android:id="@+id/btnTtDiaChiNext"
-                android:layout_width="10dp"
-                android:layout_height="20dp"
-                android:layout_rowSpan="2"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/icon_next" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_columnSpan="2"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/don_vi_van_chuyen"
-                android:textColor="@color/green"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtTtDonViVanChuyen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="5"
-                android:layout_column="0"
-                android:textColor="@color/black"
-                android:text="@string/don_vi"
-                android:textSize="14sp" />
-
-            <ImageButton
-                android:id="@+id/btnTtGiaoHangNext"
-                android:layout_width="10dp"
-                android:layout_height="20dp"
-                android:layout_rowSpan="2"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/icon_next" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_columnSpan="2"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/phuong_thuc_thanh_toan"
-                android:textColor="@color/green"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtTtPhuongThuc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="9"
-                android:layout_column="0"
-                android:text="@string/phuong_thuc"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <ImageButton
-                android:id="@+id/btnTtPhuongThucNext"
-                android:layout_width="10dp"
-                android:layout_height="20dp"
-                android:layout_rowSpan="2"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/icon_next" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_columnSpan="2"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tam_tinh"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/txtTtTamTinh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tien_tam_tinh"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/phi_van_chuyen"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/txtTtTienVanChuyen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/tien_van_chuyen"
-                android:textSize="16sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_columnSpan="2"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tong_cong"
-                android:textColor="@color/green"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"/>
-
-            <TextView
-                android:id="@+id/txtTtTongCong"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tien_tong_cong"
-                android:textColor="@color/red"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"/>
-        </GridLayout>
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@color/light_skin"
-            android:layout_marginTop="10dp">
-            <TextView
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvItemThanhToan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dong_y_dieu_khoan"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_marginTop="5dp"
-                android:gravity="center_horizontal"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dieu_khoan"
-                android:textColor="@color/yellow"
-                android:textSize="16sp"
-                android:gravity="center_horizontal"
-                android:layout_marginBottom="5dp"/>
-        </LinearLayout>
+                android:layout_margin="24dp">
+            </androidx.recyclerview.widget.RecyclerView>
 
-        <Button
-            android:id="@+id/btnTtDatHang"
-            android:layout_width="155dp"
-            android:layout_height="50dp"
-            android:background="@drawable/background_btn"
-            android:text="@string/dat_hang"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
-    </LinearLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="13">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia_chi_nhan_hang"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtTtDiaChi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:textColor="@color/black"
+                    android:text="@string/dia_chi"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/btnTtDiaChiNext"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_rowSpan="2"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/icon_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_vi_van_chuyen"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtTtDonViVanChuyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:textColor="@color/black"
+                    android:text="@string/don_vi"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/btnTtGiaoHangNext"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_rowSpan="2"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/icon_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phuong_thuc_thanh_toan"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtTtPhuongThuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:text="@string/phuong_thuc"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/btnTtPhuongThucNext"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_rowSpan="2"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/icon_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tam_tinh"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtTtTamTinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tien_tam_tinh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/phi_van_chuyen"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtTtTienVanChuyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/tien_van_chuyen"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tong_cong"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtTtTongCong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tien_tong_cong"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"/>
+            </GridLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@color/light_skin"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dong_y_dieu_khoan"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dieu_khoan"
+                    android:textColor="@color/yellow"
+                    android:textSize="16sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnTtDatHang"
+                android:layout_width="155dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_btn"
+                android:text="@string/dat_hang"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
 
 </LinearLayout>

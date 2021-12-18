@@ -62,9 +62,11 @@ public class DeliveryActivity extends AppCompatActivity {
 
                     chkNgayNhanTietKiem.setEnabled(false);
                     chkNgayNhanViettel.setEnabled(false);
+                    btnDvDongY.setEnabled(true);
                 }else {
                     chkNgayNhanTietKiem.setEnabled(true);
                     chkNgayNhanViettel.setEnabled(true);
+                    btnDvDongY.setEnabled(false);
                 }
             }else if(compoundButton.getId() == R.id.chkNgayNhanTietKiem){
                 if(b){
@@ -73,9 +75,11 @@ public class DeliveryActivity extends AppCompatActivity {
 
                     chkNgayNhanNhanh.setEnabled(false);
                     chkNgayNhanViettel.setEnabled(false);
+                    btnDvDongY.setEnabled(true);
                 }else {
                     chkNgayNhanNhanh.setEnabled(true);
                     chkNgayNhanViettel.setEnabled(true);
+                    btnDvDongY.setEnabled(false);
                 }
             }else if(compoundButton.getId() == R.id.chkNgayNhanViettel){
                 if(b){
@@ -84,9 +88,11 @@ public class DeliveryActivity extends AppCompatActivity {
 
                     chkNgayNhanNhanh.setEnabled(false);
                     chkNgayNhanTietKiem.setEnabled(false);
+                    btnDvDongY.setEnabled(true);
                 }else {
                     chkNgayNhanNhanh.setEnabled(true);
                     chkNgayNhanTietKiem.setEnabled(true);
+                    btnDvDongY.setEnabled(false);
                 }
             }
 

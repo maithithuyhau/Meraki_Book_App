@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="10dp"
-                    android:text="@string/ten"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="10dp"
-                    android:text="0385888333"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -151,7 +151,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="10dp"
                     android:inputType="textMultiLine"
-                    android:text="@string/dia_chi"
+                    android:text=""
                     android:textSize="16sp" />
             </TableRow>
         </TableLayout>
@@ -180,7 +180,8 @@
             android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:enabled="false"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     
