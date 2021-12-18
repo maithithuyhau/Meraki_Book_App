@@ -1,5 +1,7 @@
 package com.example.merakibook.mybookfragment;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.adapter.BookAdapterVertical;
+import com.example.adapter.BookAdapterVerticalFragment;
+import com.example.merakibook.DetailBookActivity;
 import com.example.merakibook.R;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
@@ -23,7 +27,7 @@ public class MyEbookFragment extends Fragment implements BookItemClickListener {
     View view;
     RecyclerView rcvMyEbook;
     ArrayList<Book> myEbook;
-    BookAdapterVertical bookAdapterVertical;
+    BookAdapterVerticalFragment bookAdapterVertical;
 
     public MyEbookFragment() {
         // Required empty public constructor
@@ -42,7 +46,7 @@ public class MyEbookFragment extends Fragment implements BookItemClickListener {
         linkView();
         initData();
 
-        bookAdapterVertical = new BookAdapterVertical(getContext(),myEbook,this);
+        bookAdapterVertical = new BookAdapterVerticalFragment(myEbook,this);
         rcvMyEbook.setLayoutManager(new LinearLayoutManager(getActivity()));
         rcvMyEbook.setAdapter(bookAdapterVertical);
 
@@ -64,6 +68,24 @@ public class MyEbookFragment extends Fragment implements BookItemClickListener {
 
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
+        Intent intent=new Intent(getActivity(), DetailBookActivity.class);
+        intent.putExtra("Title",book.getBookName());
+        intent.putExtra("Summary",book.getBookSummary());
+        intent.putExtra("Image",book.getBookImage());
+        intent.putExtra("Author",book.getBookAuthor());
+        intent.putExtra("Page",book.getBookPage());
+        intent.putExtra("EbookPrice",book.getEbookPrice());
+        intent.putExtra("bookPrice",book.getBookPrice());
+        intent.putExtra("Publisher",book.getBookPublisher());
+        intent.putExtra("DateTime",book.getDateTime());
+        intent.putExtra("LoaiBia",book.getLoaiBia());
+        intent.putExtra("BookSize",book.getBookSize());
 
+
+//        startActivity(intent);
+
+        //Animation
+        ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(getActivity(), bookImageView,"sharedName");
+        startActivity(intent,options.toBundle());
     }
 }

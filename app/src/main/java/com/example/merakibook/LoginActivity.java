@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
@@ -13,6 +15,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.adapter.ViewPaperAdapterLogin;
 import com.example.adapter.ViewPaperAdapterMyBook;
@@ -20,30 +24,55 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.zip.Inflater;
 
-public class LoginActivity extends Fragment {
+public class LoginActivity extends AppCompatActivity {
 
-    View view;
-    ViewPaperAdapterLogin viewPaperAdapterLogin;
-    TabLayout tabLayout;
-    ViewPager viewPager;
+    Fragment fragment;
+    Button btnDangKy, btnDangNhap;
+    LinearLayout linearLayoutContainer;
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.activity_my_book,container,false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         linkView();
-
-        viewPaperAdapterLogin = new ViewPaperAdapterLogin(getChildFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        viewPager.setAdapter(viewPaperAdapterLogin);
-        tabLayout.setupWithViewPager(viewPager);
-
-        return view;
+        addEvent();
     }
 
+    private void addEvent() {
+        btnDangNhap.setOnClickListener(myClick);
+        btnDangKy.setOnClickListener(myClick);
+    }
+
+    View.OnClickListener myClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            FragmentManager manager = getSupportFragmentManager();
+            FragmentTransaction transaction = manager.beginTransaction();
+            switch (view.getId()){
+                case R.id.btnDangNhap:
+                    fragment = new LoginFragment();
+                    break;
+                case R.id.btnDangKy:
+                    fragment = new SignUpFragment();
+                    break;
+                default:
+                    fragment = new LoginFragment();
+                    break;
+            }
+
+            transaction.replace(R.id.linearLayoutContainer, fragment);
+            transaction.commit();
+        }
+    };
+
+
     private void linkView() {
-        viewPager = view.findViewById(R.id.vp_login);
-        tabLayout = view.findViewById(R.id.tl_login);
+        btnDangKy = findViewById(R.id.btnDangKy);
+        btnDangNhap = findViewById(R.id.btnDangNhap);
+
+        linearLayoutContainer = findViewById(R.id.linearLayoutContainer);
+
     }
 
 }

@@ -3,6 +3,7 @@ package com.example.merakibook;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,18 +12,28 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.model.Author;
+import com.example.model.AuthorItemClickListener;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Authors extends AppCompatActivity implements BookItemClickListener {
-    private TextView txtTenTacGia1, txtTenTacGia2, txtNamSinh, txtNamMat, txtSoLuongTacPham, txtQueQuan, txtTomTat;
-    private ImageView imvAuthor;
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class Authors extends AppCompatActivity implements BookItemClickListener, AuthorItemClickListener {
+    private TextView txtTenTacGia1, txtTenTacGia2, txtNamSinh, txtNamMat, txtSoLuongTacPham, txtQueQuan, txtTomTat, txtXemTatCa;
+    private CircleImageView imvAuthor;
     private RecyclerView rcvCacTacPham;
+
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
+
+    }
+
+    @Override
+    public void onAuthorClick(Author author, CircleImageView authorImage) {
 
     }
 
@@ -33,6 +44,17 @@ public class Authors extends AppCompatActivity implements BookItemClickListener 
 
         linkViews();
         loadData();
+        addEvent();
+    }
+
+    private void addEvent() {
+        txtXemTatCa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(Authors.this, BooksOfAuthorActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -44,7 +66,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener 
         String authorDeath= intent.getExtras().getString("AuthorDeath");
         String authorTotalBook= intent.getExtras().getString("TotalBook");
 
-        int authorSummary= intent.getExtras().getInt("AuthorSummary");
+        String authorSummary= intent.getExtras().getString("AuthorSummary");
         int authorImage =intent.getExtras().getInt("AuthorImage");
 
         imvAuthor.setImageResource(authorImage);
@@ -74,5 +96,9 @@ public class Authors extends AppCompatActivity implements BookItemClickListener 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return null;
+    }
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

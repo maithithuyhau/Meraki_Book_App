@@ -74,4 +74,7 @@ public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHoriz
             });
         }
     }
+
+    public class ViewHolder {
+    }
 }
