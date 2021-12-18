@@ -215,7 +215,8 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/light_skin"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:id="@+id/layoutChinhSach">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -244,7 +245,8 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@color/light_skin"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:id="@+id/layoutGioiThieu">
 
             <TextView
                 android:layout_width="wrap_content"
