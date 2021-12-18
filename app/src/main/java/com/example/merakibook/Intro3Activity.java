@@ -24,7 +24,7 @@ public class Intro3Activity extends AppCompatActivity {
         btnIntro3Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intro3Activity.this, LoginActivity.class);
+                Intent intent = new Intent(Intro3Activity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

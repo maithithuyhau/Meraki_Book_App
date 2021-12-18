@@ -23,9 +23,10 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Authors extends AppCompatActivity implements BookItemClickListener, AuthorItemClickListener {
-    private TextView txtTenTacGia1, txtTenTacGia2, txtNamSinh, txtNamMat, txtSoLuongTacPham, txtQueQuan, txtTomTat;
+    private TextView txtTenTacGia1, txtTenTacGia2, txtNamSinh, txtNamMat, txtSoLuongTacPham, txtQueQuan, txtTomTat, txtXemTatCa;
     private CircleImageView imvAuthor;
     private RecyclerView rcvCacTacPham;
+
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
 
@@ -43,6 +44,17 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
 
         linkViews();
         loadData();
+        addEvent();
+    }
+
+    private void addEvent() {
+        txtXemTatCa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(Authors.this, BooksOfAuthorActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
