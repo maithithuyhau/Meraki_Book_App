@@ -11,10 +11,13 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -34,7 +37,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     private ImageView imvImages, imvHinh, imvComment;
     private RecyclerView rcvcung_the_loai;
     private Button btnMuaSach, btnDocNgay, btnDoc;
-    Dialog dialog;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,7 +78,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         imvHinh=findViewById(R.id.imvHinh);
         imvComment=findViewById(R.id.imvComment);
 
-        btnMuaSach=findViewById(R.id.btnDocNgay);
+        btnMuaSach=findViewById(R.id.btnMuaSach);
         btnDocNgay=findViewById(R.id.btnDocNgay);
         btnDoc=findViewById(R.id.btnDoc);
     }
@@ -138,7 +141,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     }
 
     private void addEvent() {
-        dialog=new Dialog(this);
+
         btnMuaSach.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -150,10 +153,10 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         switch (menuItem.getItemId()){
                             case R.id.muabook:
-                            ShowPopup();
+
                                 return true;
                             case R.id.muaebook:
-
+                                ShowPopup(Gravity.CENTER);
 //
                                 return true;
                             default:
@@ -179,19 +182,38 @@ imvComment.setOnClickListener(new View.OnClickListener() {
                 startActivity(intent);
             }
         });
-    }
-    public void ShowPopup(){
-        dialog.setContentView(R.layout.popup_payment_successful);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.show();
-        btnDocNgay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
-                startActivity(intent);
-            }
-        });
+//        btnDocNgay.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
+//                startActivity(intent);
+//            }
+//        });
 
+
+
+    }
+    public void ShowPopup(int gravity){
+        final Dialog dialog=new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.popup_payment_successful);
+
+        Window window=dialog.getWindow();
+        if(window==null){
+            return;
+        }
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        WindowManager.LayoutParams windowAttributes = window.getAttributes();
+        window.setAttributes(windowAttributes);
+        if(Gravity.CENTER==gravity){
+            dialog.setCancelable(true);
+        }else{
+            dialog.setCancelable(false);
+        }
+//
+
+        dialog.show();
     }
 
 
