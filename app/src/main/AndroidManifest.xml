@@ -15,6 +15,26 @@
             android:exported="true" >
 
         </activity>
+        <activity
+            android:name=".MyRatingActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".AboutMerakiBook"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".RecentlyBookActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".PurchaseOrderActivity"
+            android:exported="true" >
+
+        </activity>
 
         <activity
             android:name=".VipActivity"
@@ -63,12 +83,7 @@
         <activity
             android:name=".Intro3Activity"
             android:exported="true" />
-        <activity
-            android:name=".PurchaseOrderActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".AboutMerakiBook"
-            android:exported="true"/>
+
         <activity
             android:name=".Intro2Activity"
             android:exported="true"/>

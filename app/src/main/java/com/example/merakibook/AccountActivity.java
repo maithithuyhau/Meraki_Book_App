@@ -22,7 +22,6 @@ import android.widget.TextView;
 
 public class AccountActivity extends Fragment {
 
-    private ImageButton btnAcGioiThieuNext;
     private Button btnAcSaw, btnAcRate,btnAcCart;
     View view;
 
@@ -36,13 +35,6 @@ public class AccountActivity extends Fragment {
         linkView();
         addEvent();
 
-//        btnAcGioiThieuNext.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(getActivity(),AboutMerakiBook.class);
-//                startActivity(intent);
-//            }
-//        });
 
         return view;
 
@@ -51,7 +43,6 @@ public class AccountActivity extends Fragment {
     private void linkView() {
         layoutChinhSach = view.findViewById(R.id.layoutChinhSach);
         layoutGioiThieu = view.findViewById(R.id.layoutGioiThieu);
-        btnAcGioiThieuNext=view.findViewById(R.id.btnAcGioiThieuNext);
         btnAcCart = view.findViewById(R.id.btnAcCart);
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
@@ -61,7 +52,8 @@ public class AccountActivity extends Fragment {
         btnAcCart.setOnClickListener(myClick);
         btnAcSaw.setOnClickListener(myClick);
         btnAcRate.setOnClickListener(myClick);
-        btnAcGioiThieuNext.setOnClickListener(myClick);
+        layoutGioiThieu.setOnClickListener(myClick);
+        layoutChinhSach.setOnClickListener(myClick);
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {
@@ -81,32 +73,17 @@ public class AccountActivity extends Fragment {
                     intent = new Intent(getActivity(),MyRatingActivity.class);
                     startActivity(intent);
                     break;
-                case R.id.btnAcGioiThieuNext:
+                case R.id.layoutGioiThieu:
                     intent = new Intent(getActivity(),AboutMerakiBook.class);
+                    startActivity(intent);
+                    break;
+                case R.id.layoutChinhSach:
+                    intent = new Intent(getActivity(),PolicyActivity.class);
                     startActivity(intent);
                     break;
 
             }
         }
     };
-        });
-
-//        layoutChinhSach.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(getActivity(),PolicyActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        layoutGioiThieu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(getActivity(),AboutMerakiBook.class);
-//                startActivity(intent);
-//            }
-//        });
-
-
 
 }
