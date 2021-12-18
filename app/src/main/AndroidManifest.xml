@@ -81,6 +81,7 @@
 
         </activity>
 
+
         <activity
             android:name=".DetailBookActivity"
             android:exported="true" />

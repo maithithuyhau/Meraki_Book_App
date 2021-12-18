@@ -64,6 +64,7 @@ ImageView imvBack;
             public void onClick(View view) {
                 CommentDataBaseHelper cmtDB = new CommentDataBaseHelper(Reviews.this);
                 cmtDB.addComment(edtAddcmt.getText().toString().trim());
+                loadData();
             }
         });
         cmtDB = new CommentDataBaseHelper(Reviews.this);

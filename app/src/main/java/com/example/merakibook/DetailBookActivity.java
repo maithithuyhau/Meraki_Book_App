@@ -34,7 +34,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
     private TextView txtTenSach,txtDesc, txtTacGia,txtTacGia2,
             txtPage,txtDateTime, txtPublisher,txtBia,txtBookSize, txtmenuDitailBook,
     txtPriceEbook, txtPriceBook ;
-    private ImageView imvImages, imvHinh, imvComment;
+    private ImageView imvImages, imvHinh, imvComment, imvBack,imvCartDetail;
     private RecyclerView rcvcung_the_loai;
     private Button btnMuaSach, btnDocNgay, btnDoc;
 
@@ -77,6 +77,8 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
         imvImages=findViewById(R.id.imvDetail_Images);
         imvHinh=findViewById(R.id.imvHinh);
         imvComment=findViewById(R.id.imvComment);
+        imvBack=findViewById(R.id.imvBack);
+        imvCartDetail=findViewById(R.id.imvCartDetail);
 
         btnMuaSach=findViewById(R.id.btnMuaSach);
         btnDocNgay=findViewById(R.id.btnDocNgay);
@@ -157,6 +159,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                                 return true;
                             case R.id.muaebook:
                                 ShowPopup(Gravity.CENTER);
+
 //
                                 return true;
                             default:
@@ -190,7 +193,20 @@ imvComment.setOnClickListener(new View.OnClickListener() {
 //            }
 //        });
 
-
+            imvBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= new Intent(DetailBookActivity.this,MainActivity.class);
+                    startActivity(intent);
+                }
+            });
+        imvCartDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(DetailBookActivity.this,CartActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void ShowPopup(int gravity){
@@ -212,8 +228,16 @@ imvComment.setOnClickListener(new View.OnClickListener() {
             dialog.setCancelable(false);
         }
 //
-
+//        btnDocNgay.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
+//                startActivity(intent);
+//                dialog.dismiss();
+//            }
+//        });
         dialog.show();
+
     }
 
 

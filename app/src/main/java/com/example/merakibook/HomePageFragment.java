@@ -38,30 +38,45 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
     public HomePageFragment(){
 
     }
+    View view;
     private List<Banner> list_banner;
     private ViewPager banner_page;
     private TabLayout indicator;
     private RecyclerView rcvSachMoiNhat, rcvSachHotNhat,rcvTop10, rcvDeXuat, rcvBookFree;
 
     private DrawerLayout drawerLayout;
-    private ImageView imvDanhmuc;
+    private ImageView imvDanhmuc, imvVip,imvCart;
     private ActionBarDrawerToggle toggle;
     NavigationView danhmuc;
     BottomNavigationView menu_bar;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_home_page,container,false);
-//linkView
+       view=inflater.inflate(R.layout.fragment_home_page,container,false);
+
+         LinkView();
+         initData();
+         loadData();
+         addEvent();
+
+        return view;
+    }
+
+    private void LinkView() {
+        //linkView
         banner_page=view.findViewById(R.id.banner_page);
         indicator=view.findViewById(R.id.indicator);
-
         rcvSachMoiNhat=view.findViewById(R.id.rcvSachMoiNhat);
         rcvSachHotNhat=view.findViewById(R.id.rcvSachHotNhat);
         rcvTop10=view.findViewById(R.id.rcvTop10);
         rcvBookFree=view.findViewById(R.id.rcvBookFree);
         rcvDeXuat=view.findViewById(R.id.rcvDeXuat);
 
+        imvVip=view.findViewById(R.id.imvVip);
+        imvCart=view.findViewById(R.id.imvCart);
+    }
+
+    private void initData() {
         //Banner
         list_banner= new ArrayList<>();
         list_banner.add(new Banner(R.drawable.banner2));
@@ -69,7 +84,7 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
         list_banner.add(new Banner(R.drawable.banner3));
         list_banner.add(new Banner(R.drawable.banne4));
         list_banner.add(new Banner(R.drawable.banner5));
-       BannerAdapter adapter= new BannerAdapter(list_banner);
+        BannerAdapter adapter= new BannerAdapter(list_banner);
         banner_page.setAdapter(adapter);
         // set timer
 //        Timer timer=new Timer();
@@ -130,6 +145,9 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
         rcvDeXuat.setAdapter(adapter5);
         rcvDeXuat.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL,false));
 
+    }
+
+    private void loadData() {
         // thanh danh mục
         Toolbar toolbar=(Toolbar) view.findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -147,30 +165,55 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.bangxephang:
+
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.tieuthuyet:
+                        Intent intent=new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent.putExtra("category","Tiểu thuyết");
+                        startActivity(intent);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.truyenngan:
+                        Intent intent1 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent1.putExtra("category","Truyện ngắn");
+                        startActivity(intent1);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.trinhtham:
+                        Intent intent2 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent2.putExtra("category","Trinh thám");
+                        startActivity(intent2);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.giatuong:
+                        Intent intent3 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent3.putExtra("category","Giả tưởng");
+                        startActivity(intent3);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.kinhdoanh:
+                        Intent intent4 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent4.putExtra("category","Kinh doanh");
+                        startActivity(intent4);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.kynang:
+                        Intent intent5 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent5.putExtra("category","Kỹ năng");
+                        startActivity(intent5);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.tamly:
+                        Intent intent6 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent6.putExtra("category","Tâm lý");
+                        startActivity(intent6);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.giaoduc:
+                        Intent intent7 =new Intent(getActivity(),BookListCatogoryActivity.class);
+                        intent7.putExtra("category","Giáo dục");
+                        startActivity(intent7);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
@@ -179,8 +222,26 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
             }
         });
 
-        return view;
     }
+
+    private void addEvent() {
+        imvVip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),VipActivity.class);
+                startActivity(intent);
+            }
+        });
+        imvCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),CartActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
 
     private void setSupportActionBar(Toolbar toolbar) {
 
@@ -208,6 +269,7 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(getActivity(), bookImageView,"sharedName");
         startActivity(intent,options.toBundle());
     }
+
 
 //    class  BannerTimer extends TimerTask {
 //

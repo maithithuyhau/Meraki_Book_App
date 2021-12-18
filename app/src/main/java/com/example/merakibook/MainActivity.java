@@ -4,20 +4,25 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView menu_bar;
     Fragment NavContent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         linkView();
+        addEvent();
         getSupportFragmentManager().beginTransaction().replace(R.id.NavContent, new HomePageFragment()).commit();
     }
 
@@ -25,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         menu_bar=(BottomNavigationView)findViewById(R.id.menu_bar);
         menu_bar.setOnNavigationItemSelectedListener(navListener);
 
+
+
+    }
+
+    private void addEvent() {
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override

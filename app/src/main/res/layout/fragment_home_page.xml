@@ -57,6 +57,7 @@
                     android:textSize="14sp" />
 
                 <ImageView
+                    android:id="@+id/imvVip"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
 
@@ -65,6 +66,7 @@
                     android:src="@drawable/icon_vip" />
 
                 <ImageView
+                    android:id="@+id/imvCart"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"

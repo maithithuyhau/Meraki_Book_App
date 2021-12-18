@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.adapter.BookAdapterHorizontal;
 import com.example.model.Book;
@@ -34,16 +35,18 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
     BookAdapterHorizontal bookAdapterHorizontal;
     int item_book_layout;
     RecyclerView rcvListBookCategory;
-
+    TextView txtCategory;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_list_catogory);
 
         linkView();
+        loadData();
         addSortList();
         configRecyclerView();
         addEventSpinner();
+
 
     }
 
@@ -55,6 +58,13 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
     private void linkView() {
         spSort = findViewById(R.id.spSort);
         rcvListBookCategory = findViewById(R.id.rcvListBookCategory);
+        txtCategory=findViewById(R.id.txtCategory);
+    }
+
+    private void loadData() {
+        Intent intent= getIntent();
+        String Name=intent.getExtras().getString("category");
+        txtCategory.setText(Name);
     }
 
     private void addSortList() {

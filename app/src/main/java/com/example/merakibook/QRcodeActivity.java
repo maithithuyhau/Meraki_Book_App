@@ -42,7 +42,7 @@ public class QRcodeActivity extends AppCompatActivity {
     private void linkView() {
         btnCheck = findViewById(R.id.btnCheck);
         btnBackHome = findViewById(R.id.btnBackHome);
-        txtTittle = findViewById(R.id.txtTittle);
+        txtTittle = findViewById(R.id.txtCategory);
         txtCountdown =  findViewById(R.id.txtCountdown);
     }
 
