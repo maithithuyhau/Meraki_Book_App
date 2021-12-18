@@ -28,8 +28,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/imvAuthor"
+                    android:transitionName="sharedName"
                     android:layout_width="153dp"
                     android:layout_height="198dp"
                     android:src="@drawable/namcao" />
