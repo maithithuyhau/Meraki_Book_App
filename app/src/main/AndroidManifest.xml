@@ -18,11 +18,6 @@
         <activity
             android:name=".CartActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".PaymentOptionActivity"
@@ -55,9 +50,12 @@
         <activity
             android:name=".Authors"
             android:exported="true"/>
+        <activity android:name=".LoginActivity" android:exported="true">
+        </activity>
         <activity
             android:name=".Intro3Activity"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".Intro2Activity"
             android:exported="true" />
@@ -70,7 +68,11 @@
         <activity
             android:name=".Intro1Activity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ReturnAndRefundPolicyActivity"

@@ -31,7 +31,7 @@ public class Intro2Activity extends AppCompatActivity {
         btnIntro2Skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intro2Activity.this, Intro1Activity.class);
+                Intent intent = new Intent(Intro2Activity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
