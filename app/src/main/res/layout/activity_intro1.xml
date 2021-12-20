@@ -24,7 +24,7 @@
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/btnIntro3Next"
+        android:id="@+id/btnIntro1Next"
         android:layout_width="95dp"
         android:layout_height="33dp"
         android:layout_marginTop="200dp"
