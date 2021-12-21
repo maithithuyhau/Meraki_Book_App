@@ -3,6 +3,7 @@ package com.example.merakibook;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -14,6 +15,8 @@ public class AddressActivity extends AppCompatActivity {
     Button btnDcLuuThongTin;
     EditText edtDcAddress,edtDcName,edtDcPhone;
     Intent intent;
+
+    public static final String REFERENCE_NAME = "paymentInfo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,10 @@ public class AddressActivity extends AppCompatActivity {
         btnDcLuuThongTin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("diachi", edtDcAddress.getText().toString());
+                editor.commit();
                 intent = new Intent(AddressActivity.this, DeliveryActivity.class);
                 startActivity(intent);
             }

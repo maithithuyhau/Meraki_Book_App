@@ -47,9 +47,10 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/imvSach"
         android:orientation="vertical"
+        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
-        tools:layout_editor_absoluteX="129dp">
+        app:layout_constraintStart_toEndOf="@+id/imvSach"
+        app:layout_constraintTop_toTopOf="@+id/textView5">
 
         <TextView
             android:id="@+id/txtTenSach"
