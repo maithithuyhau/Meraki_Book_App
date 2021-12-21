@@ -250,6 +250,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayoutTotal"
         android:layout_marginTop="20dp"
+        android:enabled="false"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

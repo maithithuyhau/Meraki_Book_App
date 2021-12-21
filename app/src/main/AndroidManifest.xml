@@ -17,6 +17,11 @@
 
         </activity>
         <activity
+            android:name=".QRcodeActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".LoginActivity"
             android:exported="true" >
 
@@ -43,7 +48,6 @@
         <activity
             android:name=".BookListCatogoryActivity"
             android:exported="true">
-
 
         </activity>
 
