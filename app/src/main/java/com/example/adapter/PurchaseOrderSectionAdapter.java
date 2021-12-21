@@ -34,4 +34,5 @@ public class PurchaseOrderSectionAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return 3;
     }
+
 }
