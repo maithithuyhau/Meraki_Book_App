@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class AboutMerakiBook extends AppCompatActivity {
-ImageView imvTwitter, imvFB, imvInsta;
+ImageView imvTwitter, imvFB, imvInsta, imvBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ ImageView imvTwitter, imvFB, imvInsta;
         imvFB=findViewById(R.id.imvFB);
         imvInsta=findViewById(R.id.imvInsta);
         imvTwitter=findViewById(R.id.imvTwitter);
+        imvBack=findViewById(R.id.imvBack);
     }
 
     private void addEvent() {
@@ -45,6 +46,12 @@ ImageView imvTwitter, imvFB, imvInsta;
             public void onClick(View view) {
                 Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/imh_au/"));
                 startActivity(intent);
+            }
+        });
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

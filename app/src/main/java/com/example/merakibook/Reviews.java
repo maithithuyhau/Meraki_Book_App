@@ -53,8 +53,7 @@ ImageView imvBack;
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Reviews.this,DetailBookActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 

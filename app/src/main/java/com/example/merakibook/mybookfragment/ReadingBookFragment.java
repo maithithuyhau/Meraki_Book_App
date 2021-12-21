@@ -19,6 +19,7 @@ import com.example.merakibook.DetailBookActivity;
 import com.example.merakibook.R;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
+import com.example.utils.Constant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,17 +69,17 @@ public class ReadingBookFragment extends Fragment implements BookItemClickListen
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
         Intent intent = new Intent(getActivity(), DetailBookActivity.class);
-        intent.putExtra("Title", book.getBookName());
-        intent.putExtra("Summary", book.getBookSummary());
-        intent.putExtra("Image", book.getBookImage());
-        intent.putExtra("Author", book.getBookAuthor());
-        intent.putExtra("Page", book.getBookPage());
-        intent.putExtra("EbookPrice", book.getEbookPrice());
-        intent.putExtra("bookPrice", book.getBookPrice());
-        intent.putExtra("Publisher", book.getBookPublisher());
-        intent.putExtra("DateTime", book.getDateTime());
-        intent.putExtra("LoaiBia", book.getLoaiBia());
-        intent.putExtra("BookSize", book.getBookSize());
+        intent.putExtra(Constant.BOOK_NAME,book.getBookName());
+        intent.putExtra(Constant.BOOK_SUMMARY,book.getBookSummary());
+        intent.putExtra(Constant.BOOK_IMAGE,book.getBookImage());
+        intent.putExtra(Constant.BOOK_AUTHOR,book.getBookAuthor());
+        intent.putExtra(Constant.BOOK_PAGE,book.getBookPage());
+        intent.putExtra(Constant.BOOK_E_PRICE,book.getEbookPrice());
+        intent.putExtra(Constant.BOOK_PRICE,book.getBookPrice());
+        intent.putExtra(Constant.BOOK_PUBLISHER,book.getBookPublisher());
+        intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
+        intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
+        intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
 
 
 //        startActivity(intent);
