@@ -3,17 +3,22 @@ package com.example.merakibook;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class AddressActivity extends AppCompatActivity {
     Button btnDcLuuThongTin;
+    ImageButton  btnBack;
     EditText edtDcAddress,edtDcName,edtDcPhone;
     Intent intent;
+
+    public static final String REFERENCE_NAME = "paymentInfo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +33,23 @@ public class AddressActivity extends AppCompatActivity {
         edtDcAddress = findViewById(R.id.edtDcAddress);
         edtDcName = findViewById(R.id.edtDcName);
         edtDcPhone = findViewById(R.id.edtDcPhone);
+        btnBack = findViewById(R.id.btnBack);
     }
 
     private void addEvent() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         btnDcLuuThongTin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("diachi", edtDcAddress.getText().toString());
+                editor.commit();
                 intent = new Intent(AddressActivity.this, DeliveryActivity.class);
                 startActivity(intent);
             }

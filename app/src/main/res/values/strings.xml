@@ -326,5 +326,10 @@
     <string name="ngay_nhan_Viettel">Ngày nhận 30/11 - 3/12</string>
     <string name="dong_y">Đồng ý</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="don_mua_chi_tiet">Đơn mua chi tiết</string>
+    <string name="huy">Hủy bỏ</string>
+    <string name="ngay_dat_hang">Ngày đặt hàng</string>
+    <string name="cho_xac_nhan">Chờ xác nhận</string>
+
 
 </resources>

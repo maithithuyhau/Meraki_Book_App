@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.adapter.CartAdapter;
 import com.example.model.Book;
@@ -23,6 +24,7 @@ public class CartActivity extends AppCompatActivity {
     ArrayList<Cart> carts;
     CartAdapter adapter;
 
+    ImageButton btnBack;
     Button btnMuaHang;
 
     @Override
@@ -40,6 +42,7 @@ public class CartActivity extends AppCompatActivity {
 
         rcvGioHang = findViewById(R.id.rcvGioHang);
         btnMuaHang = findViewById(R.id.btnMuaHang);
+        btnBack = findViewById(R.id.btnBack);
     }
 
     private void initData() {
@@ -78,6 +81,12 @@ public class CartActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CartActivity.this, AddressActivity.class);
                 startActivity(intent);
+            }
+        });
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class VipActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnDangKyNgay;
+    ImageButton btnBack;
     TextView txtKhungGia3, txtKhungGia2, txtKhungGia1;
     private FragmentManager manager;
 
@@ -32,6 +34,8 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
 
     private void linkView() {
         btnDangKyNgay = findViewById(R.id.btnDangKyNgay);
+        btnBack = findViewById(R.id.btnBack);
+
         txtKhungGia1 = findViewById(R.id.txtKhungGia1);
         txtKhungGia2 = findViewById(R.id.txtKhungGia2);
         txtKhungGia3 = findViewById(R.id.txtKhungGia3);
@@ -83,6 +87,13 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
                 });
                 dialog.setCanceledOnTouchOutside(false);
                 dialog.show();
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 

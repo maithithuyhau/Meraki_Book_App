@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text="@string/lao_hac_va_cac_sp_khac"
+                android:text="@string/tp_lao_hac"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -89,7 +89,7 @@
                 >
 
                 <Button
-                    android:id="@+id/btnDetail"
+                    android:id="@+id/btnDetailConfirm"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
@@ -101,13 +101,13 @@
                     android:textSize="12sp" />
 
                 <Button
-                    android:id="@+id/btnBuyAgain"
+                    android:id="@+id/btnOrderCancel"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:background="@drawable/custom_button"
                     android:backgroundTint="@color/yellow"
-                    android:text="@string/mua_lai"
+                    android:text="@string/huy"
                     android:textAllCaps="false"
                     android:textSize="12sp" />
             </LinearLayout>

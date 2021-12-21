@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.merakibook.R;
 import com.example.model.Author;
 import com.example.model.AuthorItemClickListener;
+import com.example.model.Book;
 import com.example.model.BookItemClickListener;
 
 
@@ -49,6 +50,7 @@ public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapte
     public int getItemCount() {
         return authors.size();
     }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         CircleImageView imvTacGiaImage;

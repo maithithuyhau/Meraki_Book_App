@@ -1,8 +1,11 @@
 package com.example.merakibook;
 
+import static com.example.merakibook.AddressActivity.REFERENCE_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,11 +13,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class DeliveryActivity extends AppCompatActivity {
     Button btnDvDongY;
     CheckBox chkNgayNhanNhanh, chkNgayNhanTietKiem, chkNgayNhanViettel;
-
+    TextView txtNgayNhanNhanh, txtNgayNhanTietKiem, txtNgayNhanViettel;
+    ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,19 +31,42 @@ public class DeliveryActivity extends AppCompatActivity {
 
     private void linkView() {
         btnDvDongY = findViewById(R.id.btnDvDongY);
+        btnBack = findViewById(R.id.btnBack);
+
         chkNgayNhanNhanh = findViewById(R.id.chkNgayNhanNhanh);
         chkNgayNhanTietKiem = findViewById(R.id.chkNgayNhanTietKiem);
         chkNgayNhanViettel =findViewById(R.id.chkNgayNhanViettel);
+
+        txtNgayNhanNhanh = findViewById(R.id.txtNgayNhanNhanh);
+        txtNgayNhanTietKiem = findViewById(R.id.txtNgayNhanTietKiem);
+        txtNgayNhanViettel = findViewById(R.id.txtNgayNhanViettel);
     }
 
     private void addEvent() {
-        //emptyEvent();
         checkEvent();
+
         btnDvDongY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                if(chkNgayNhanNhanh.isChecked()){
+                    editor.putString("giaohang","Giao hàng nhanh: " + txtNgayNhanNhanh.getText().toString());
+                }else if(chkNgayNhanTietKiem.isChecked()){
+                    editor.putString("giaohang","Giao hàng tiết kiệm: "+ txtNgayNhanTietKiem.getText().toString());
+                }else if(chkNgayNhanViettel.isChecked()){
+                    editor.putString("giaohang","Giao hàng Viettel: "+ txtNgayNhanViettel.getText().toString());
+                }
+                editor.commit();
                 Intent intent = new Intent(DeliveryActivity.this, PaymentOptionActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

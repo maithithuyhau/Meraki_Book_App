@@ -22,7 +22,8 @@ import android.widget.TextView;
 
 public class AccountActivity extends Fragment {
 
-    private Button btnAcSaw, btnAcRate,btnAcCart;
+    Button btnAcSaw, btnAcRate,btnAcCart;
+    ImageButton  btnBack;
     View view;
 
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
@@ -46,6 +47,7 @@ public class AccountActivity extends Fragment {
         btnAcCart = view.findViewById(R.id.btnAcCart);
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
+        btnBack = view.findViewById(R.id.btnBack);
     }
 
     private void addEvent() {
@@ -54,6 +56,14 @@ public class AccountActivity extends Fragment {
         btnAcRate.setOnClickListener(myClick);
         layoutGioiThieu.setOnClickListener(myClick);
         layoutChinhSach.setOnClickListener(myClick);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().onBackPressed();
+            }
+        });
+
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {

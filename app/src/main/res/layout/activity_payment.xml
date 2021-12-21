@@ -60,7 +60,8 @@
                 android:id="@+id/rcvItemThanhToan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="24dp">
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
             </androidx.recyclerview.widget.RecyclerView>
 
             <GridLayout
@@ -83,7 +84,6 @@
                     android:layout_row="1"
                     android:layout_column="0"
                     android:textColor="@color/black"
-                    android:text="@string/dia_chi"
                     android:textSize="14sp" />
 
                 <ImageButton
@@ -117,7 +117,6 @@
                     android:layout_row="5"
                     android:layout_column="0"
                     android:textColor="@color/black"
-                    android:text="@string/don_vi"
                     android:textSize="14sp" />
 
                 <ImageButton
@@ -150,7 +149,6 @@
                     android:layout_height="wrap_content"
                     android:layout_row="9"
                     android:layout_column="0"
-                    android:text="@string/phuong_thuc"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -247,6 +245,7 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center_horizontal"/>
                 <TextView
+                    android:id="@+id/txtTtDieuKhoan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/dieu_khoan"

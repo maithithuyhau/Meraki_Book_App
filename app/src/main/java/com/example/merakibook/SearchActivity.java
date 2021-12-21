@@ -1,6 +1,7 @@
 package com.example.merakibook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -8,10 +9,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,6 +32,7 @@ import com.example.model.BookItemClickListener;
 import com.example.utils.Constant;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -35,6 +42,7 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     ImageView imvHinh;
     CircleImageView imvTacGiaImage;
     TextView txtName, txtTacGia, txtTacGiaView;
+    SearchView svSearch;
     RecyclerView rcvTacGia;
     ArrayList<Book> books;
     ArrayList<Author>authors;
@@ -48,8 +56,10 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         linkViews();
         configRecyclerView();
         initData();
+        addEvents();
 
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -65,6 +75,7 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         txtTacGiaView = findViewById(R.id.txtTacGiaView);
         rcvItemBook = findViewById(R.id.rcvBookItem);
         rcvTacGia = findViewById(R.id.rcvTacGia);
+//        svSearch = findViewById(R.id.svSearch);
     }
 
     private void configRecyclerView() {
@@ -122,7 +133,6 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     public void onAuthorClick(Author author, CircleImageView authorImage) {
         Intent intent = new Intent(SearchActivity. this, Authors.class);
         intent.putExtra("AuthorName", author.getAuthorName());
-
         intent.putExtra("PlaceOfBirth", author.getAuthorPlaceOfBirth());
         intent.putExtra("TotalBook", author.getAuthorTotalBook());
         intent.putExtra("AuthorBirth", author.getAuthorBirth());
@@ -132,4 +142,24 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SearchActivity.this, authorImage,"sharedName");
         startActivity(intent,options.toBundle());
     }
+
+    private void addEvents() {
+//        svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                if (books.contains(query)){
+//
+//                }
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                return false;
+//            }
+//        });
+
+    }
+
+
 }

@@ -1,19 +1,25 @@
 package com.example.merakibook;
 
+import static com.example.merakibook.AddressActivity.REFERENCE_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class PaymentOptionActivity extends AppCompatActivity {
 
@@ -21,12 +27,10 @@ public class PaymentOptionActivity extends AppCompatActivity {
     RadioButton rdoCOD, rdoATM, rdoVisa;
     Button btnAgree;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_option);
-
         linkView();
         addEvent();
     }
@@ -40,24 +44,54 @@ public class PaymentOptionActivity extends AppCompatActivity {
     }
 
     private void addEvent() {
+        checkEmpty();
         btnAgree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int checkedOption = rdgPaymentOption.getCheckedRadioButtonId();
-                if (checkedOption == -1){
-                    Toast.makeText(PaymentOptionActivity.this, "Hãy chọn một phương thức thanh toán!", Toast.LENGTH_SHORT).show();
-                }else{
-                    selectedPayment(checkedOption);
+                SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                if(rdoATM.isChecked()){
+                    editor.putString("thanhtoan", rdoATM.getText().toString());
+                }else if(rdoCOD.isChecked()){
+                    editor.putString("thanhtoan", rdoCOD.getText().toString());
+                }else if(rdoVisa.isChecked()){
+                    editor.putString("thanhtoan", rdoVisa.getText().toString());
                 }
+                editor.commit();
+                int checkedOption = rdgPaymentOption.getCheckedRadioButtonId();
+                    selectedPayment(checkedOption);
             }
         });
     }
+    private void checkEmpty() {
+        rdoCOD.setOnCheckedChangeListener(checkRadio);
+        rdoATM.setOnCheckedChangeListener(checkRadio);
+        rdoVisa.setOnCheckedChangeListener(checkRadio);
+    }
+    CompoundButton.OnCheckedChangeListener checkRadio = new CompoundButton.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+            if(compoundButton.getId() == R.id.rdoCOD){
+                if(b){
+                    btnAgree.setEnabled(true);
+                }
+            }else if(compoundButton.getId() == R.id.rdoATM){
+                if(b){
+                    btnAgree.setEnabled(true);
+                }
+            }else if (compoundButton.getId() == R.id.rdoVisa){
+                if(b){
+                    btnAgree.setEnabled(true);
+                }
+            }
+        }
+    };
 
     private void selectedPayment(int checkedId){
         switch (checkedId){
             case R.id.rdoCOD:
-                QRcodeActivity qRcodeActivity = new QRcodeActivity();
-                qRcodeActivity.openDialog(PaymentOptionActivity.this);
+                Intent intent = new Intent(PaymentOptionActivity.this, PaymentActivity.class);
+                PaymentOptionActivity.this.startActivity(intent);
                 break;
             case R.id.rdoATM:
                 openQRActivityWithATM();
