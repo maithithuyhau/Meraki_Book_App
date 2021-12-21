@@ -14,12 +14,13 @@ import android.widget.Button;
 
 import com.example.adapter.CartAdapter;
 import com.example.model.Book;
+import com.example.model.Cart;
 
 import java.util.ArrayList;
 
 public class CartActivity extends AppCompatActivity {
     RecyclerView rcvGioHang;
-    ArrayList<Book> books;
+    ArrayList<Cart> carts;
     CartAdapter adapter;
 
     Button btnMuaHang;
@@ -31,6 +32,7 @@ public class CartActivity extends AppCompatActivity {
         linkView();
         initData();
         addEvent();
+        DeleteItem();
 
     }
 
@@ -41,18 +43,33 @@ public class CartActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        books = new ArrayList<>();
-        books.add(new Book("Bạm đắt giá bao nhiêu","Vãn Tình","320","45000","119000","NXB Văn Học","2018-08-01","Bìa mềm","14.5 x 20cm",R.string.sach_moi,R.drawable.bandatgiabaonhieu,R.string.ban_dat_gia_bao_nhieu));
-        books.add(new Book("Dứt Tình","Vũ Trọng Phụng","162","15000","45000","NXB Văn Học","2016-03-18","Bìa cứng","13 x 20.5 cm",R.string.sach_moi,R.drawable.duttinh,R.string.dut_tinh));
-        books.add(new Book("Lão Hạc","Nam Cao","208","15000","35000","Nhà Xuất Bản Dân Trí","2021","Bìa mềm","13 x 20cm",R.string.sach_moi,R.drawable.laohac,R.string.lao_hac));
+        carts = new ArrayList<>();
+        carts.add(new Cart("Bạm đắt giá bao nhiêu","Vãn Tình", 119000, R.drawable.bandatgiabaonhieu,1));
+        carts.add(new Cart("Dứt Tình","Vũ Trọng Phụng", 45000, R.drawable.duttinh,1));
+        carts.add(new Cart("Lão Hạc","Nam Cao", 35000, R.drawable.laohac,1));
 
 
-        adapter = new CartAdapter(getApplicationContext(), books);
+        adapter = new CartAdapter(getApplicationContext(), carts);
         rcvGioHang.setAdapter(adapter);
 
 
         rcvGioHang.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
 
+    }
+
+    private void DeleteItem() {
+        adapter.setOnItemClickListener(new CartAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+
+            }
+
+            @Override
+            public void onDeleteClick(int position) {
+                removeItem(position);
+
+            }
+        });
     }
 
     private void addEvent() {
@@ -63,6 +80,11 @@ public class CartActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void removeItem(int position) {
+        carts.remove(position);
+        adapter.notifyItemRemoved(position);
     }
 
 }

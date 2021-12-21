@@ -155,7 +155,7 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         switch (menuItem.getItemId()){
                             case R.id.muabook:
-
+                                AddCart();
                                 return true;
                             case R.id.muaebook:
                                 ShowPopup(Gravity.CENTER);
@@ -185,13 +185,7 @@ imvComment.setOnClickListener(new View.OnClickListener() {
                 startActivity(intent);
             }
         });
-//        btnDocNgay.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
-//                startActivity(intent);
-//            }
-//        });
+//
 
             imvBack.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -209,6 +203,13 @@ imvComment.setOnClickListener(new View.OnClickListener() {
         });
 
     }
+
+    private void AddCart() {
+        Intent intent=new Intent(this,CartActivity.class);
+
+        startActivity(intent);
+    }
+
     public void ShowPopup(int gravity){
         final Dialog dialog=new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -227,15 +228,15 @@ imvComment.setOnClickListener(new View.OnClickListener() {
         }else{
             dialog.setCancelable(false);
         }
-//
-//        btnDocNgay.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
-//                startActivity(intent);
-//                dialog.dismiss();
-//            }
-//        });
+          btnDocNgay=dialog.findViewById(R.id.btnDocNgay);
+          btnDocNgay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1HnNpFJUcWMS2Ws0wNDNg-Au6XXtkl-2R/view"));
+                startActivity(intent);
+                dialog.dismiss();
+            }
+        });
         dialog.show();
 
     }
