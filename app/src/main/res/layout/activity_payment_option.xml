@@ -7,46 +7,60 @@
     tools:context=".PaymentOptionActivity"
     android:background="@color/background">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/green"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:weightSum="10"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/navBar">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="15dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_weight="0.5"
-            android:background="@drawable/icon_back" />
-
-        <TextView
-            android:id="@+id/txtPaymentOption"
+        <LinearLayout
+            android:id="@+id/navBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:layout_weight="9.5"
-            android:gravity="center_horizontal"
-            android:text="@string/txt_payment_option"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/icon_back" />
+
+            <TextView
+                android:id="@+id/txtPaymentOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="9.5"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_payment_option"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <ImageView
+        android:id="@+id/imageView11"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/background_dropshadow"
-        app:layout_constraintTop_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
     <ImageView
         android:id="@+id/imvBgTittle"
@@ -56,21 +70,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navBar" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txt_payment_option_tittle"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@id/imvBgTittle"
-        app:layout_constraintEnd_toEndOf="@id/imvBgTittle"
-        app:layout_constraintTop_toTopOf="@id/imvBgTittle"
-        app:layout_constraintBottom_toBottomOf="@id/imvBgTittle"
         android:padding="20dp"
-        android:textColor="@color/black"/>
-
-
+        android:text="@string/txt_payment_option_tittle"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
     <RadioGroup
         android:id="@+id/rdgPaymentOption"
@@ -80,7 +91,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imvBgTittle"
         android:padding="20dp">
-            <RadioButton
+
+        <RadioButton
                 android:id="@+id/rdoCOD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
