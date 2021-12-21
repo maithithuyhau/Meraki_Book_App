@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Intro3Activity extends AppCompatActivity {
 
-    Button btnIntro3Next, btnIntro3Skip;
+    Button btnIntro3Next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +28,9 @@ public class Intro3Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnIntro3Skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intro3Activity.this, Intro2Activity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void linkViews() {
         btnIntro3Next = findViewById(R.id.btnIntro3Next);
-        btnIntro3Skip = findViewById(R.id.btnIntro3Skip);
     }
 }

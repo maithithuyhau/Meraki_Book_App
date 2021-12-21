@@ -52,6 +52,8 @@ public class Search_BookList_Adapter extends RecyclerView.Adapter<Search_BookLis
         return data.size();
     }
 
+
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView txtName, txtTacGia;
         ImageView imvHinh;

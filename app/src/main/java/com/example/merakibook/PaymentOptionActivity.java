@@ -10,10 +10,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class PaymentOptionActivity extends AppCompatActivity {
 
@@ -21,12 +23,10 @@ public class PaymentOptionActivity extends AppCompatActivity {
     RadioButton rdoCOD, rdoATM, rdoVisa;
     Button btnAgree;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_option);
-
         linkView();
         addEvent();
     }
@@ -56,8 +56,8 @@ public class PaymentOptionActivity extends AppCompatActivity {
     private void selectedPayment(int checkedId){
         switch (checkedId){
             case R.id.rdoCOD:
-                QRcodeActivity qRcodeActivity = new QRcodeActivity();
-                qRcodeActivity.openDialog(PaymentOptionActivity.this);
+                Intent intent = new Intent(PaymentOptionActivity.this, PaymentActivity.class);
+                PaymentOptionActivity.this.startActivity(intent);
                 break;
             case R.id.rdoATM:
                 openQRActivityWithATM();

@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,7 +18,7 @@ import com.example.model.BookItemClickListener;
 
 import java.util.ArrayList;
 
-public class BooksOfAuthorActivity implements BookItemClickListener {
+public class BooksOfAuthorActivity  implements BookItemClickListener {
 
     View view;
     RecyclerView rcvBooksOfAuthor;

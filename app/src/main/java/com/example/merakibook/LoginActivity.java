@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         linkView();
+        getSupportFragmentManager().beginTransaction().replace(R.id.linearLayoutContainer, new LoginFragment()).commit();
         addEvent();
     }
 

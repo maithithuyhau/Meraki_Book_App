@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import com.example.adapter.PurchaseOrderSectionAdapter;
@@ -15,6 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 public class PurchaseOrderActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
+    ImageButton imbBackProfile;
     ViewPager2 pager2;
     PurchaseOrderSectionAdapter adapter;
 
@@ -25,12 +28,15 @@ public class PurchaseOrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_purchase_order);
         linkViews();
         loadData();
+        addEvents();
 
 
     }
 
 
+
     private void linkViews() {
+        imbBackProfile = findViewById(R.id.imbBackProfile);
         tabLayout = findViewById(R.id.TabPurchaseOrder);
         pager2 = findViewById(R.id.PurchaseOrderView);
     }
@@ -77,5 +83,15 @@ public class PurchaseOrderActivity extends AppCompatActivity {
             ((LinearLayout) root).setDividerPadding(10);
             ((LinearLayout) root).setDividerDrawable(drawable);
         }
+    }
+
+   private void addEvents() {
+        imbBackProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               finish();
+            }
+        });
+
     }
 }
