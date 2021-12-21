@@ -10,9 +10,11 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class AddressActivity extends AppCompatActivity {
     Button btnDcLuuThongTin;
+    ImageButton  btnBack;
     EditText edtDcAddress,edtDcName,edtDcPhone;
     Intent intent;
 
@@ -31,9 +33,16 @@ public class AddressActivity extends AppCompatActivity {
         edtDcAddress = findViewById(R.id.edtDcAddress);
         edtDcName = findViewById(R.id.edtDcName);
         edtDcPhone = findViewById(R.id.edtDcPhone);
+        btnBack = findViewById(R.id.btnBack);
     }
 
     private void addEvent() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         btnDcLuuThongTin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

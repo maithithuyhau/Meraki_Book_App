@@ -13,12 +13,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class DeliveryActivity extends AppCompatActivity {
     Button btnDvDongY;
     CheckBox chkNgayNhanNhanh, chkNgayNhanTietKiem, chkNgayNhanViettel;
     TextView txtNgayNhanNhanh, txtNgayNhanTietKiem, txtNgayNhanViettel;
+    ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +31,12 @@ public class DeliveryActivity extends AppCompatActivity {
 
     private void linkView() {
         btnDvDongY = findViewById(R.id.btnDvDongY);
+        btnBack = findViewById(R.id.btnBack);
+
         chkNgayNhanNhanh = findViewById(R.id.chkNgayNhanNhanh);
         chkNgayNhanTietKiem = findViewById(R.id.chkNgayNhanTietKiem);
         chkNgayNhanViettel =findViewById(R.id.chkNgayNhanViettel);
+
         txtNgayNhanNhanh = findViewById(R.id.txtNgayNhanNhanh);
         txtNgayNhanTietKiem = findViewById(R.id.txtNgayNhanTietKiem);
         txtNgayNhanViettel = findViewById(R.id.txtNgayNhanViettel);
@@ -55,6 +60,13 @@ public class DeliveryActivity extends AppCompatActivity {
                 editor.commit();
                 Intent intent = new Intent(DeliveryActivity.this, PaymentOptionActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

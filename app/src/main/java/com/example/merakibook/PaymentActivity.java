@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.adapter.BookAdapterVertical;
@@ -31,6 +32,7 @@ public class PaymentActivity extends AppCompatActivity {
     PaymentAdapter adapter;
 
     Button btnTtDatHang;
+    ImageButton btnBack;
     TextView txtTtDiaChi, txtTtDonViVanChuyen, txtTtPhuongThuc, txtTtDieuKhoan;
 
     @Override
@@ -44,7 +46,10 @@ public class PaymentActivity extends AppCompatActivity {
 
     private void linkView() {
         rcvItemThanhToan = findViewById(R.id.rcvItemThanhToan);
+
         btnTtDatHang = findViewById(R.id.btnTtDatHang);
+        btnBack = findViewById(R.id.btnBack);
+
         txtTtDiaChi = findViewById(R.id.txtTtDiaChi);
         txtTtDonViVanChuyen = findViewById(R.id.txtTtDonViVanChuyen);
         txtTtPhuongThuc = findViewById(R.id.txtTtPhuongThuc);
@@ -74,6 +79,13 @@ public class PaymentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openDialog(PaymentActivity.this);
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }
