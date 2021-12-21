@@ -79,6 +79,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"/>
                     <TextView
+                        android:id="@+id/txtDeal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -88,6 +89,7 @@
                 </LinearLayout>
 
                 <ImageView
+                    android:id="@+id/imvNextDeal"
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
@@ -129,6 +131,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold"/>
                     <TextView
+                        android:id="@+id/txtNotification"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -138,6 +141,7 @@
                 </LinearLayout>
 
                 <ImageView
+                    android:id="@+id/imvNextNotif"
                     android:layout_width="30dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
@@ -161,7 +165,7 @@
                 android:background="@drawable/linear_border"
                 />
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcvThongBao"
+                android:id="@+id/rcvNotif"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="24dp"

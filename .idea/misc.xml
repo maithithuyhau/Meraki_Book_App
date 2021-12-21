@@ -135,6 +135,56 @@
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_book_horizontal.xml" value="0.18" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/item_policy.xml" value="0.25" />
         <entry key="..\:/thuchanh/Meraki_Book_App/app/src/main/res/layout/order_item.xml" value="0.42407407407407405" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/drawable-v24/ic_baseline_menu_book_24.xml" value="0.2203125" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.2203125" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/drawable/ic_coin.xml" value="0.2203125" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_about_meraki_book.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_account.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_address.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_authors.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_book_list_catogory.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_books_of_author.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_cart.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_cart_item_list.xml" value="0.22" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_delivery.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_delivery_policy.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_detail_book.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_home_page.xml" value="0.1068840579710145" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_intro1.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_main.xml" value="0.1068840579710145" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_my_book.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_my_rating.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_notification.xml" value="0.33" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_order_confirm_detail.xml" value="0.33" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_order_detail.xml" value="0.2" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_policy.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_purchase_order.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_qrcode.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_recently_book.xml" value="0.18" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_reviews.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/activity_search.xml" value="0.33" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/banner_item.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/book_item_order.xml" value="0.22" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/bookitem.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/fragment_all_star_rating.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/fragment_confirm_.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/fragment_delivered_.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/fragment_delivering_.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/fragment_my_ebook.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/fragment_two_star_rating.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_author_horizontal.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_book_horizontal.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_book_vertical.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_comment.xml" value="0.1" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_confirm.xml" value="0.33" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_delivered.xml" value="0.25" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/item_notification.xml" value="0.33" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/order_item.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/popup_order_successful.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/layout/popup_payment_successful.xml" value="0.18659420289855072" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/menu/danhmuc.xml" value="0.20416666666666666" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/menu/popup_muasach.xml" value="0.20416666666666666" />
+        <entry key="..\:/thuchanh/meraki/app/src/main/res/menu/search.xml" value="0.1" />
       </map>
     </option>
   </component>
