@@ -26,7 +26,7 @@ public class  Confirm_Fragment extends Fragment implements OrderDetailClickListe
     RecyclerView rcvConfirm;
     ImageView imvOrderImage;
     TextView txtOrderName, txtOrderPrice;
-    Button btnDetail, btnOrderCancel;
+    Button btnDetailConfirm, btnOrderCancel;
 
     ArrayList<Order> orders;
     OrderConfirmAdapter orderConfirmAdapter;
@@ -51,7 +51,7 @@ public class  Confirm_Fragment extends Fragment implements OrderDetailClickListe
         imvOrderImage = view.findViewById(R.id.imvOrderImage);
         txtOrderName = view.findViewById(R.id.txtOrderName);
         txtOrderPrice = view.findViewById(R.id.txtOrderPrice);
-        btnDetail = view.findViewById(R.id.btnDetail);
+        btnDetailConfirm = view.findViewById(R.id.btnDetailConfirm);
         btnOrderCancel = view.findViewById(R.id.btnOrderCancel);
 
     }
@@ -71,7 +71,7 @@ public class  Confirm_Fragment extends Fragment implements OrderDetailClickListe
 
     @Override
     public void onOrderClick(Order order, ImageView orderImage) {
-        Intent intent = new Intent(getActivity(), OrderDetailActivity.class);
+        Intent intent = new Intent(getActivity(), OrderConfirmDetailActivity.class);
         intent.putExtra("OrderName", order.getOrderName());
         intent.putExtra("OrderNumber", order.getOrderNumber());
         intent.putExtra("OrderPrice", order.getOrderPrice());

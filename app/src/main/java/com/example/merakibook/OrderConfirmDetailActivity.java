@@ -20,6 +20,7 @@ public class OrderConfirmDetailActivity extends AppCompatActivity implements Ord
 private TextView  txtOrderName,txtOrderNumber, txtOrderPrice, txtOrderDate, txtOrderQuantity, txtOrderStatus, txtOrderTime;
 private ImageView imvOrderImage;
 private ImageButton imbBackOrder;
+private Button btnOrderCancel;
 
 
 
@@ -49,6 +50,7 @@ private ImageButton imbBackOrder;
 //        txtOrderTime = findViewById(R.id.txtOrderTime);
         imvOrderImage = findViewById(R.id.imvOrderImage);
         imbBackOrder = findViewById(R.id.imbBackOrder);
+        btnOrderCancel = findViewById(R.id.btnOrderCancel);
     }
 
     private void loadData() {
@@ -79,6 +81,12 @@ private ImageButton imbBackOrder;
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+        btnOrderCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
             }
         });
     }

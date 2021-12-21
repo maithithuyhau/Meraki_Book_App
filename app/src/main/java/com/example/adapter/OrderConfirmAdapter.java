@@ -57,7 +57,7 @@ public class OrderConfirmAdapter extends RecyclerView.Adapter<OrderConfirmAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imvOrderImage;
         TextView txtOrderName, txtOrderPrice, txtOrderQuantity;
-        Button btnDetail, btnOrderCancel;
+        Button btnDetailConfirm, btnOrderCancel;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -65,26 +65,27 @@ public class OrderConfirmAdapter extends RecyclerView.Adapter<OrderConfirmAdapte
             txtOrderName = itemView.findViewById(R.id.txtOrderName);
             txtOrderPrice = itemView.findViewById(R.id.txtOrderPrice);
             txtOrderQuantity = itemView.findViewById(R.id.txtOrderQuantity);
-            btnDetail = itemView.findViewById(R.id.btnDetail);
+            btnDetailConfirm = itemView.findViewById(R.id.btnDetailConfirm);
             btnOrderCancel = itemView.findViewById(R.id.btnOrderCancel);
 
 
-            btnDetail.setOnClickListener(new View.OnClickListener() {
+            btnDetailConfirm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+//                    orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
                     orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
                 }
             });
-            btnOrderCancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(view.equals(btnOrderCancel)){
-                        removeAt(getAdapterPosition());
-                    } else if(orderConfirm != null){
-                        orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
-                    }
-                }
-            });
+//            btnOrderCancel.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    if(view.equals(btnOrderCancel)){
+//                        removeAt(getAdapterPosition());
+//                    } else if(orderConfirm != null){
+//                        orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
+//                    }
+//                }
+//            });
 
         }
 
