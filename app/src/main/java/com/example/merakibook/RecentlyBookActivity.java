@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.adapter.BookAdapterVertical;
@@ -25,6 +26,7 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
     RecyclerView rcvRecentlyBook;
     ArrayList<Book> myRecentlyBook;
     BookAdapterVerticalFragment bookAdapterVertical;
+    ImageButton imbBackRecently;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
 
         linkView();
         initData();
+        addEvent();
 
         bookAdapterVertical = new BookAdapterVerticalFragment(myRecentlyBook,this);
         rcvRecentlyBook.setLayoutManager(new LinearLayoutManager(this));
@@ -47,6 +50,7 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
 
     private void linkView() {
         rcvRecentlyBook =findViewById(R.id.rcvRecentlyBook);
+        imbBackRecently = findViewById(R.id.imbBackRecently);
     }
 
     private void initData() {
@@ -56,6 +60,15 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
         myRecentlyBook.add(new Book("Bạm đắt giá bao nhiêu","Vãn Tình","320","45,000","119,000","NXB Văn Học","2018-08-01","Bìa mềm","14.5 x 20cm",R.string.sach_moi,R.drawable.bandatgiabaonhieu,R.string.ban_dat_gia_bao_nhieu));
         myRecentlyBook.add(new Book("Gia tộc Morgan","Ron Chernow","1092","65,000","279,000"," NXB Thế Giới","30/09/2021","Bìa mềm","14 x 20,5 cm",R.string.sach_moi,R.drawable.giatocmorgan,R.string.gia_toc_margan));
 
+    }
+
+    private void addEvent() {
+        imbBackRecently.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
