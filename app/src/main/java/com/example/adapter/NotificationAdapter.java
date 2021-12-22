@@ -39,14 +39,14 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_notification,parent,false);
 
-        return new ViewHolder((view));
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.imvOrderImage.setImageResource(orders.get(position).getOrderImage());
         holder.txtOrderName.setText(orders.get(position).getOrderName());
-       holder.txtOrderDate.setText(orders.get(position).getOrderDate());
+       holder.txtOrderTime.setText(orders.get(position).getOrderDate());
        holder.txtOrderStatus.setText(orders.get(position).getOrderStatus());
 
 
@@ -59,21 +59,21 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imvOrderImage;
-        TextView txtOrderName, txtOrderDate, txtOrderStatus;
+        TextView txtOrderName, txtOrderTime, txtOrderStatus;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imvOrderImage = itemView.findViewById(R.id.imvOrderImage);
             txtOrderName = itemView.findViewById(R.id.txtOrderName);
-            txtOrderDate = itemView.findViewById(R.id.txtOrderDate);
+            txtOrderTime = itemView.findViewById(R.id.txtOrderTime);
             txtOrderStatus = itemView.findViewById(R.id.txtOrderStatus);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    orderDetailClickListener.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
+                    orderDetailClickListener.onOrderClick(orders.get(getAdapterPosition()),imvOrderImage);
 
                 }
             });

@@ -44,11 +44,11 @@ private ImageButton imbBackOrder;
 
 
     private void linkViews() {
-//        rcvOrderItemList = findViewById(R.id.rcvOrderItemList);
+
         txtOrderName = findViewById(R.id.txtOrderName);
         txtOrderNumber = findViewById(R.id.txtOrderNumber);
         txtOrderPrice = findViewById(R.id.txtOrderPrice);
-//        txtOrderDate = findViewById(R.id.txtOrderDate);
+
         txtOrderStatus = findViewById(R.id.txtOrderStatus);
         txtOrderQuantity = findViewById(R.id.txtOrderQuantity);
         txtOrderTime = findViewById(R.id.txtOrderTime);
@@ -62,7 +62,6 @@ private ImageButton imbBackOrder;
         String orderName = intent.getExtras().getString(Constant.ORDER_NAME);
         String orderNumber = intent.getExtras().getString(Constant.ORDER_NUMBER);
         String orderPrice = intent.getExtras().getString(Constant.ORDER_PRICE);
-//        String orderDate = intent.getExtras().getString(Constant.ORDER_DATE);
         String orderQuantity = intent.getExtras().getString(Constant.ORDER_QUANTITY);
         String orderStatus = intent.getExtras().getString(Constant.ORDER_STATUS);
         String orderTime = intent.getExtras().getString(Constant.ORDER_TIME);
@@ -72,7 +71,6 @@ private ImageButton imbBackOrder;
         txtOrderName.setText(orderName);
         txtOrderNumber.setText(orderNumber);
         txtOrderStatus.setText(orderStatus);
-//        txtOrderDate.setText(orderDate);
         txtOrderPrice.setText(orderPrice);
         txtOrderQuantity.setText(orderQuantity);
         txtOrderStatus.setText(orderStatus);

@@ -12,65 +12,52 @@
         android:theme="@style/Theme.MerakiBook">
         <activity
             android:name=".Reviews"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".CartActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
+        <activity
+            android:name=".BangXepHang"
+            android:exported="true"/>
+        <activity
+            android:name=".OrderDetailActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".OrderConfirmDetailActivity"
+            android:exported="true"/>
         <activity
             android:name=".PaymentOptionActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".AddressActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".BookListCatogoryActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"/>
 
         <activity
             android:name=".PaymentActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"/>
+        <activity
+            android:name=".VipActivity"
+            android:exported="true"/>
         <activity
             android:name=".DeliveryActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".Authors"
-            android:exported="true">
-
-
-        </activity>
-        <activity android:name=".LoginActivity" android:exported="true">
-        </activity>
+            android:exported="true"/>
+        <activity android:name=".LoginActivity"
+            android:exported="true"/>
         <activity
             android:name=".Intro3Activity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Intro2Activity"
             android:exported="true" />
         <activity
             android:name=".PurchaseOrderActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".AboutMerakiBook"
             android:exported="true"/>
@@ -92,20 +79,21 @@
             android:exported="true" />
         <activity
             android:name=".PolicyActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".SearchActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".DetailBookActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

@@ -39,7 +39,7 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.activity_notification,container,false);
+       view=inflater.inflate(R.layout.activity_notification,container,false);
 
         linkViews();
         initData();
@@ -49,7 +49,7 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
 
 
     private void linkViews() {
-        rcvNotification = view.findViewById(R.id.rcvNotif);
+        rcvNotification=view.findViewById(R.id.rcvNotif);
         txtOrderName = view.findViewById(R.id.txtOrderName);
         txtOrderStatus = view.findViewById(R.id.txtOrderStatus);
         txtOrderTime = view.findViewById(R.id.txtOrderTime);
@@ -60,6 +60,9 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
         orders = new ArrayList<>();
         orders.add(new Order("Đáp án của thời gian", "1099A", "2", "125.000", "12:00 10/11/2021","Giao hàng thành công","15:00 13/11/2021",R.drawable.dapancuathoigian));
         orders.add(new Order("Chí Phèo", "1250B", "1", "45.000", "9:00 15/12/2021","Giao hàng thành công","16:00 18/12/2021",R.drawable.chipheo));
+        orders.add(new Order("Đáp án của thời gian", "1099A", "2", "125.000", "12:00 10/11/2021","Giao hàng thành công","15:00 13/11/2021",R.drawable.dapancuathoigian));
+        orders.add(new Order("Chí Phèo", "1250B", "1", "45.000", "9:00 15/12/2021","Giao hàng thành công","16:00 18/12/2021",R.drawable.chipheo));
+
         adapter = new NotificationAdapter(orders, this);
         rcvNotification.setAdapter(adapter);
         rcvNotification.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL,false));
@@ -77,7 +80,7 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
         intent.putExtra("OrderTime", order.getOrderTime());
         intent.putExtra("OrderImage", order.getOrderImage());
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(getActivity(), orderImage,"sharedName");
-        startActivity(intent,options.toBundle());
+        startActivity(intent, options.toBundle());
     }
 
 }
