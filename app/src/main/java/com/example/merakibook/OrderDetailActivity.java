@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.example.model.Order;
 import com.example.model.OrderDetailClickListener;
+import com.example.utils.Constant;
 
 import java.util.ArrayList;
 
@@ -58,14 +59,14 @@ private ImageButton imbBackOrder;
 
     private void loadData() {
         Intent intent = getIntent();
-        String orderName = intent.getExtras().getString("OrderName");
-        String orderNumber = intent.getExtras().getString("OrderNumber");
-        String orderPrice = intent.getExtras().getString("OrderPrice");
-//        String orderDate = intent.getExtras().getString("OrderDate");
-        String orderQuantity = intent.getExtras().getString("OrderQuantity");
-        String orderStatus = intent.getExtras().getString("OrderStatus");
-        String orderTime = intent.getExtras().getString("OrderTime");
-        int orderImage = intent.getExtras().getInt("OrderImage");
+        String orderName = intent.getExtras().getString(Constant.ORDER_NAME);
+        String orderNumber = intent.getExtras().getString(Constant.ORDER_NUMBER);
+        String orderPrice = intent.getExtras().getString(Constant.ORDER_PRICE);
+//        String orderDate = intent.getExtras().getString(Constant.ORDER_DATE);
+        String orderQuantity = intent.getExtras().getString(Constant.ORDER_QUANTITY);
+        String orderStatus = intent.getExtras().getString(Constant.ORDER_STATUS);
+        String orderTime = intent.getExtras().getString(Constant.ORDER_TIME);
+        int orderImage = intent.getExtras().getInt(Constant.ORDER_IMAGE);
 
         imvOrderImage.setImageResource(orderImage);
         txtOrderName.setText(orderName);

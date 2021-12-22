@@ -23,4 +23,13 @@ public class Constant {
     public  static  final String AUTHOR_SUMMARY="AuthorSummary";
     public  static  final String AUTHOR_IMAGE="AuthorImage";
 
+    public static final String ORDER_NAME ="OrderName";
+    public static final String ORDER_NUMBER ="OrderNumber";
+    public static final String ORDER_PRICE="OrderPrice";
+    public static final String ORDER_DATE ="OrderDate";
+    public static final String ORDER_QUANTITY ="OrderQuantity";
+    public static final String ORDER_STATUS ="OrderStatus";
+    public static final String ORDER_TIME ="OrderTime";
+    public static final String ORDER_IMAGE ="OrderImage";
+
 }

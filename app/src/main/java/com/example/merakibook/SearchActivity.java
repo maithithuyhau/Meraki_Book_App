@@ -132,18 +132,19 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     @Override
     public void onAuthorClick(Author author, CircleImageView authorImage) {
         Intent intent = new Intent(SearchActivity. this, Authors.class);
-        intent.putExtra("AuthorName", author.getAuthorName());
-        intent.putExtra("PlaceOfBirth", author.getAuthorPlaceOfBirth());
-        intent.putExtra("TotalBook", author.getAuthorTotalBook());
-        intent.putExtra("AuthorBirth", author.getAuthorBirth());
-        intent.putExtra("AuthorDeath", author.getAuthorDeath());
-        intent.putExtra("AuthorImage", author.getAuthorImage());
-        intent.putExtra("AuthorSummary", author.getAuthorSummary());
+        intent.putExtra(Constant.AUTHOR_NAME, author.getAuthorName());
+        intent.putExtra(Constant.PLACE_OF_BIRTH, author.getAuthorPlaceOfBirth());
+        intent.putExtra(Constant.TOTAL_BOOK, author.getAuthorTotalBook());
+        intent.putExtra(Constant.AUTHOR_BIRTH, author.getAuthorBirth());
+        intent.putExtra(Constant.AUTHOR_DEADTH, author.getAuthorDeath());
+        intent.putExtra(Constant.AUTHOR_IMAGE, author.getAuthorImage());
+        intent.putExtra(Constant.AUTHOR_SUMMARY, author.getAuthorSummary());
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SearchActivity.this, authorImage,"sharedName");
         startActivity(intent,options.toBundle());
     }
 
     private void addEvents() {
+
 //        svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 //            @Override
 //            public boolean onQueryTextSubmit(String query) {
