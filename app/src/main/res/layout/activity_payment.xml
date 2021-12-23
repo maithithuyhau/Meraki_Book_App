@@ -71,6 +71,7 @@
                 android:rowCount="13">
 
                 <TextView
+                    android:id="@+id/txtDiaChi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dia_chi_nhan_hang"
@@ -104,6 +105,7 @@
                     android:background="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/txtVanChuyen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/don_vi_van_chuyen"
@@ -137,6 +139,7 @@
                     android:background="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/txtThanhToan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/phuong_thuc_thanh_toan"

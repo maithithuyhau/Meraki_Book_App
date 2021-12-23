@@ -33,7 +33,7 @@ public class PaymentActivity extends AppCompatActivity {
 
     Button btnTtDatHang;
     ImageButton btnBack;
-    TextView txtTtDiaChi, txtTtDonViVanChuyen, txtTtPhuongThuc, txtTtDieuKhoan;
+    TextView txtTtDiaChi, txtTtDonViVanChuyen, txtTtPhuongThuc, txtTtDieuKhoan, txtThanhToan, txtDiaChi, txtVanChuyen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,9 @@ public class PaymentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
         linkView();
         initData();
+        InfoRegis();
         addEvent();
+
     }
 
     private void linkView() {
@@ -54,6 +56,9 @@ public class PaymentActivity extends AppCompatActivity {
         txtTtDonViVanChuyen = findViewById(R.id.txtTtDonViVanChuyen);
         txtTtPhuongThuc = findViewById(R.id.txtTtPhuongThuc);
         txtTtDieuKhoan = findViewById(R.id.txtTtDieuKhoan);
+        txtDiaChi = findViewById(R.id.txtDiaChi);
+        txtVanChuyen = findViewById(R.id.txtVanChuyen);
+        txtThanhToan = findViewById(R.id.txtThanhToan);
     }
 
     private void initData() {
@@ -89,6 +94,7 @@ public class PaymentActivity extends AppCompatActivity {
             }
         });
     }
+
     public void openDialog(Context context){
         Dialog dialog = new Dialog(context);
         dialog.setContentView(R.layout.popup_order_successful);
@@ -105,5 +111,35 @@ public class PaymentActivity extends AppCompatActivity {
         dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
+    }
+    private void InfoRegis() {
+        txtDiaChi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PaymentActivity.this, AddressActivity.class);
+                startActivity(intent);
+            }
+        });
+        txtVanChuyen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PaymentActivity.this, DeliveryActivity.class);
+                startActivity(intent);
+            }
+        });
+        txtThanhToan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PaymentActivity.this, PaymentOptionActivity.class);
+                startActivity(intent);
+            }
+        });
+        txtTtDieuKhoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PaymentActivity.this, TermsOfUseActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

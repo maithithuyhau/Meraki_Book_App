@@ -23,7 +23,7 @@ import android.widget.TextView;
 public class AccountActivity extends Fragment {
 
     Button btnAcSaw, btnAcRate,btnAcCart;
-    ImageButton  btnBack;
+    ImageButton  btnBack, btnCaiDat;
     View view;
 
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
@@ -48,6 +48,7 @@ public class AccountActivity extends Fragment {
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
         btnBack = view.findViewById(R.id.btnBack);
+        btnCaiDat = view.findViewById(R.id.btnCaiDat);
     }
 
     private void addEvent() {

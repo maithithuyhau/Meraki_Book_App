@@ -19,7 +19,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class VipActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnDangKyNgay;
     ImageButton btnBack;
-    TextView txtKhungGia3, txtKhungGia2, txtKhungGia1;
+    TextView txtKhungGia3, txtKhungGia2, txtKhungGia1, txtQuyenLoi, txtDieuKhoan1;
     private FragmentManager manager;
 
     @Override
@@ -39,6 +39,8 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
         txtKhungGia1 = findViewById(R.id.txtKhungGia1);
         txtKhungGia2 = findViewById(R.id.txtKhungGia2);
         txtKhungGia3 = findViewById(R.id.txtKhungGia3);
+        txtQuyenLoi = findViewById(R.id.txtQuyenLoi);
+        txtDieuKhoan1 = findViewById(R.id.txtDieuKhoan1);
 
     }
 
@@ -94,6 +96,21 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        txtQuyenLoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(VipActivity.this, PolicyActivity.class);
+                startActivity(intent);
+            }
+        });
+        txtDieuKhoan1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(VipActivity.this, TermsOfUseActivity.class);
+                startActivity(intent);
             }
         });
 
