@@ -63,6 +63,8 @@
         <entry key="..\:/Android Fol/Meraki_Book_App/app/src/main/res/menu/menu_bottom.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App/app/src/main/res/menu/popup_muasach.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_authors.xml" value="0.264" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_book_list_catogory.xml" value="0.13020833333333334" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_books_of_author.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_intro1.xml" value="0.264" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_intro2.xml" value="0.264" />
@@ -75,6 +77,9 @@
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/bookitem.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_home_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_login.xml" value="0.13405797101449277" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_my_ebook.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_reading_book.xml" value="0.13020833333333334" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_sign_up.xml" value="0.13360507246376813" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/item_comment.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/item_delivered.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/item_notification.xml" value="0.25416666666666665" />

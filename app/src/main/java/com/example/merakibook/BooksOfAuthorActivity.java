@@ -18,7 +18,7 @@ import com.example.model.BookItemClickListener;
 
 import java.util.ArrayList;
 
-public class BooksOfAuthorActivity  implements BookItemClickListener {
+public class BooksOfAuthorActivity extends AppCompatActivity implements BookItemClickListener {
 
     View view;
     RecyclerView rcvBooksOfAuthor;
@@ -36,25 +36,18 @@ public class BooksOfAuthorActivity  implements BookItemClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.activity_books_of_author, container, false);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_books_of_author);
 
         linkView();
         initData();
-
-        //bookAdapterVertical = new BookAdapterVertical(getContext(), myBook, this);
-        //rcvBooksOfAuthor.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rcvBooksOfAuthor.setAdapter(bookAdapterVertical);
-        
-        return view;
     }
 
-    
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return null;
+    }
+
 
     private void initData() {
         myBook = new ArrayList<>();

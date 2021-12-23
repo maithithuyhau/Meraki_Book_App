@@ -1,5 +1,6 @@
 package com.example.merakibook;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,6 +15,7 @@ public class LoginFragment extends Fragment {
 
     View view;
     EditText edtEmailOrSDT, edtMatKhau;
+    Button btnDangNhap;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -31,7 +33,13 @@ public class LoginFragment extends Fragment {
         view  =inflater.inflate(R.layout.fragment_login, container, false);
 
         linkView();
+        addEvent();
         return view;
+    }
+
+    private void addEvent() {
+        Intent intent = new Intent(getActivity(), MainActivity.class);
+        startActivity(intent);
     }
 
     private void linkView() {
