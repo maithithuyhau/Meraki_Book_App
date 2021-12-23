@@ -7,41 +7,41 @@
     tools:context=".MyRatingActivity"
     android:background="@color/background">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/green"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:weightSum="10"
-        android:id="@+id/navBar">
+        <LinearLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="15dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_weight="0.5"
-            android:background="@drawable/icon_back" />
+            <ImageButton
+                android:id="@+id/imbBack"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.5"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/icon_back" />
 
-        <TextView
-            android:id="@+id/txtCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:gravity="center"
-            android:text="@string/txt_tittle_my_rating"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="@string/txt_tittle_my_rating"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_search"
-            android:layout_weight="0.5"
-            android:layout_marginEnd="24dp"/>
-    </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_search" />
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView9"
@@ -54,12 +54,12 @@
             android:layout_below="@id/navBar"/>
 
 
-        <ImageView
-            android:id="@+id/imvAvatar"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_below="@id/navBar"
-            android:background="@drawable/taikhoan_bg" />
+    <ImageView
+        android:id="@+id/imvAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/navBar"
+        android:background="@drawable/taikhoan_bg" />
 
         <GridLayout
             android:id="@+id/gridLayoutRating"

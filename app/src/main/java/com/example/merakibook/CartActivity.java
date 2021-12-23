@@ -1,4 +1,5 @@
 package com.example.merakibook;
+import static com.example.utils.Constant.REFERENCE_PATH;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -12,11 +13,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.adapter.CartAdapter;
 import com.example.model.Book;
 import com.example.model.Cart;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class CartActivity extends AppCompatActivity {
@@ -79,8 +82,17 @@ public class CartActivity extends AppCompatActivity {
         btnMuaHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CartActivity.this, AddressActivity.class);
-                startActivity(intent);
+                File f = new File(getApplicationInfo().dataDir + REFERENCE_PATH );
+                if(!f.exists()){
+                    Intent intent = new Intent(CartActivity.this, AddressActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(CartActivity.this, "paymentinfo ko tồn tại", Toast.LENGTH_SHORT).show();
+                }else if(f.exists()){
+                    Intent intent = new Intent(CartActivity.this, PaymentActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(CartActivity.this, "paymentinfo tồn tại", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {

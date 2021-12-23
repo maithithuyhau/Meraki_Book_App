@@ -8,16 +8,16 @@
     android:background="@color/background">
 
     <LinearLayout
+        android:id="@+id/navBar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/green"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:weightSum="10"
-        android:id="@+id/navBar">
+        android:weightSum="10">
 
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackRecently"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:layout_marginStart="24dp"
@@ -38,9 +38,9 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic_search"
+            android:layout_marginEnd="24dp"
             android:layout_weight="0.5"
-            android:layout_marginEnd="24dp"/>
+            android:src="@drawable/ic_search" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

@@ -7,18 +7,6 @@
     tools:context=".PaymentOptionActivity"
     android:background="@color/background">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/green"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
         <LinearLayout
             android:id="@+id/navBar"
             android:layout_width="match_parent"
@@ -26,24 +14,24 @@
             android:background="@color/green"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:paddingEnd="24dp"
             android:weightSum="10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/btnBack"
+                android:id="@+id/imbBack"
                 android:layout_width="15dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="24dp"
                 android:layout_weight="0.5"
+                android:layout_marginStart="24dp"
                 android:background="@drawable/icon_back" />
 
             <TextView
                 android:id="@+id/txtPaymentOption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
                 android:layout_weight="9.5"
                 android:gravity="center_horizontal"
                 android:text="@string/txt_payment_option"
@@ -51,7 +39,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
 
     <ImageView
         android:id="@+id/imageView11"
@@ -60,7 +47,7 @@
         android:background="@drawable/background_dropshadow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+        app:layout_constraintTop_toBottomOf="@id/navBar"/>
 
     <ImageView
         android:id="@+id/imvBgTittle"
@@ -70,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+        app:layout_constraintTop_toBottomOf="@id/navBar"/>
 
     <TextView
         android:id="@+id/textView8"
@@ -81,7 +68,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+        app:layout_constraintTop_toBottomOf="@id/navBar"/>
 
     <RadioGroup
         android:id="@+id/rdgPaymentOption"

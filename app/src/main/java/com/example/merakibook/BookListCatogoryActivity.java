@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -26,6 +27,7 @@ import java.util.List;
 
 public class BookListCatogoryActivity extends AppCompatActivity implements BookItemClickListener {
 
+    ImageButton imbBack;
     //Spinner
     Spinner spSort;
     ArrayList<String> listSort;
@@ -47,6 +49,7 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
         addSortList();
         configRecyclerView();
         addEventSpinner();
+        addEvent();
 
 
     }
@@ -60,6 +63,16 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
         spSort = findViewById(R.id.spSort);
         rcvListBookCategory = findViewById(R.id.rcvListBookCategory);
         txtCategory=findViewById(R.id.txtCategory);
+        imbBack = findViewById(R.id.imbBack);
+    }
+
+    private void addEvent() {
+        imbBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     private void loadData() {

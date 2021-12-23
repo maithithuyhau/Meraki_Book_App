@@ -21,8 +21,6 @@
         <ImageView
             android:id="@+id/imvBack"
             android:layout_width="15dp"
-
-
             android:layout_height="25dp"
             android:src="@drawable/icon_back" />
 
@@ -43,7 +41,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
 
-            android:src="@drawable/icon_card_fontbar" />
+            />
 
     </LinearLayout>
 

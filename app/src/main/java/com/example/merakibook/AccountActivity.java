@@ -23,7 +23,7 @@ import android.widget.TextView;
 public class AccountActivity extends Fragment {
 
     Button btnAcSaw, btnAcRate,btnAcCart;
-    ImageButton  btnBack;
+    ImageButton  btnBack, btnCaiDat;
     View view;
 
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
@@ -48,6 +48,7 @@ public class AccountActivity extends Fragment {
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
         btnBack = view.findViewById(R.id.btnBack);
+        btnCaiDat = view.findViewById(R.id.btnCaiDat);
     }
 
     private void addEvent() {
@@ -56,6 +57,7 @@ public class AccountActivity extends Fragment {
         btnAcRate.setOnClickListener(myClick);
         layoutGioiThieu.setOnClickListener(myClick);
         layoutChinhSach.setOnClickListener(myClick);
+        btnCaiDat.setOnClickListener(myClick);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +65,6 @@ public class AccountActivity extends Fragment {
                 getActivity().onBackPressed();
             }
         });
-
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {
@@ -91,7 +92,10 @@ public class AccountActivity extends Fragment {
                     intent = new Intent(getActivity(),PolicyActivity.class);
                     startActivity(intent);
                     break;
-
+                case R.id.btnCaiDat:
+                    intent = new Intent(getActivity(),SettingActivity.class);
+                    startActivity(intent);
+                    break;
             }
         }
     };

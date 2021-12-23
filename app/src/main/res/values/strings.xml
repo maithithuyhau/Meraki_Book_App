@@ -126,6 +126,18 @@
     <string name="btn_2_star">2 sao (1)</string>
     <string name="btn_1_star">1 sao (1)</string>
 
+    //Cài đặt
+    <string name="txt_setting">Cài đặt</string>
+    <string name="txt_notify_user">Thông tin cá nhân</string>
+    <string name="txt_setting_app">Cài đặt ứng dụng</string>
+    <string name="txt_setting_read">Thiết lập đọc</string>
+    <string name="txt_dark_screen">Chế độ ban đêm</string>
+    <string name="txt_language">Ngôn ngữ</string>
+    <string name="txt_prioritize">Truyện được ưu tiên</string>
+    <string name="txt_private_security">Riêng tư và bảo mật</string>
+    <string name="txt_setting_password">Cài đặt mật khẩu</string>
+    <string name="txt_help">Trợ giúp và hỗ trợ</string>
+    <string name="btn_sign_out">Đăng xuất</string>
 
     //Policy
     <string name="tai_khoan_khach_hang">Khi sử dụng dịch vụ Meraki Book, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng Meraki Book. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp Meraki Book phục vụ quý khách tốt nhất.\nTrong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản tại Meraki Book.\nQuý khách phải giữ kín mật khẩu và tài khoản, hoàn toàn chịu trách nhiệm đối với tất cả các hoạt động diễn ra thông qua việc sử dụng mật khẩu hoặc tài khoản của mình. Quý khách nên đảm bảo thoát khỏi tài khoản tại Meraki Book sau mỗi lần sử dụng để bảo mật thông tin của mình.</string>
