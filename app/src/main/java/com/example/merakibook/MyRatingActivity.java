@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 public class MyRatingActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class MyRatingActivity extends AppCompatActivity {
     Button btnAllStar, btnFiveStar, btnFourStar, btnThreeStar, btnTwoStar, btnOneStar;
     LinearLayout linearLayoutContainer;
     Fragment fragment;
+    ImageButton imbBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MyRatingActivity extends AppCompatActivity {
         btnThreeStar = findViewById(R.id.btnThreeStar);
         btnTwoStar = findViewById(R.id.btnTwoStar);
         btnOneStar = findViewById(R.id.btnOneStar);
+        imbBack = findViewById(R.id.imbBack);
 
         linearLayoutContainer = findViewById(R.id.linearLayoutContainer);
     }
@@ -43,6 +46,12 @@ public class MyRatingActivity extends AppCompatActivity {
         btnThreeStar.setOnClickListener(myClick);
         btnTwoStar.setOnClickListener(myClick);
         btnOneStar.setOnClickListener(myClick);
+        imbBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {

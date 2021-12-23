@@ -16,6 +16,7 @@ import com.example.model.Author;
 import com.example.model.AuthorItemClickListener;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
+import com.example.utils.Constant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,14 +60,14 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
 
     private void loadData() {
         Intent intent= getIntent();
-        String authorName=intent.getExtras().getString("AuthorName");
-        String authorPlaceOfBirth= intent.getExtras().getString("PlaceOfBirth");
-        String authorBirth=intent.getExtras().getString("AuthorBirth");
-        String authorDeath= intent.getExtras().getString("AuthorDeath");
-        String authorTotalBook= intent.getExtras().getString("TotalBook");
+        String authorName=intent.getExtras().getString(Constant.ORDER_NAME);
+        String authorPlaceOfBirth= intent.getExtras().getString(Constant.PLACE_OF_BIRTH);
+        String authorBirth=intent.getExtras().getString(Constant.AUTHOR_BIRTH);
+        String authorDeath= intent.getExtras().getString(Constant.AUTHOR_DEADTH);
+        String authorTotalBook= intent.getExtras().getString(Constant.TOTAL_BOOK);
 
-        String authorSummary= intent.getExtras().getString("AuthorSummary");
-        int authorImage =intent.getExtras().getInt("AuthorImage");
+        String authorSummary= intent.getExtras().getString(Constant.AUTHOR_SUMMARY);
+        int authorImage =intent.getExtras().getInt(Constant.AUTHOR_IMAGE);
 
         imvAuthor.setImageResource(authorImage);
 

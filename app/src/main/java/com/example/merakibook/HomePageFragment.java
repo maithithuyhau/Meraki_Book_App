@@ -25,14 +25,13 @@ import com.example.adapter.BookAdapterHorizontalFragment;
 import com.example.model.Banner;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
+import com.example.utils.Constant;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class HomePageFragment extends Fragment implements BookItemClickListener {
     public HomePageFragment(){
@@ -67,9 +66,9 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
         banner_page=view.findViewById(R.id.banner_page);
         indicator=view.findViewById(R.id.indicator);
         rcvSachMoiNhat=view.findViewById(R.id.rcvSachMoiNhat);
-        rcvSachHotNhat=view.findViewById(R.id.rcvSachHotNhat);
-        rcvTop10=view.findViewById(R.id.rcvTop10);
-        rcvBookFree=view.findViewById(R.id.rcvBookFree);
+        rcvSachHotNhat=view.findViewById(R.id.rcvTopTuan);
+        rcvTop10=view.findViewById(R.id.rcvTopThang);
+        rcvBookFree=view.findViewById(R.id.rcvBanChay);
         rcvDeXuat=view.findViewById(R.id.rcvDeXuat);
 
         imvVip=view.findViewById(R.id.imvVip);
@@ -125,13 +124,13 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
 
         //List Free
         List<Book> list_book4= new ArrayList<>();
-        list_book2.add(new Book("Sapiens","Yuval Noah Harari","560","75,000","155,000","Nhà Xuất Bản Thế Giới","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.sapiens,R.string.sapiens));
-        list_book2.add(new Book("Sinh trắc vân tay","RICHARD UNGER","444","85,000","183,000 ","Nhà Xuất Bản Hồng Đức","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.sinhtracvantay,R.string.sinh_trac_van_tay));
-        list_book2.add(new Book("Bạm đắt giá bao nhiêu","Vãn Tình","320","45,000","119,000","NXB Văn Học","2018-08-01","Bìa mềm","14.5 x 20cm",R.string.sach_moi,R.drawable.bandatgiabaonhieu,R.string.ban_dat_gia_bao_nhieu));
-        list_book2.add(new Book("Gia tộc Morgan","Ron Chernow","1092","65,000","279,000"," NXB Thế Giới","30/09/2021","Bìa mềm","14 x 20,5 cm",R.string.sach_moi,R.drawable.giatocmorgan,R.string.gia_toc_margan));
+        list_book4.add(new Book("Sapiens","Yuval Noah Harari","560","75,000","155,000","Nhà Xuất Bản Thế Giới","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.sapiens,R.string.sapiens));
+        list_book4.add(new Book("Sinh trắc vân tay","RICHARD UNGER","444","85,000","183,000 ","Nhà Xuất Bản Hồng Đức","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.sinhtracvantay,R.string.sinh_trac_van_tay));
+        list_book4.add(new Book("Bạm đắt giá bao nhiêu","Vãn Tình","320","45,000","119,000","NXB Văn Học","2018-08-01","Bìa mềm","14.5 x 20cm",R.string.sach_moi,R.drawable.bandatgiabaonhieu,R.string.ban_dat_gia_bao_nhieu));
+        list_book4.add(new Book("Gia tộc Morgan","Ron Chernow","1092","65,000","279,000"," NXB Thế Giới","30/09/2021","Bìa mềm","14 x 20,5 cm",R.string.sach_moi,R.drawable.giatocmorgan,R.string.gia_toc_margan));
 
         BookAdapterHorizontalFragment adapter4= new BookAdapterHorizontalFragment(list_book4,this);
-        rcvBookFree.setAdapter(adapter2);
+        rcvBookFree.setAdapter(adapter4);
         rcvBookFree.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL,false));
 
         //List sách đề xuất
@@ -165,7 +164,8 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.bangxephang:
-
+                        Intent intent0=new Intent(getActivity(),BangXepHang.class);
+                        startActivity(intent0);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.tieuthuyet:
@@ -250,17 +250,17 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
         Intent intent=new Intent(getActivity(),DetailBookActivity.class);
-        intent.putExtra("Title",book.getBookName());
-        intent.putExtra("Summary",book.getBookSummary());
-        intent.putExtra("Image",book.getBookImage());
-        intent.putExtra("Author",book.getBookAuthor());
-        intent.putExtra("Page",book.getBookPage());
-        intent.putExtra("EbookPrice",book.getEbookPrice());
-        intent.putExtra("bookPrice",book.getBookPrice());
-        intent.putExtra("Publisher",book.getBookPublisher());
-        intent.putExtra("DateTime",book.getDateTime());
-        intent.putExtra("LoaiBia",book.getLoaiBia());
-        intent.putExtra("BookSize",book.getBookSize());
+        intent.putExtra(Constant.BOOK_NAME,book.getBookName());
+        intent.putExtra(Constant.BOOK_SUMMARY,book.getBookSummary());
+        intent.putExtra(Constant.BOOK_IMAGE,book.getBookImage());
+        intent.putExtra(Constant.BOOK_AUTHOR,book.getBookAuthor());
+        intent.putExtra(Constant.BOOK_PAGE,book.getBookPage());
+        intent.putExtra(Constant.BOOK_E_PRICE,book.getEbookPrice());
+        intent.putExtra(Constant.BOOK_PRICE,book.getBookPrice());
+        intent.putExtra(Constant.BOOK_PUBLISHER,book.getBookPublisher());
+        intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
+        intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
+        intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
 
 
 //        startActivity(intent);

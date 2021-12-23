@@ -4,17 +4,6 @@ public class Order {
     private String orderName, orderNumber, orderQuantity, orderPrice, orderDate, orderStatus, orderTime;
     private int orderImage;
 
-    public Order(String orderName, String orderNumber, String orderQuantity, String orderPrice, String orderDate, String orderStatus, String orderTime, int orderImage) {
-        this.orderName = orderName;
-        this.orderNumber = orderNumber;
-        this.orderQuantity = orderQuantity;
-        this.orderPrice = orderPrice;
-        this.orderDate = orderDate;
-        this.orderStatus = orderStatus;
-        this.orderTime= orderTime;
-        this.orderImage = orderImage;
-    }
-
     public String getOrderName() {
         return orderName;
     }
@@ -76,6 +65,17 @@ public class Order {
     }
 
     public void setOrderImage(int orderImage) {
+        this.orderImage = orderImage;
+    }
+
+    public Order(String orderName, String orderNumber, String orderQuantity, String orderPrice, String orderDate, String orderStatus, String orderTime, int orderImage) {
+        this.orderName = orderName;
+        this.orderNumber = orderNumber;
+        this.orderQuantity = orderQuantity;
+        this.orderPrice = orderPrice;
+        this.orderDate = orderDate;
+        this.orderStatus = orderStatus;
+        this.orderTime = orderTime;
         this.orderImage = orderImage;
     }
 }

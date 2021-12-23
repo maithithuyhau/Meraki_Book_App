@@ -76,16 +76,16 @@ public class OrderConfirmAdapter extends RecyclerView.Adapter<OrderConfirmAdapte
                     orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
                 }
             });
-//            btnOrderCancel.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    if(view.equals(btnOrderCancel)){
-//                        removeAt(getAdapterPosition());
-//                    } else if(orderConfirm != null){
-//                        orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
-//                    }
-//                }
-//            });
+            btnOrderCancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(view.equals(btnOrderCancel)){
+                        removeAt(getAdapterPosition());
+                    } else if(orderConfirm != null){
+                        orderConfirm.onOrderClick(orders.get(getAdapterPosition()), imvOrderImage);
+                    }
+                }
+            });
 
         }
 

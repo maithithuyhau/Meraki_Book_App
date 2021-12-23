@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.example.adapter.OrderConfirmAdapter;
 import com.example.model.Order;
 import com.example.model.OrderDetailClickListener;
+import com.example.utils.Constant;
 
 import java.util.ArrayList;
 
@@ -72,14 +73,14 @@ public class  Confirm_Fragment extends Fragment implements OrderDetailClickListe
     @Override
     public void onOrderClick(Order order, ImageView orderImage) {
         Intent intent = new Intent(getActivity(), OrderConfirmDetailActivity.class);
-        intent.putExtra("OrderName", order.getOrderName());
-        intent.putExtra("OrderNumber", order.getOrderNumber());
-        intent.putExtra("OrderPrice", order.getOrderPrice());
-        intent.putExtra("OrderDate", order.getOrderDate());
-        intent.putExtra("OrderQuantity", order.getOrderQuantity());
-        intent.putExtra("OrderStatus", order.getOrderStatus());
-        intent.putExtra("OrderTime", order.getOrderTime());
-        intent.putExtra("OrderImage", order.getOrderImage());
+        intent.putExtra(Constant.ORDER_NAME, order.getOrderName());
+        intent.putExtra(Constant.ORDER_NUMBER, order.getOrderNumber());
+        intent.putExtra(Constant.ORDER_PRICE, order.getOrderPrice());
+        intent.putExtra(Constant.ORDER_DATE, order.getOrderDate());
+        intent.putExtra(Constant.ORDER_QUANTITY, order.getOrderQuantity());
+        intent.putExtra(Constant.ORDER_STATUS, order.getOrderStatus());
+        intent.putExtra(Constant.ORDER_TIME, order.getOrderTime());
+        intent.putExtra(Constant.ORDER_IMAGE, order.getOrderImage());
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(getActivity(), orderImage,"sharedName");
         startActivity(intent,options.toBundle());
     }

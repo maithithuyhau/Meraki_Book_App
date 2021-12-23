@@ -20,9 +20,9 @@
         android:id="@+id/navBar">
 
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/imbBackMyBook"
             android:layout_width="15dp"
-            android:layout_height="20dp"
+            android:layout_height="11dp"
             android:layout_marginStart="24dp"
             android:layout_weight="0.5"
             android:background="@drawable/icon_back" />

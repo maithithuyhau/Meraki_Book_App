@@ -16,7 +16,8 @@
         android:backgroundTint="@color/background"
         app:cardCornerRadius="4dp"
         app:cardElevation="1dp"
-        app:cardMaxElevation="2dp">
+        app:cardMaxElevation="2dp"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"

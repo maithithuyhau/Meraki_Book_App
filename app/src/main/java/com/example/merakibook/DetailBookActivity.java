@@ -26,6 +26,7 @@ import android.widget.TextView;
 import com.example.adapter.BookAdapterHorizontal;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
+import com.example.utils.Constant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,21 +88,21 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
 
     private void loadData() {
         Intent intent= getIntent();
-        String bookName=intent.getExtras().getString("Title");
-        String bookAuthor= intent.getExtras().getString("Author");
+        String bookName=intent.getExtras().getString(Constant.BOOK_NAME);
+        String bookAuthor= intent.getExtras().getString(Constant.BOOK_AUTHOR);
 
 
-        String bookPage=intent.getExtras().getString("Page");
-        String ebookPrice= intent.getExtras().getString("EbookPrice");
-        String bookPrice=intent.getExtras().getString("bookPrice");
-        String bookPublisher= intent.getExtras().getString("Publisher");
-        String dateTime=intent.getExtras().getString("DateTime");
-        String loaiBia= intent.getExtras().getString("LoaiBia");
-        String bookSize= intent.getExtras().getString("BookSize");
+        String bookPage=intent.getExtras().getString(Constant.BOOK_PAGE);
+        String ebookPrice= intent.getExtras().getString(Constant.BOOK_E_PRICE);
+        String bookPrice=intent.getExtras().getString(Constant.BOOK_PRICE);
+        String bookPublisher= intent.getExtras().getString(Constant.BOOK_PUBLISHER);
+        String dateTime=intent.getExtras().getString(Constant.BOOK_DATETIME);
+        String loaiBia= intent.getExtras().getString(Constant.BOOK_LOAI_BIA);
+        String bookSize= intent.getExtras().getString(Constant.BOOK_SIZE);
 
 
-        int Summary= intent.getExtras().getInt("Summary");
-        int bookImage =intent.getExtras().getInt("Image");
+        int Summary= intent.getExtras().getInt(Constant.BOOK_SUMMARY);
+        int bookImage =intent.getExtras().getInt(Constant.BOOK_IMAGE);
 
 
         imvImages.setImageResource(bookImage);
@@ -190,8 +191,7 @@ imvComment.setOnClickListener(new View.OnClickListener() {
             imvBack.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent= new Intent(DetailBookActivity.this,MainActivity.class);
-                    startActivity(intent);
+                    finish();
                 }
             });
         imvCartDetail.setOnClickListener(new View.OnClickListener() {
@@ -245,17 +245,18 @@ imvComment.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
         Intent intent=new Intent(this,DetailBookActivity.class);
-        intent.putExtra("Title",book.getBookName());
-        intent.putExtra("Summary",book.getBookSummary());
-        intent.putExtra("Image",book.getBookImage());
-        intent.putExtra("Author",book.getBookAuthor());
-        intent.putExtra("Page",book.getBookPage());
-        intent.putExtra("EbookPrice",book.getEbookPrice());
-        intent.putExtra("bookPrice",book.getBookPrice());
-        intent.putExtra("Publisher",book.getBookPublisher());
-        intent.putExtra("DateTime",book.getDateTime());
-        intent.putExtra("LoaiBia",book.getLoaiBia());
-        intent.putExtra("BookSize",book.getBookSize());
+
+        intent.putExtra(Constant.BOOK_NAME,book.getBookName());
+        intent.putExtra(Constant.BOOK_SUMMARY,book.getBookSummary());
+        intent.putExtra(Constant.BOOK_IMAGE,book.getBookImage());
+        intent.putExtra(Constant.BOOK_AUTHOR,book.getBookAuthor());
+        intent.putExtra(Constant.BOOK_PAGE,book.getBookPage());
+        intent.putExtra(Constant.BOOK_E_PRICE,book.getEbookPrice());
+        intent.putExtra(Constant.BOOK_PRICE,book.getBookPrice());
+        intent.putExtra(Constant.BOOK_PUBLISHER,book.getBookPublisher());
+        intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
+        intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
+        intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
 
 
 //        startActivity(intent);

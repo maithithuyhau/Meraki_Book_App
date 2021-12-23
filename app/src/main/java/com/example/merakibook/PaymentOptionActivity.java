@@ -26,6 +26,7 @@ public class PaymentOptionActivity extends AppCompatActivity {
     RadioGroup rdgPaymentOption;
     RadioButton rdoCOD, rdoATM, rdoVisa;
     Button btnAgree;
+    ImageButton imbBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class PaymentOptionActivity extends AppCompatActivity {
         rdoCOD = findViewById(R.id.rdoCOD);
         rdoATM = findViewById(R.id.rdoATM);
         rdoVisa = findViewById(R.id.rdoVisa);
+        imbBack = findViewById(R.id.imbBack);
     }
 
     private void addEvent() {
@@ -60,6 +62,13 @@ public class PaymentOptionActivity extends AppCompatActivity {
                 editor.commit();
                 int checkedOption = rdgPaymentOption.getCheckedRadioButtonId();
                     selectedPayment(checkedOption);
+            }
+        });
+
+        imbBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

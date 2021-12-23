@@ -29,6 +29,7 @@ import com.example.model.AuthorItemClickListener;
 import com.example.model.Book;
 import com.example.model.Author;
 import com.example.model.BookItemClickListener;
+import com.example.utils.Constant;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -111,17 +112,17 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
         Intent intent = new Intent(SearchActivity. this,DetailBookActivity.class);
-        intent.putExtra("Title",book.getBookName());
-        intent.putExtra("Summary",book.getBookSummary());
-        intent.putExtra("Image",book.getBookImage());
-        intent.putExtra("Author",book.getBookAuthor());
-        intent.putExtra("Page",book.getBookPage());
-        intent.putExtra("EbookPrice",book.getEbookPrice());
-        intent.putExtra("bookPrice",book.getBookPrice());
-        intent.putExtra("Publisher",book.getBookPublisher());
-        intent.putExtra("DateTime",book.getDateTime());
-        intent.putExtra("LoaiBia",book.getLoaiBia());
-        intent.putExtra("BookSize",book.getBookSize());
+        intent.putExtra(Constant.BOOK_NAME,book.getBookName());
+        intent.putExtra(Constant.BOOK_SUMMARY,book.getBookSummary());
+        intent.putExtra(Constant.BOOK_IMAGE,book.getBookImage());
+        intent.putExtra(Constant.BOOK_AUTHOR,book.getBookAuthor());
+        intent.putExtra(Constant.BOOK_PAGE,book.getBookPage());
+        intent.putExtra(Constant.BOOK_E_PRICE,book.getEbookPrice());
+        intent.putExtra(Constant.BOOK_PRICE,book.getBookPrice());
+        intent.putExtra(Constant.BOOK_PUBLISHER,book.getBookPublisher());
+        intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
+        intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
+        intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
 
         //Animation
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SearchActivity.this, bookImageView,"sharedName");
@@ -131,18 +132,19 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     @Override
     public void onAuthorClick(Author author, CircleImageView authorImage) {
         Intent intent = new Intent(SearchActivity. this, Authors.class);
-        intent.putExtra("AuthorName", author.getAuthorName());
-        intent.putExtra("PlaceOfBirth", author.getAuthorPlaceOfBirth());
-        intent.putExtra("TotalBook", author.getAuthorTotalBook());
-        intent.putExtra("AuthorBirth", author.getAuthorBirth());
-        intent.putExtra("AuthorDeath", author.getAuthorDeath());
-        intent.putExtra("AuthorImage", author.getAuthorImage());
-        intent.putExtra("AuthorSummary", author.getAuthorSummary());
+        intent.putExtra(Constant.AUTHOR_NAME, author.getAuthorName());
+        intent.putExtra(Constant.PLACE_OF_BIRTH, author.getAuthorPlaceOfBirth());
+        intent.putExtra(Constant.TOTAL_BOOK, author.getAuthorTotalBook());
+        intent.putExtra(Constant.AUTHOR_BIRTH, author.getAuthorBirth());
+        intent.putExtra(Constant.AUTHOR_DEADTH, author.getAuthorDeath());
+        intent.putExtra(Constant.AUTHOR_IMAGE, author.getAuthorImage());
+        intent.putExtra(Constant.AUTHOR_SUMMARY, author.getAuthorSummary());
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SearchActivity.this, authorImage,"sharedName");
         startActivity(intent,options.toBundle());
     }
 
     private void addEvents() {
+
 //        svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 //            @Override
 //            public boolean onQueryTextSubmit(String query) {
