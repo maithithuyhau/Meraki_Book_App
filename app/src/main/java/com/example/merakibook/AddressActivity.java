@@ -1,5 +1,7 @@
 package com.example.merakibook;
 
+import static com.example.utils.Constant.REFERENCE_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,8 +19,6 @@ public class AddressActivity extends AppCompatActivity {
     ImageButton  btnBack;
     EditText edtDcAddress,edtDcName,edtDcPhone;
     Intent intent;
-
-    public static final String REFERENCE_NAME = "paymentInfo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

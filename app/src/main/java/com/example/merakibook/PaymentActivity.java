@@ -1,6 +1,6 @@
 package com.example.merakibook;
 
-import static com.example.merakibook.AddressActivity.REFERENCE_NAME;
+import static com.example.utils.Constant.REFERENCE_NAME;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;

@@ -32,4 +32,7 @@ public class Constant {
     public static final String ORDER_TIME ="OrderTime";
     public static final String ORDER_IMAGE ="OrderImage";
 
+    public static final String REFERENCE_NAME = "paymentInfo";
+    public  static final String REFERENCE_PATH = "/shared_prefs/";
+
 }

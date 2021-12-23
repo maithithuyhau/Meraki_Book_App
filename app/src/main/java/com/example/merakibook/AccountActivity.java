@@ -65,6 +65,14 @@ public class AccountActivity extends Fragment {
             }
         });
 
+        btnCaiDat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AccountActivity.class);
+                ((SettingActivity) getActivity()).startActivity(intent);
+            }
+        });
+
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {

@@ -1,6 +1,5 @@
 package com.example.merakibook;
-
-import static com.example.merakibook.AddressActivity.REFERENCE_NAME;
+import static com.example.utils.Constant.REFERENCE_PATH;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -31,7 +30,6 @@ public class CartActivity extends AppCompatActivity {
     ImageButton btnBack;
     Button btnMuaHang;
 
-    public  static final String REFERENCE_PATH = "/shared_prefs/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +82,6 @@ public class CartActivity extends AppCompatActivity {
         btnMuaHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String dataPath = getApplicationInfo().dataDir + REFERENCE_PATH + REFERENCE_NAME;
                 File f = new File(getApplicationInfo().dataDir + REFERENCE_PATH );
                 if(!f.exists()){
                     Intent intent = new Intent(CartActivity.this, AddressActivity.class);
