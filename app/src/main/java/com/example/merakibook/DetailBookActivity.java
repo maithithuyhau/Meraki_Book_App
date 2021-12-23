@@ -156,12 +156,10 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         switch (menuItem.getItemId()){
                             case R.id.muabook:
-                                AddCart();
+//                                AddCart();
                                 return true;
                             case R.id.muaebook:
                                 ShowPopup(Gravity.CENTER);
-
-//
                                 return true;
                             default:
                                 return false;
@@ -172,13 +170,13 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                 popupMenu.show();
             }
         });
-imvComment.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        Intent intent=new Intent(DetailBookActivity.this,Reviews.class);
-        startActivity(intent);
-    }
-});
+        imvComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(DetailBookActivity.this,Reviews.class);
+                startActivity(intent);
+            }
+        });
         btnDoc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -186,7 +184,7 @@ imvComment.setOnClickListener(new View.OnClickListener() {
                 startActivity(intent);
             }
         });
-//
+
 
             imvBack.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -194,13 +192,13 @@ imvComment.setOnClickListener(new View.OnClickListener() {
                     finish();
                 }
             });
-        imvCartDetail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(DetailBookActivity.this,CartActivity.class);
-                startActivity(intent);
-            }
-        });
+            imvCartDetail.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= new Intent(DetailBookActivity.this,CartActivity.class);
+                    startActivity(intent);
+                }
+            });
 
     }
 
@@ -257,10 +255,7 @@ imvComment.setOnClickListener(new View.OnClickListener() {
         intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
         intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
         intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
-
-
 //        startActivity(intent);
-
         //Animation
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(DetailBookActivity.this, bookImageView,"sharedName");
         startActivity(intent,options.toBundle());

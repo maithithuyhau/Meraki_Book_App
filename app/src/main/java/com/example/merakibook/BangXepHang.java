@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.adapter.BookAdapterHorizontal;
 import com.example.model.Book;
@@ -23,6 +24,7 @@ import java.util.List;
 public class BangXepHang extends AppCompatActivity implements BookItemClickListener {
 RecyclerView rcvTopTuan, rcvTopThang, rcvBanChay;
 ImageView imvBack;
+TextView txtXemallTuan,txtXemAllTopThang,txtXemallBanChay;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +45,12 @@ ImageView imvBack;
         rcvTopThang=findViewById(R.id.rcvTopThang);
         rcvTopTuan=findViewById(R.id.rcvTopTuan);
 
+        txtXemallBanChay=findViewById(R.id.txtXemallBanChay);
+        txtXemallTuan=findViewById(R.id.txtXemallTuan);
+        txtXemAllTopThang=findViewById(R.id.txtXemAllTopThang);
+
         imvBack=findViewById(R.id.imvBack);
+
 
     }
 
@@ -54,10 +61,34 @@ ImageView imvBack;
                 finish();
             }
         });
+        txtXemAllTopThang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BangXepHang.this,BookListCatogoryActivity.class);
+                intent.putExtra(Constant.CATEGORY,"Top Tháng");
+                startActivity(intent);
+            }
+        });
+        txtXemallTuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BangXepHang.this,BookListCatogoryActivity.class);
+                intent.putExtra(Constant.CATEGORY,"Top Tuần");
+                startActivity(intent);
+            }
+        });
+        txtXemallBanChay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BangXepHang.this,BookListCatogoryActivity.class);
+                intent.putExtra(Constant.CATEGORY,"Sách bán chạy");
+                startActivity(intent);
+            }
+        });
     }
 
     private void initData() {
-
+        //sách top tuần
         List<Book> list_book1= new ArrayList<>();
         list_book1.add(new Book("Đắc nhân tâm","Dale Carnegie","320","15,000","45,000","First News - Trí Việt","2016-03-18","Bìa cứng","14.5 x 20.5 cm",R.string.sach_moi,R.drawable.datnhantam,R.string.dat_nhan_tam));
         list_book1.add(new Book("Dứt Tình","Vũ Trọng Phụng","162","15,000","45,000","NXB Văn Học","2016-03-18","Bìa cứng","13 x 20.5 cm",R.string.sach_moi,R.drawable.duttinh,R.string.dut_tinh));
@@ -68,7 +99,7 @@ ImageView imvBack;
         rcvTopTuan.setAdapter(adapter1);
         rcvTopTuan.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
 
-        //sách hot
+        // Sách Top tháng
         List<Book> list_book2= new ArrayList<>();
         list_book2.add(new Book("Sapiens","Yuval Noah Harari","560","75,000","155,000","Nhà Xuất Bản Thế Giới","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.sapiens,R.string.sapiens));
         list_book2.add(new Book("Sinh trắc vân tay","RICHARD UNGER","444","85,000","183,000 ","Nhà Xuất Bản Hồng Đức","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.sinhtracvantay,R.string.sinh_trac_van_tay));
@@ -79,7 +110,7 @@ ImageView imvBack;
         rcvTopThang.setAdapter(adapter2);
         rcvTopThang.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
 
-        // Sách Top 10
+        //sách nên đọc
         List<Book> list_book3= new ArrayList<>();
         list_book3.add(new Book("Becoming"," Michelle Obama","448","35,000","579.000","Penguin Books","2021-07-14 11:36:27","Hardback","242 x 164 x 42 mm",R.string.sach_moi,R.drawable.becoming,R.string.sapiens));
         list_book3.add(new Book("Không gia đình","Hector Malot","582","45,000","168,210","NXB Văn Học","14/01/2016","Bìa mềm","16 x 24 cm",R.string.sach_moi,R.drawable.khonggiadinh,R.string.khong_gia_dinh));
