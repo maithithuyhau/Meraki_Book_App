@@ -15,7 +15,13 @@
             android:name=".OrderDetailActivity"
             android:exported="true" />
         <activity
+            android:name=".OrderConfirmDetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".Reviews"
+            android:exported="true"/>
+        <activity
+            android:name=".BangXepHang"
             android:exported="true"/>
         <activity
             android:name=".CartActivity"
