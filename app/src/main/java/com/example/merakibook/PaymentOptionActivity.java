@@ -60,8 +60,10 @@ public class PaymentOptionActivity extends AppCompatActivity {
                     editor.putString("thanhtoan", rdoVisa.getText().toString());
                 }
                 editor.commit();
-                int checkedOption = rdgPaymentOption.getCheckedRadioButtonId();
-                    selectedPayment(checkedOption);
+                Intent intent = new Intent(PaymentOptionActivity.this, PaymentActivity.class);
+                startActivity(intent);
+//                int checkedOption = rdgPaymentOption.getCheckedRadioButtonId();
+//                    selectedPayment(checkedOption);
             }
         });
 
@@ -96,20 +98,20 @@ public class PaymentOptionActivity extends AppCompatActivity {
         }
     };
 
-    private void selectedPayment(int checkedId){
-        switch (checkedId){
-            case R.id.rdoCOD:
-                Intent intent = new Intent(PaymentOptionActivity.this, PaymentActivity.class);
-                PaymentOptionActivity.this.startActivity(intent);
-                break;
-            case R.id.rdoATM:
-                openQRActivityWithATM();
-                break;
-            case R.id.rdoVisa:
-                openQRActivityWithVisa();
-                break;
-        }
-    }
+//    private void selectedPayment(int checkedId){
+//        switch (checkedId){
+//            case R.id.rdoCOD:
+//                Intent intent = new Intent(PaymentOptionActivity.this, PaymentActivity.class);
+//                PaymentOptionActivity.this.startActivity(intent);
+//                break;
+//            case R.id.rdoATM:
+//                openQRActivityWithATM();
+//                break;
+//            case R.id.rdoVisa:
+//                openQRActivityWithVisa();
+//                break;
+//        }
+//    }
 
     private void openQRActivityWithATM(){
         String atm = "Sử dụng ứng dụng trên di động của ngân hàng (mobile banking) quét mã QR bên dưới để thanh toán.";

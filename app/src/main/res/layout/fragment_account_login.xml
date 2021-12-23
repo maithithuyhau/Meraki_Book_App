@@ -1,73 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountLoginFragment"
     android:orientation="vertical"
-    android:weightSum="10"
-    android:background="@color/background">
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/green">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/green"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:weightSum="10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/navBar">
-
-            <TextView
-                android:id="@+id/txtHeaderTaiKhoan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="9"
-                android:text="@string/header_tai_khoan"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center_horizontal"
-                android:layout_gravity="center_vertical"/>
-            <ImageButton
-                android:id="@+id/btnCaiDat"
-                android:layout_width="10dp"
-                android:layout_weight="0.5"
-                android:layout_height="24dp"
-                android:background="@drawable/ic_gear"
-                android:layout_marginEnd="24dp"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
+    android:weightSum="10">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/imageView11"
             android:layout_width="match_parent"
-            android:layout_height="143dp"
-            android:background="@drawable/taikhoan_bg"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp" />
+            android:layout_height="60dp"
+            android:background="@drawable/background_dropshadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+            <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/navBar">
+
+                <TextView
+                    android:id="@+id/txtHeaderTaiKhoan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="@string/header_tai_khoan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"/>
+                <ImageButton
+                    android:id="@+id/btnCaiDat"
+                    android:layout_width="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_gear"
+                    android:layout_marginEnd="24dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/background_account_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            app:cardCornerRadius="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="40dp">
+            app:layout_constraintTop_toTopOf="parent">
+
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/profile"/>
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_account" />
         </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnAccDangNhap"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/dang_nhap"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/background_btn_account_boder"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <Button
+            android:id="@+id/btnAccDangKy"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/dang_ky"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/background_btn_account_boder"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.494" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
@@ -267,6 +312,5 @@
 
 
     </LinearLayout>
-
 
 </LinearLayout>

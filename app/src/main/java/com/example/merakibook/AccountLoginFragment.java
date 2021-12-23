@@ -1,43 +1,34 @@
 package com.example.merakibook;
 
-import static com.example.merakibook.R.id.btnAcGioiThieuNext;
+import static com.example.utils.Constant.ACCOUNT_STATUS_PATH;
+import android.content.Intent;
+import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Toast;
 
-public class AccountActivity extends Fragment {
+import java.io.File;
 
-    Button btnAcSaw, btnAcRate,btnAcCart;
-    ImageButton  btnBack, btnCaiDat;
-    View view;
-
+public class AccountLoginFragment extends Fragment  {
+    Button btnAcSaw, btnAcRate,btnAcCart, btnAccDangNhap, btnAccDangKy, btnDangNhap;
+    ImageButton btnCaiDat;
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
-    @Nullable
+
+    View view;
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-        view = inflater.inflate(R.layout.activity_account,container,false);
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.fragment_account_login, container, false);
         linkView();
         addEvent();
-
         return view;
-
     }
 
     private void linkView() {
@@ -47,8 +38,11 @@ public class AccountActivity extends Fragment {
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
         btnCaiDat = view.findViewById(R.id.btnCaiDat);
-    }
+        btnAccDangKy = view.findViewById(R.id.btnAccDangKy);
+        btnAccDangNhap = view.findViewById(R.id.btnAccDangNhap);
+        btnDangNhap = view.findViewById(R.id.btnDangNhap);
 
+    }
     private void addEvent() {
         btnAcCart.setOnClickListener(myClick);
         btnAcSaw.setOnClickListener(myClick);
@@ -56,7 +50,8 @@ public class AccountActivity extends Fragment {
         layoutGioiThieu.setOnClickListener(myClick);
         layoutChinhSach.setOnClickListener(myClick);
         btnCaiDat.setOnClickListener(myClick);
-
+        btnAccDangNhap.setOnClickListener(myClick);
+        btnAccDangKy.setOnClickListener(myClick);
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {
@@ -88,9 +83,27 @@ public class AccountActivity extends Fragment {
                     intent = new Intent(getActivity(), SettingActivity.class);
                     startActivity(intent);
                     break;
-
+                case R.id.btnAccDangNhap:
+                    btnAccDangNhap.setBackgroundResource(R.drawable.background_btn);
+                    File f = new File(getActivity().getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH);
+                    if (!f.exists()){
+                        Toast.makeText(getActivity(), "Ko có", Toast.LENGTH_SHORT).show();
+                        f.mkdirs();
+                        intent = new Intent(getActivity(), LoginActivity.class);
+                        startActivity(intent);
+                    }
+                    break;
+                case R.id.btnAccDangKy:
+                    btnAccDangKy.setBackgroundResource(R.drawable.background_btn);
+                    File file = new File(getActivity().getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH);
+                    if (!file.exists()){
+                        Toast.makeText(getActivity(), "Ko có", Toast.LENGTH_SHORT).show();
+                        file.mkdirs();
+                        intent = new Intent(getActivity(), LoginActivity.class);
+                        startActivity(intent);
+                    }
+                    break;
             }
         }
     };
-
 }

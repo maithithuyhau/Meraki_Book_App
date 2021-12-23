@@ -1,5 +1,8 @@
 package com.example.merakibook;
 
+import static com.example.utils.Constant.ACCOUNT_STATUS_PATH;
+import static com.example.utils.Constant.REFERENCE_PATH;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -9,8 +12,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView menu_bar;
@@ -51,7 +57,13 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment=new NotificationActivity();
                     break;
                 case R.id.TaiKhoan:
-                    selectedFragment=new AccountActivity();
+                    File f = new File(getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH );
+                    if(!f.exists()){
+                        selectedFragment=new AccountLoginFragment();
+                    }else if(f.exists()){
+                        selectedFragment=new AccountActivity();
+                    }
+
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.NavContent, selectedFragment).commit();

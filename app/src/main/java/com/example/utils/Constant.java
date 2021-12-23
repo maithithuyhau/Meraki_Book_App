@@ -35,4 +35,6 @@ public class Constant {
     public static final String REFERENCE_NAME = "paymentInfo";
     public  static final String REFERENCE_PATH = "/shared_prefs/";
 
+    public static final String ACCOUNT_STATUS_PATH = "/login";
+
 }
