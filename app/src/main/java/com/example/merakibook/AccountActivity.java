@@ -57,6 +57,7 @@ public class AccountActivity extends Fragment {
         btnAcRate.setOnClickListener(myClick);
         layoutGioiThieu.setOnClickListener(myClick);
         layoutChinhSach.setOnClickListener(myClick);
+        btnCaiDat.setOnClickListener(myClick);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,15 +65,6 @@ public class AccountActivity extends Fragment {
                 getActivity().onBackPressed();
             }
         });
-
-        btnCaiDat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AccountActivity.class);
-                ((SettingActivity) getActivity()).startActivity(intent);
-            }
-        });
-
     }
 
     View.OnClickListener myClick = new View.OnClickListener() {
@@ -100,7 +92,10 @@ public class AccountActivity extends Fragment {
                     intent = new Intent(getActivity(),PolicyActivity.class);
                     startActivity(intent);
                     break;
-
+                case R.id.btnCaiDat:
+                    intent = new Intent(getActivity(),SettingActivity.class);
+                    startActivity(intent);
+                    break;
             }
         }
     };
