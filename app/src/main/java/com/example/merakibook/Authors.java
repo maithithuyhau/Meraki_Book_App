@@ -55,12 +55,18 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
     }
 
     private void addEvent() {
-
+        txtXemTatCa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Authors.this, BooksOfAuthorActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void loadData() {
         Intent intent= getIntent();
-        String authorName=intent.getExtras().getString(Constant.ORDER_NAME);
+        String authorName=intent.getExtras().getString(Constant.AUTHOR_NAME);
         String authorPlaceOfBirth= intent.getExtras().getString(Constant.PLACE_OF_BIRTH);
         String authorBirth=intent.getExtras().getString(Constant.AUTHOR_BIRTH);
         String authorDeath= intent.getExtras().getString(Constant.AUTHOR_DEADTH);

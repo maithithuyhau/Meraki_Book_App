@@ -1,7 +1,5 @@
 package com.example.merakibook;
 
-import static com.example.merakibook.R.id.btnAcGioiThieuNext;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

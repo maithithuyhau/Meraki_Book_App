@@ -87,7 +87,6 @@ public class AccountLoginFragment extends Fragment  {
                     btnAccDangNhap.setBackgroundResource(R.drawable.background_btn);
                     File f = new File(getActivity().getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH);
                     if (!f.exists()){
-                        Toast.makeText(getActivity(), "Ko có", Toast.LENGTH_SHORT).show();
                         f.mkdirs();
                         intent = new Intent(getActivity(), LoginActivity.class);
                         startActivity(intent);
@@ -97,7 +96,6 @@ public class AccountLoginFragment extends Fragment  {
                     btnAccDangKy.setBackgroundResource(R.drawable.background_btn);
                     File file = new File(getActivity().getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH);
                     if (!file.exists()){
-                        Toast.makeText(getActivity(), "Ko có", Toast.LENGTH_SHORT).show();
                         file.mkdirs();
                         intent = new Intent(getActivity(), LoginActivity.class);
                         startActivity(intent);

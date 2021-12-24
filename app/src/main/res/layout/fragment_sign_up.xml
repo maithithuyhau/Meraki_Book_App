@@ -76,7 +76,7 @@
             android:paddingStart="50dp"/>
     </LinearLayout>
     <Button
-        android:id="@+id/btnDangNhap"
+        android:id="@+id/btnDangKi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_dang_ki"
