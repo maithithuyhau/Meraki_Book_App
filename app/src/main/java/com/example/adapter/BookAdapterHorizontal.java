@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,16 +20,18 @@ import com.example.model.BookItemClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHorizontal.MyViewHolder> {
+public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHorizontal.MyViewHolder> implements Filterable {
 
     Context context;
     List<Book> data;
+    List<Book> dataFilterable;
     BookItemClickListener bookItemClickListener;
 
     public BookAdapterHorizontal(Context context, List<Book> data, BookItemClickListener listener) {
         this.context = context;
         this.data = data;
         this.bookItemClickListener = listener;
+        this.dataFilterable=data;
     }
 
 
@@ -42,14 +46,48 @@ public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHoriz
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.txtBook.setText(data.get(position).getBookName());
-        holder.imvBook.setImageResource(data.get(position).getBookImage());
-        holder.txtAuthor.setText(data.get(position).getBookAuthor());
+        holder.txtBook.setText(dataFilterable.get(position).getBookName());
+        holder.imvBook.setImageResource(dataFilterable.get(position).getBookImage());
+        holder.txtAuthor.setText(dataFilterable.get(position).getBookAuthor());
     }
 
     @Override
     public int getItemCount() {
-        return data.size();
+        return dataFilterable.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+
+
+
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String Key=charSequence.toString();
+                if(Key.isEmpty()){
+                    dataFilterable=data;
+                }else {
+                    List<Book> lstFiltered=new ArrayList<>();
+                    for (Book row:data){
+                        if (row.getBookName().toLowerCase().contains(Key.toLowerCase())){
+                            lstFiltered.add(row);
+                        }
+
+                    }
+                    dataFilterable=lstFiltered;
+                }
+                FilterResults filterResults=new FilterResults();
+                filterResults.values=dataFilterable;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                dataFilterable=(List<Book>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
@@ -69,7 +107,7 @@ public class BookAdapterHorizontal extends RecyclerView.Adapter<BookAdapterHoriz
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    bookItemClickListener.onBookClick(data.get(getAdapterPosition()),imvBook);
+                    bookItemClickListener.onBookClick(dataFilterable.get(getAdapterPosition()),imvBook);
                 }
             });
         }
