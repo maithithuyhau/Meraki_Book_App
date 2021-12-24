@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,18 +20,21 @@ import com.example.model.BookItemClickListener;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapter.ViewHolder> {
+public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapter.ViewHolder> implements Filterable {
     Context context;
     ArrayList<Author> authors;
+    ArrayList<Author> authorsFilterable;
     AuthorItemClickListener authorItemClickListener;
 
     public AuthorSearchAdapter(Context context, ArrayList<Author> authors, AuthorItemClickListener authorItemClickListener) {
         this.context = context;
         this.authors = authors;
         this.authorItemClickListener = authorItemClickListener;
+        this.authorsFilterable=authors;
     }
 
     @NonNull
@@ -42,13 +47,44 @@ public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.imvTacGiaImage.setImageResource(authors.get(position).getAuthorImage());
-        holder.txtTacGiaView.setText(authors.get(position).getAuthorName());
+        holder.imvTacGiaImage.setImageResource(authorsFilterable.get(position).getAuthorImage());
+        holder.txtTacGiaView.setText(authorsFilterable.get(position).getAuthorName());
     }
 
     @Override
     public int getItemCount() {
-        return authors.size();
+        return authorsFilterable.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String Key=charSequence.toString();
+                if(Key.isEmpty()){
+                    authorsFilterable=authors;
+                }else {
+                   ArrayList<Author> lstFiltered=new ArrayList<>();
+                    for (Author row:authors){
+                        if (row.getAuthorName().toLowerCase().contains(Key.toLowerCase())){
+                            lstFiltered.add(row);
+                        }
+
+                    }
+                    authorsFilterable=lstFiltered;
+                }
+                FilterResults filterResults=new FilterResults();
+                filterResults.values=authorsFilterable;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                authorsFilterable=(ArrayList<Author>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 
 
@@ -65,7 +101,7 @@ public class AuthorSearchAdapter extends RecyclerView.Adapter<AuthorSearchAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    authorItemClickListener.onAuthorClick(authors.get(getAdapterPosition()),imvTacGiaImage);
+                    authorItemClickListener.onAuthorClick(authorsFilterable.get(getAdapterPosition()),imvTacGiaImage);
                 }
             });
         }

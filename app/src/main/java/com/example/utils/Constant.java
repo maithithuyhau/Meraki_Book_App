@@ -37,4 +37,7 @@ public class Constant {
 
     public static final String ACCOUNT_STATUS_PATH = "/login";
 
+    public  static final String CATEGORY = "category";
+
+
 }

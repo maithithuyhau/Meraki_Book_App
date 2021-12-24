@@ -77,7 +77,7 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
 
     private void loadData() {
         Intent intent= getIntent();
-        String Name=intent.getExtras().getString("category");
+        String Name=intent.getExtras().getString(Constant.CATEGORY);
         txtCategory.setText(Name);
     }
 

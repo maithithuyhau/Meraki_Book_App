@@ -43,6 +43,7 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     CircleImageView imvTacGiaImage;
     TextView txtName, txtTacGia, txtTacGiaView;
     SearchView svSearch;
+    EditText edtSearch;
     RecyclerView rcvTacGia;
     ArrayList<Book> books;
     ArrayList<Author>authors;
@@ -76,6 +77,24 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         rcvItemBook = findViewById(R.id.rcvBookItem);
         rcvTacGia = findViewById(R.id.rcvTacGia);
 //        svSearch = findViewById(R.id.svSearch);
+        edtSearch=findViewById(R.id.edtSearch);
+        edtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                adapter.getFilter().filter(charSequence);
+                authorSearchAdapter.getFilter().filter(charSequence);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
     }
 
     private void configRecyclerView() {
