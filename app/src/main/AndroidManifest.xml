@@ -72,6 +72,9 @@
             android:name=".DeliveryPolicyActivity"
             android:exported="true" />
         <activity
+            android:name=".BooksOfAuthorActivity"
+            android:exported="true" />
+        <activity
             android:name=".PrivacyPolicyActivity"
             android:exported="true" />
         <activity
