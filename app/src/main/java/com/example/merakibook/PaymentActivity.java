@@ -80,19 +80,8 @@ public class PaymentActivity extends AppCompatActivity {
         txtTtPhuongThuc.append(thanhtoan);
         txtTtDonViVanChuyen.append(giaohang);
 
-        btnTtDatHang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDialog(PaymentActivity.this);
-            }
-        });
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        btnTtDatHang.setOnClickListener(myClick);
+        btnBack.setOnClickListener(myClick);
     }
 
     public void openDialog(Context context){
@@ -103,7 +92,7 @@ public class PaymentActivity extends AppCompatActivity {
         btnDetailOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context,PurchaseOrderActivity.class);
+                Intent intent = new Intent(context, PurchaseOrderActivity.class);
                 context.startActivity(intent);
             }
         });
@@ -113,33 +102,48 @@ public class PaymentActivity extends AppCompatActivity {
         dialog.show();
     }
     private void InfoRegis() {
-        txtDiaChi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PaymentActivity.this, AddressActivity.class);
-                startActivity(intent);
-            }
-        });
-        txtVanChuyen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PaymentActivity.this, DeliveryActivity.class);
-                startActivity(intent);
-            }
-        });
-        txtThanhToan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PaymentActivity.this, PaymentOptionActivity.class);
-                startActivity(intent);
-            }
-        });
-        txtTtDieuKhoan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PaymentActivity.this, TermsOfUseActivity.class);
-                startActivity(intent);
-            }
-        });
+        txtDiaChi.setOnClickListener(myClick);
+        txtVanChuyen.setOnClickListener(myClick);
+        txtThanhToan.setOnClickListener(myClick);
+        txtTtDieuKhoan.setOnClickListener(myClick);
     }
+    View.OnClickListener myClick = new View.OnClickListener() {
+        Intent intent;
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.txtDiaChi:
+                    intent = new Intent(PaymentActivity.this, AddressActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.txtVanChuyen:
+                    intent = new Intent(PaymentActivity.this, DeliveryActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.txtThanhToan:
+                    intent = new Intent(PaymentActivity.this, PaymentOptionActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.txtTtDieuKhoan:
+                    intent = new Intent(PaymentActivity.this, TermsOfUseActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btnTtDatHang:
+                    if(txtTtPhuongThuc.getText().toString().equals("Thanh toán tiền mặt khi nhận hàng")){
+                        openDialog(PaymentActivity.this);
+                    }else if(txtTtPhuongThuc.getText().toString().equals("Thẻ ATM nội địa")){
+                        intent = new Intent(PaymentActivity.this, QRcodeActivity.class);
+                        startActivity(intent);
+                    }
+                    else if(txtTtPhuongThuc.getText().toString().equals("Thẻ quốc tế (Visa, Master,...)")){
+                        intent = new Intent(PaymentActivity.this, QRcodeActivity.class);
+                        startActivity(intent);
+                    }
+                    break;
+                case R.id.btnBack:
+                    finish();
+                    break;
+            }
+        }
+    };
 }

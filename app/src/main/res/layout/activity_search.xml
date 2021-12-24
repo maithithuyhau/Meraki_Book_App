@@ -22,19 +22,19 @@
 
             android:layout_marginStart="24dp"/>
 
-        <SearchView
-            android:id="@+id/svSearch"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:queryHint="Tìm kiếm"
-            android:iconifiedByDefault="false"
-            android:textSize="14sp"
-            android:layout_gravity="center"
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/border"
-            android:layout_margin="10dp"
-            android:layout_marginEnd="24dp">
-
-        </SearchView>
+            android:drawableStart="@drawable/ic_search"
+            android:hint="Tìm kiếm"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

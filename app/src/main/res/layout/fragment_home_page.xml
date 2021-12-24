@@ -43,11 +43,12 @@
                 <!--            android:src="@drawable/icon_menu" />-->
 
                 <EditText
+                    android:id="@+id/edtSearch"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="3"
                     android:background="@drawable/border"
-                    android:layout_marginRight="10dp"
                     android:drawableStart="@drawable/ic_search"
                     android:hint="Tìm kiếm"
                     android:padding="7dp"
@@ -158,7 +159,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/indicator" />
 
                         <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/rcvTopTuan"
+                            android:id="@+id/rcvTopHot"
                             android:layout_width="360dp"
                             android:layout_height="201dp"
                             android:layout_marginStart="24dp"
@@ -178,7 +179,7 @@
                             android:textColor="#FAB829"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            app:layout_constraintBottom_toTopOf="@+id/rcvTopTuan"
+                            app:layout_constraintBottom_toTopOf="@+id/rcvTopHot"
                             app:layout_constraintEnd_toStartOf="@+id/txtXemallHot"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
@@ -193,12 +194,12 @@
                             android:textColor="@color/green"
 
                             android:textSize="16sp"
-                            app:layout_constraintBottom_toTopOf="@+id/rcvTopTuan"
+                            app:layout_constraintBottom_toTopOf="@+id/rcvTopHot"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/rcvSachMoiNhat" />
 
                         <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/rcvTopThang"
+                            android:id="@+id/rcvTop10"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="24dp"
@@ -207,7 +208,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/rcvTopTuan" />
+                            app:layout_constraintTop_toBottomOf="@id/rcvTopHot" />
 
                         <TextView
                             android:id="@+id/txtTop10"
@@ -218,7 +219,7 @@
                             android:textColor="#FAB829"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            app:layout_constraintBottom_toTopOf="@+id/rcvTopThang"
+                            app:layout_constraintBottom_toTopOf="@+id/rcvTop10"
                             app:layout_constraintEnd_toStartOf="@+id/txtXemAllTop10"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
@@ -233,13 +234,13 @@
                             android:textColor="@color/green"
 
                             android:textSize="16sp"
-                            app:layout_constraintBottom_toTopOf="@+id/rcvTopThang"
+                            app:layout_constraintBottom_toTopOf="@+id/rcvTop10"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/rcvTopTuan"
+                            app:layout_constraintTop_toBottomOf="@id/rcvTopHot"
                             app:layout_constraintVertical_bias="0.0" />
 
                         <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/rcvBanChay"
+                            android:id="@+id/rcvFree"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="24dp"
@@ -248,7 +249,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/rcvTopThang" />
+                            app:layout_constraintTop_toBottomOf="@id/rcvTop10" />
 
                         <TextView
                             android:id="@+id/txtBookFree"
@@ -259,7 +260,7 @@
                             android:textColor="#FAB829"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            app:layout_constraintBottom_toTopOf="@+id/rcvBanChay"
+                            app:layout_constraintBottom_toTopOf="@+id/rcvFree"
                             app:layout_constraintEnd_toStartOf="@+id/txtXemAllTop10"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
@@ -274,9 +275,9 @@
                             android:textColor="@color/green"
 
                             android:textSize="16sp"
-                            app:layout_constraintBottom_toTopOf="@+id/rcvBanChay"
+                            app:layout_constraintBottom_toTopOf="@+id/rcvFree"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/rcvTopThang" />
+                            app:layout_constraintTop_toBottomOf="@id/rcvTop10" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rcvDeXuat"
@@ -290,7 +291,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/rcvBanChay" />
+                            app:layout_constraintTop_toBottomOf="@id/rcvFree" />
 
                         <TextView
                             android:id="@+id/txtDeXuat"
@@ -317,7 +318,7 @@
                             android:textSize="16sp"
                             app:layout_constraintBottom_toTopOf="@+id/rcvDeXuat"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/rcvBanChay" />
+                            app:layout_constraintTop_toBottomOf="@id/rcvFree" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.core.widget.NestedScrollView>
 

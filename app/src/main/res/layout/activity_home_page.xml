@@ -174,12 +174,12 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toTopOf="@+id/rcvTopTuan"
-                            app:layout_constraintEnd_toStartOf="@+id/txtXemallHot"
+                            app:layout_constraintEnd_toStartOf="@+id/txtXemallTuan"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
 
                         <TextView
-                            android:id="@+id/txtXemallHot"
+                            android:id="@+id/txtXemallTuan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="24dp"
@@ -214,12 +214,12 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toTopOf="@+id/rcvTopThang"
-                            app:layout_constraintEnd_toStartOf="@+id/txtXemAllTop10"
+                            app:layout_constraintEnd_toStartOf="@+id/txtXemAllTopThang"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
 
                         <TextView
-                            android:id="@+id/txtXemAllTop10"
+                            android:id="@+id/txtXemAllTopThang"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="24dp"
@@ -255,12 +255,12 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toTopOf="@+id/rcvBanChay"
-                            app:layout_constraintEnd_toStartOf="@+id/txtXemAllTop10"
+                            app:layout_constraintEnd_toStartOf="@+id/txtXemAllTopThang"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
 
                         <TextView
-                            android:id="@+id/txtXemallFree"
+                            android:id="@+id/txtXemallBanChay"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="24dp"
@@ -297,7 +297,7 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toTopOf="@+id/rcvDeXuat"
-                            app:layout_constraintEnd_toStartOf="@+id/txtXemallFree"
+                            app:layout_constraintEnd_toStartOf="@+id/txtXemallBanChay"
                             app:layout_constraintHorizontal_bias="0.021"
                             app:layout_constraintStart_toStartOf="parent" />
 
