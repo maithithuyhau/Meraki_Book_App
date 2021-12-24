@@ -7,47 +7,64 @@
     tools:context=".PurchaseOrderActivity"
     android:orientation="vertical"
     android:background="@color/background">
-    <LinearLayout
-        android:id="@+id/lnPurchaseOrder"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:background="@color/green"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
-    android:weightSum="10"
-    >
-    <ImageButton
-        android:id="@+id/imbBackProfile"
-        android:layout_width="15dp"
-        android:layout_height="20dp"
-        android:background="@drawable/icon_back"
-        android:layout_marginStart="24dp"
-        android:layout_weight="0.5"/>
-    <TextView
-        android:id="@+id/txtHeaderThongBao"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/don_mua"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center_horizontal"
-        android:layout_weight="9"
-        />
-    <ImageButton
-        android:id="@+id/imbGioHang"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_weight="0.5"
-        android:background="@drawable/ic_search"
-        android:layout_marginEnd="24dp" />
-</LinearLayout>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green"
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageButton
+                android:id="@+id/imbBackProfile"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_back" />
+            <TextView
+                android:id="@+id/txtHeaderThongBao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/don_mua"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <SearchView
+                android:id="@+id/actionSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:closeIcon="@drawable/ic_baseline_close_24"
+                android:gravity="right"
+                android:searchHintIcon="@drawable/ic_search"
+                android:queryHint="@string/tim_kiem"
+                android:background="@color/green"
+                android:searchIcon="@drawable/ic_search"
+                android:maxWidth="1000dp"
+                android:queryBackground="@android:color/transparent"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/TabPurchaseOrder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lnPurchaseOrder"
+        android:layout_below="@id/toolbar"
         android:background="@drawable/tab_line"
         app:tabSelectedTextColor="@color/green"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"

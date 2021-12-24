@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,11 +31,11 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
     RecyclerView rcvNotification;
     TextView txtOrderName, txtOrderStatus, txtOrderTime;
     ImageView imvOrderImage;
-    ImageButton imbBackNotification;
+    ImageButton imbGioHang;
     ArrayList<Order> orders;
     OrderDetailClickListener orderDetailClickListener;
     NotificationAdapter adapter;
-
+    FragmentManager fragmentManager;
 
     @Nullable
     @Override
@@ -43,9 +44,11 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
 
         linkViews();
         initData();
+        addEvents();
         return view;
 
     }
+
 
 
     private void linkViews() {
@@ -54,6 +57,8 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
         txtOrderStatus = view.findViewById(R.id.txtOrderStatus);
         txtOrderTime = view.findViewById(R.id.txtOrderTime);
         imvOrderImage = view.findViewById(R.id.imvOrderImage);
+
+        imbGioHang = view.findViewById(R.id.imbGioHang);
     }
 
     private void initData() {
@@ -67,6 +72,19 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
         rcvNotification.setAdapter(adapter);
         rcvNotification.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL,false));
     }
+
+    private void addEvents() {
+
+        imbGioHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), CartActivity.class);
+                startActivity(intent);
+
+            }
+        });
+    }
+
 
     @Override
     public void onOrderClick(Order order, ImageView orderImage) {
@@ -82,5 +100,6 @@ public class NotificationActivity extends Fragment implements OrderDetailClickLi
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(getActivity(), orderImage,"sharedName");
         startActivity(intent, options.toBundle());
     }
+
 
 }
