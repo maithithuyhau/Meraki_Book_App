@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.example.adapter.BookAdapterHorizontal;
@@ -30,8 +31,10 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
     private TextView txtTenTacGia1, txtTenTacGia2, txtNamSinh, txtNamMat, txtSoLuongTacPham, txtQueQuan, txtTomTat, txtXemTatCa;
     private CircleImageView imvAuthor;
     private RecyclerView rcvCacTacPham;
+    ImageView imvBack;
     ArrayList<Book> myBook;
     BookAdapterHorizontal bookAdapter;
+    SearchView searchView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +60,9 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
         rcvCacTacPham=findViewById(R.id.rcvCacTacPham);
 
         imvAuthor=findViewById(R.id.imvAuthor);
+        imvBack=findViewById(R.id.imvBack);
+
+        searchView=findViewById(R.id.actionSearch);
     }
 
     private void intiData() {
@@ -67,17 +73,37 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
         myBook.add(new Book("Đời thừa","Nam Cao","150","25,000","65,000","Nhà Xuất Bản Văn Học","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.doithua,R.string.sapiens));
         myBook.add(new Book("Đôi mắt","Nam Cao","170","25,000","50,000 ","Nhà Xuất Bản Văn Học","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.doimat,R.string.sinh_trac_van_tay));
         myBook.add(new Book("Giăng sáng","Nam Cao","190","30,000","75,000 ","Nhà Xuất Bản Văn Học","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.giangsang,R.string.sinh_trac_van_tay));
+
         bookAdapter= new BookAdapterHorizontal(this,myBook,this);
         rcvCacTacPham.setAdapter(bookAdapter);
         rcvCacTacPham.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
     }
 
     private void addEvent() {
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         txtXemTatCa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Authors.this, BooksOfAuthorActivity.class);
                 startActivity(intent);
+            }
+        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                bookAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                bookAdapter.getFilter().filter(newText);
+                return false;
             }
         });
     }

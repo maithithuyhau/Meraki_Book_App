@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filterable;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -27,8 +29,8 @@ public class BooksOfAuthorActivity extends AppCompatActivity implements BookItem
     RecyclerView rcvBooksOfAuthor;
     ArrayList<Book> myBook;
     BookAdapterVertical bookAdapterVertical;
-    
-
+    SearchView searchView;
+    ImageView imvBack;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,12 +38,37 @@ public class BooksOfAuthorActivity extends AppCompatActivity implements BookItem
         setContentView(R.layout.activity_books_of_author);
 
         linkView();
+        addEvent();
         initData();
+    }
+
+    private void addEvent() {
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                bookAdapterVertical.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                bookAdapterVertical.getFilter().filter(newText);
+                return false;
+            }
+        });
     }
 
 
     private void linkView() {
+        imvBack=findViewById(R.id.imvBack);
         rcvBooksOfAuthor = findViewById(R.id.rcvBooksOfAuthor);
+        searchView = findViewById(R.id.actionSearch);
     }
 
     private void initData() {
@@ -52,6 +79,7 @@ public class BooksOfAuthorActivity extends AppCompatActivity implements BookItem
         myBook.add(new Book("Đời thừa","Nam Cao","150","25,000","65,000","Nhà Xuất Bản Văn Học","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.doithua,R.string.sapiens));
         myBook.add(new Book("Đôi mắt","Nam Cao","170","25,000","50,000 ","Nhà Xuất Bản Văn Học","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.doimat,R.string.sinh_trac_van_tay));
         myBook.add(new Book("Giăng sáng","Nam Cao","190","30,000","75,000 ","Nhà Xuất Bản Văn Học","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.giangsang,R.string.sinh_trac_van_tay));
+
         bookAdapterVertical = new BookAdapterVertical(this,myBook,this);
         rcvBooksOfAuthor.setLayoutManager(new LinearLayoutManager(this));
         rcvBooksOfAuthor.setAdapter(bookAdapterVertical);
