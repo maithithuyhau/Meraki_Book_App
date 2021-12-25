@@ -42,7 +42,7 @@ public class BookAdapterVertical extends RecyclerView.Adapter<BookAdapterVertica
         holder.txtNameVer.setText(books.get(position).getBookName());
         holder.txtAuthorVer.setText(books.get(position).getBookAuthor());
         holder.txtPageVer.setText(books.get(position).getBookPage());
-        holder.btnRead.getContext();
+
     }
 
     @Override
