@@ -1,6 +1,7 @@
 package com.example.merakibook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,7 +28,7 @@ import java.util.List;
 
 public class BookListCatogoryActivity extends AppCompatActivity implements BookItemClickListener {
 
-    ImageButton imbBack;
+    ImageView imvBackAllBook;
     //Spinner
     Spinner spSort;
     ArrayList<String> listSort;
@@ -39,17 +40,19 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
     int item_book_layout;
     RecyclerView rcvListBookCategory;
     TextView txtCategory;
+    androidx.appcompat.widget.SearchView searchViewAllBook;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_list_catogory);
 
         linkView();
+        addEvent();
         loadData();
         addSortList();
         configRecyclerView();
         addEventSpinner();
-        addEvent();
 
 
     }
@@ -63,22 +66,36 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
         spSort = findViewById(R.id.spSort);
         rcvListBookCategory = findViewById(R.id.rcvListBookCategory);
         txtCategory=findViewById(R.id.txtCategory);
-        imbBack = findViewById(R.id.imbBack);
+        imvBackAllBook = findViewById(R.id.imvBackAllBook);
+        searchViewAllBook = findViewById(R.id.actionSearchAllBook);
     }
 
     private void addEvent() {
-        imbBack.setOnClickListener(new View.OnClickListener() {
+        imvBackAllBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+        searchViewAllBook.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                bookAdapterHorizontal.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                bookAdapterHorizontal.getFilter().filter(newText);
+                return false;
             }
         });
     }
 
     private void loadData() {
         Intent intent= getIntent();
-        String Name=intent.getExtras().getString(Constant.CATEGORY);
-        txtCategory.setText(Name);
+        String name=intent.getExtras().getString(Constant.CATEGORY);
+        txtCategory.setText(name);
     }
 
     private void addSortList() {
@@ -198,10 +215,6 @@ public class BookListCatogoryActivity extends AppCompatActivity implements BookI
             intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
             intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
             intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
-
-
-//        startActivity(intent);
-
 
         //Animation
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(BookListCatogoryActivity.this, bookImageView,"sharedName");

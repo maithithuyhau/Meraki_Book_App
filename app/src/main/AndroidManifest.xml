@@ -45,7 +45,8 @@
             android:exported="true" />
         <activity
             android:name=".BookListCatogoryActivity"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
         <activity
             android:name=".PaymentActivity"
             android:exported="true" />
@@ -76,6 +77,7 @@
         <activity
             android:name=".MyRatingActivity"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".ReturnAndRefundPolicyActivity"
@@ -126,7 +128,6 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-
         </activity>
     </application>
 
