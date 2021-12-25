@@ -98,8 +98,8 @@ ArrayList<String> cmt_id, cmt_content;
 //        notifyItemRemoved(position);
 //        notifyItemRangeChanged(position, cmt_content.size());
         AlertDialog.Builder builder= new AlertDialog.Builder(context);
-        builder.setTitle("Confirm");
-        builder.setMessage("Are you sure you want to delete this comment");
+        builder.setTitle("Xác nhận!");
+        builder.setMessage("Bạn có chắc muốn xóa bình luận này không?");
         builder.setIcon(android.R.drawable.ic_input_delete);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -109,7 +109,7 @@ ArrayList<String> cmt_id, cmt_content;
                 notifyItemRangeChanged(position, cmt_content.size());
             }
         });
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
