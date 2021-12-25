@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 
 import com.example.adapter.ViewPaperAdapterMyBook;
 import com.google.android.material.tabs.TabLayout;
@@ -22,7 +21,6 @@ public class MyBookActivity extends Fragment {
     ViewPaperAdapterMyBook viewPaperAdapterMyBook;
     TabLayout tabLayout;
     ViewPager viewPager;
-    ImageButton imbBackMyBook;
 
     public MyBookActivity() {
     }
@@ -33,7 +31,6 @@ public class MyBookActivity extends Fragment {
         view = inflater.inflate(R.layout.activity_my_book,container,false);
 
         linkView();
-        addEvent();
 
         viewPaperAdapterMyBook = new ViewPaperAdapterMyBook(getChildFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(viewPaperAdapterMyBook);
@@ -45,15 +42,6 @@ public class MyBookActivity extends Fragment {
     private void linkView() {
         viewPager = view.findViewById(R.id.viewPagerMyBook);
         tabLayout = view.findViewById(R.id.tabMyBook);
-        imbBackMyBook = view.findViewById(R.id.imbBackMyBook);
     }
 
-    private void addEvent() {
-        imbBackMyBook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-    }
 }

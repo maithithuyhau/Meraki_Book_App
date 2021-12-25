@@ -1,6 +1,7 @@
 package com.example.merakibook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,7 +27,8 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
     RecyclerView rcvRecentlyBook;
     ArrayList<Book> myRecentlyBook;
     BookAdapterVerticalFragment bookAdapterVertical;
-    ImageButton imbBackRecently;
+    ImageView imvBackRecently;
+    androidx.appcompat.widget.SearchView searchViewRecently;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,8 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
 
     private void linkView() {
         rcvRecentlyBook =findViewById(R.id.rcvRecentlyBook);
-        imbBackRecently = findViewById(R.id.imbBackRecently);
+        imvBackRecently = findViewById(R.id.imvBackRecently);
+        searchViewRecently = findViewById(R.id.actionSearchRecently);
     }
 
     private void initData() {
@@ -63,10 +66,23 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
     }
 
     private void addEvent() {
-        imbBackRecently.setOnClickListener(new View.OnClickListener() {
+        imvBackRecently.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+        searchViewRecently.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                bookAdapterVertical.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                bookAdapterVertical.getFilter().filter(newText);
+                return false;
             }
         });
     }
@@ -84,9 +100,6 @@ public class RecentlyBookActivity extends AppCompatActivity implements BookItemC
         intent.putExtra("DateTime",book.getDateTime());
         intent.putExtra("LoaiBia",book.getLoaiBia());
         intent.putExtra("BookSize",book.getBookSize());
-
-
-//        startActivity(intent);
 
         //Animation
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(RecentlyBookActivity.this, bookImageView,"sharedName");
