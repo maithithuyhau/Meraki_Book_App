@@ -61,8 +61,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
 
         imvAuthor=findViewById(R.id.imvAuthor);
         imvBack=findViewById(R.id.imvBack);
-
-        searchView=findViewById(R.id.actionSearch);
+        searchView = findViewById(R.id.actionSearch);
     }
 
     private void intiData() {
