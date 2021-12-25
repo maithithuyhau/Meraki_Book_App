@@ -27,42 +27,61 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-    <LinearLayout
-        android:id="@+id/lnBooksOfAuthor"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/green"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="5dp"
-        android:weightSum="10"
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="24dp"
-            android:src="@drawable/icon_back"
-            android:layout_weight="0.5"/>
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_back" />
 
-        <TextView
-            android:id="@+id/txtBooksOfAuthor"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="9"
-            android:text="@string/cac_tac_pham_cua_nam_cao"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_weight="0.5"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_search" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txtmenuDitailBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Các tác phẩm của Nam Cao"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/actionSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/green"
+                android:closeIcon="@drawable/ic_baseline_close_24"
+                android:gravity="right"
+                android:maxWidth="1000dp"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="@string/tim_kiem"
+                android:searchHintIcon="@drawable/ic_search"
+                android:searchIcon="@drawable/ic_search" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
 </androidx.constraintlayout.widget.ConstraintLayout>

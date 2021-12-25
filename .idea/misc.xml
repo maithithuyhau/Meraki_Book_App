@@ -37,6 +37,12 @@
         <entry key="..\:/Android Fol/Meraki_Book_App/app/src/main/res/layout/item_author_horizontal.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Fol/Meraki_Book_App/app/src/main/res/layout/item_book_horizontal.xml" value="0.161231884057971" />
         <entry key="..\:/Android Fol/Meraki_Book_App/app/src/main/res/layout/order_item.xml" value="0.4" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_authors.xml" value="0.264" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_bang_xep_hang.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_books_of_author.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/activity_login.xml" value="0.12360688956433637" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_login.xml" value="0.12360688956433637" />
+        <entry key="..\:/Android Fol/Meraki_Book_App_2/app/src/main/res/layout/fragment_sign_up.xml" value="0.12360688956433637" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/drawable-v24/bg_item_book_vertical.xml" value="0.25" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/drawable-v24/drop_shadow_item_book.xml" value="0.25" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/drawable/background_book_dropshadow.xml" value="0.2703125" />
@@ -54,14 +60,13 @@
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_my_rating.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_order_confirm_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_order_detail.xml" value="0.25416666666666665" />
-        <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_payment.xml" value="0.264" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_payment.xml" value="0.4" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_payment_option.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_policy.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_privacy_policy.xml" value="0.264" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_return_and_refund_policy.xml" value="0.25416666666666665" />
-        <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_terms_of_use.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_terms_of_use.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/activity_vip.xml" value="0.25416666666666665" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/book_item_order.xml" value="0.264" />
         <entry key="..\:/Meraki_Book_App/app/src/main/res/layout/fragment_home_page.xml" value="0.25416666666666665" />
