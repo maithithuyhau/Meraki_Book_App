@@ -227,7 +227,11 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
                         startActivity(intent7);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-
+                    case R.id.tacgia:
+                        Intent intent8 =new Intent(getActivity(),ListAuthorActivity.class);
+                        startActivity(intent8);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
                 }
                 return true;
             }

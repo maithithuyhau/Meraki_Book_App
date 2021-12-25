@@ -76,25 +76,8 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         txtTacGiaView = findViewById(R.id.txtTacGiaView);
         rcvItemBook = findViewById(R.id.rcvBookItem);
         rcvTacGia = findViewById(R.id.rcvTacGia);
-//      svSearch = findViewById(R.id.svSearch);
         edtSearch=findViewById(R.id.edtSearch);
-        edtSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                adapter.getFilter().filter(charSequence);
-                authorSearchAdapter.getFilter().filter(charSequence);
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
     }
 
     private void configRecyclerView() {
@@ -128,6 +111,28 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
 
 
 
+    private void addEvents() {
+
+        edtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                adapter.getFilter().filter(charSequence);
+                authorSearchAdapter.getFilter().filter(charSequence);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+    }
+
     @Override
     public void onBookClick(Book book, ImageView bookImageView) {
         Intent intent = new Intent(SearchActivity. this,DetailBookActivity.class);
@@ -160,25 +165,6 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         intent.putExtra(Constant.AUTHOR_SUMMARY, author.getAuthorSummary());
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(SearchActivity.this, authorImage,"sharedName");
         startActivity(intent,options.toBundle());
-    }
-
-    private void addEvents() {
-
-//        svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                if (books.contains(query)){
-//
-//                }
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                return false;
-//            }
-//        });
-
     }
 
 

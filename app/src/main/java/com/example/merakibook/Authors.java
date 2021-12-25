@@ -34,7 +34,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
     ImageView imvBack;
     ArrayList<Book> myBook;
     BookAdapterHorizontal bookAdapter;
-    SearchView searchView;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +61,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
 
         imvAuthor=findViewById(R.id.imvAuthor);
         imvBack=findViewById(R.id.imvBack);
-        searchView = findViewById(R.id.actionSearch);
+
     }
 
     private void intiData() {
@@ -92,19 +92,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
                 startActivity(intent);
             }
         });
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                bookAdapter.getFilter().filter(query);
-                return false;
-            }
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                bookAdapter.getFilter().filter(newText);
-                return false;
-            }
-        });
     }
 
     private void loadData() {

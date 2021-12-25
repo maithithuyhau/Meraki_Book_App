@@ -14,5 +14,6 @@
         />
     <item android:id="@+id/tamly" android:title="Tâm lý"/>
     <item android:id="@+id/giaoduc" android:title="Giáo dục"/>
+    <item android:id="@+id/tacgia" android:title="Tác giả"/>
 
 </menu>

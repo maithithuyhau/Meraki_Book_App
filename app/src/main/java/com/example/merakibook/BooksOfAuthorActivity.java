@@ -10,9 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filterable;
 import android.widget.ImageView;
-import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,6 +42,13 @@ public class BooksOfAuthorActivity extends AppCompatActivity implements BookItem
         initData();
     }
 
+
+    private void linkView() {
+        imvBack=findViewById(R.id.imvBack);
+        rcvBooksOfAuthor = findViewById(R.id.rcvBooksOfAuthor);
+        searchView=findViewById(R.id.actionSearch);
+    }
+
     private void addEvent() {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,13 +69,6 @@ public class BooksOfAuthorActivity extends AppCompatActivity implements BookItem
                 return false;
             }
         });
-    }
-
-
-    private void linkView() {
-        imvBack=findViewById(R.id.imvBack);
-        rcvBooksOfAuthor = findViewById(R.id.rcvBooksOfAuthor);
-        searchView = findViewById(R.id.actionSearch);
     }
 
     private void initData() {
