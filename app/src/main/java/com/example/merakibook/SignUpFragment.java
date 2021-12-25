@@ -1,5 +1,7 @@
 package com.example.merakibook;
 
+import static com.example.utils.Constant.ACCOUNT_STATUS_PATH;
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.io.File;
 
 public class SignUpFragment extends Fragment {
 
@@ -41,8 +45,14 @@ public class SignUpFragment extends Fragment {
         btnDangKi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
+                File f = new File(getActivity().getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH);
+                if (f.exists()){
+                    Intent intent = new Intent(getActivity(), AccountActivity.class);
+                    startActivity(intent);
+                }else {
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
     }

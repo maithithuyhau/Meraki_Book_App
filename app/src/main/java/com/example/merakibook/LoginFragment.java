@@ -1,15 +1,22 @@
 package com.example.merakibook;
 
+import static com.example.utils.Constant.ACCOUNT_STATUS_PATH;
+
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+
+import java.io.File;
 
 public class LoginFragment extends Fragment {
 
@@ -41,11 +48,12 @@ public class LoginFragment extends Fragment {
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
             }
         });
     }
+
 
     private void linkView() {
         edtEmailOrSDT = view.findViewById(R.id.edtEmailOrSĐT);
