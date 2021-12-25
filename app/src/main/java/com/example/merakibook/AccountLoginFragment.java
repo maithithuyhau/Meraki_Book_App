@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.io.File;
 
 public class AccountLoginFragment extends Fragment  {
-    Button btnAcSaw, btnAcRate,btnAcCart, btnAccDangNhap, btnAccDangKy, btnDangNhap;
+    Button btnAcSaw, btnAcRate,btnAcCart, btnAccDangNhap, btnAccDangKy, btnDangNhap, btnDangKy;
     ImageButton btnCaiDat;
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
 
@@ -34,6 +34,7 @@ public class AccountLoginFragment extends Fragment  {
     private void linkView() {
         layoutChinhSach = view.findViewById(R.id.layoutChinhSach);
         layoutGioiThieu = view.findViewById(R.id.layoutGioiThieu);
+
         btnAcCart = view.findViewById(R.id.btnAcCart);
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
@@ -41,6 +42,7 @@ public class AccountLoginFragment extends Fragment  {
         btnAccDangKy = view.findViewById(R.id.btnAccDangKy);
         btnAccDangNhap = view.findViewById(R.id.btnAccDangNhap);
         btnDangNhap = view.findViewById(R.id.btnDangNhap);
+        btnDangKy = view.findViewById(R.id.btnDangKy);
 
     }
     private void addEvent() {
@@ -90,6 +92,12 @@ public class AccountLoginFragment extends Fragment  {
                         f.mkdirs();
                         intent = new Intent(getActivity(), LoginActivity.class);
                         startActivity(intent);
+                        btnDangNhap.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                openAccountActivity();
+                            }
+                        });
                     }
                     break;
                 case R.id.btnAccDangKy:
@@ -99,9 +107,20 @@ public class AccountLoginFragment extends Fragment  {
                         file.mkdirs();
                         intent = new Intent(getActivity(), LoginActivity.class);
                         startActivity(intent);
+                        btnDangKy.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                openAccountActivity();
+                            }
+                        });
                     }
                     break;
             }
+        }
+
+        private void openAccountActivity() {
+            intent = new Intent(getActivity(), AccountActivity.class);
+            startActivity(intent);
         }
     };
 }

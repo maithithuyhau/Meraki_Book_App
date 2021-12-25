@@ -20,7 +20,6 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
     Button btnDangKyNgay;
     ImageButton btnBack;
     TextView txtKhungGia3, txtKhungGia2, txtKhungGia1, txtQuyenLoi, txtDieuKhoan1;
-    private FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,11 +116,6 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
     }
 
     private void toHomePage() {
-//        manager = getSupportFragmentManager();
-//        FragmentTransaction transaction = manager.beginTransaction();
-//        transaction.replace(R.id.layoutVip, new HomePageFragment());
-//        transaction.addToBackStack(null);
-//        transaction.commit();
         Intent intent = new Intent(VipActivity.this, MainActivity.class);
         startActivity(intent);
     }

@@ -21,7 +21,7 @@ import android.widget.TextView;
 public class AccountActivity extends Fragment {
 
     Button btnAcSaw, btnAcRate,btnAcCart;
-    ImageButton  btnBack, btnCaiDat;
+    ImageButton  btnCaiDat;
     View view;
 
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
