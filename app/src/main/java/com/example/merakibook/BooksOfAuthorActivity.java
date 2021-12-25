@@ -73,7 +73,7 @@ public class BooksOfAuthorActivity extends AppCompatActivity implements BookItem
 
     private void initData() {
         myBook = new ArrayList<>();
-        myBook.add(new Book("Lão Hạc","Nam Cao","150","15,000","45,000","Nhà Xuất Bản Văn Học","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.laohacreal,R.string.sapiens));
+        myBook.add(new Book("Lão Hạc","Nam Cao","150","15,000","45,000","Nhà Xuất Bản Văn Học","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.laohac,R.string.sapiens));
         myBook.add(new Book("Sống mòn","Nam Cao","170","25,000","83,000 ","Nhà Xuất Bản Văn Học","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.songmon,R.string.sinh_trac_van_tay));
         myBook.add(new Book("Chí Phèo","Nam Cao","190","35,000","113,000 ","Nhà Xuất Bản Văn Học","2021-01-12","Bìa mềm","15 x 24.5 cm",R.string.sach_moi,R.drawable.chipheo,R.string.sinh_trac_van_tay));
         myBook.add(new Book("Đời thừa","Nam Cao","150","25,000","65,000","Nhà Xuất Bản Văn Học","2021-07-14 11:36:27","Bìa mềm","13 x 20.5 cm",R.string.sach_moi,R.drawable.doithua,R.string.sapiens));
