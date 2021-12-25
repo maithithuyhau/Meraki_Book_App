@@ -44,9 +44,9 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
     private ViewPager banner_page;
     private TabLayout indicator;
     private RecyclerView rcvSachMoiNhat, rcvSachHotNhat,rcvTop10, rcvDeXuat, rcvBookFree;
-    private EditText edtSearch;
+//  private EditText edtSearch;
     private DrawerLayout drawerLayout;
-    private ImageView imvDanhmuc, imvVip,imvCart;
+    private ImageView imvDanhmuc, imvVip,imvCart,edtSearch;
     private ActionBarDrawerToggle toggle;
     TextView txtXemAllNew,txtXemallHot,txtXemAllTop10,txtXemallFree,txtXemallDeXuat;
     NavigationView danhmuc;

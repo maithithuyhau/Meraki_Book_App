@@ -199,7 +199,13 @@ public class DetailBookActivity extends AppCompatActivity implements BookItemCli
                     startActivity(intent);
                 }
             });
-
+            txtTacGia2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+//                    Intent intent= new Intent(DetailBookActivity.this,Authors.class);
+//                    startActivity(intent);
+                }
+            });
     }
 
     private void AddCart() {

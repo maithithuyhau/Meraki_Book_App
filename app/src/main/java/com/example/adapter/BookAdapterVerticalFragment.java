@@ -4,6 +4,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,16 +16,20 @@ import com.example.merakibook.R;
 import com.example.model.Book;
 import com.example.model.BookItemClickListener;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
-public class BookAdapterVerticalFragment extends RecyclerView.Adapter<BookAdapterVerticalFragment.MyViewHolder> {
+public class BookAdapterVerticalFragment extends RecyclerView.Adapter<BookAdapterVerticalFragment.MyViewHolder> implements Filterable {
 
     List<Book> data;
     BookItemClickListener bookItemClickListener;
-    public BookAdapterVerticalFragment(List<Book> data , BookItemClickListener listener) {
+    List<Book> dataSearch;
 
+    public BookAdapterVerticalFragment(List<Book> data , BookItemClickListener listener) {
         this.data = data;
         this.bookItemClickListener = listener;
+        this.dataSearch = data;
     }
 
     @NonNull
@@ -72,5 +78,35 @@ public class BookAdapterVerticalFragment extends RecyclerView.Adapter<BookAdapte
             });
 
         }
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String strSearch = charSequence.toString();
+                if(strSearch.isEmpty()){
+                    data = dataSearch;
+                }else {
+                    List<Book> list = new ArrayList<>();
+                    for (Book book : dataSearch){
+                        if (book.getBookName().toLowerCase().contains(strSearch.toLowerCase())){
+                            list.add(book);
+                        }
+                    }
+                    data = list;
+                }
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = data;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                data = (List<Book>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 }

@@ -51,6 +51,6 @@ public class SignUpFragment extends Fragment {
         edtEmailOrSDT= view.findViewById(R.id.edtEmailOrSĐT);
         edtMatKhau = view.findViewById(R.id.edtMatKhau);
         edtNhapLaiMatKhau = view.findViewById(R.id.edtNhapLaiMatKhau);
-
+        btnDangKi = view.findViewById(R.id.btnDangKi);
     }
 }

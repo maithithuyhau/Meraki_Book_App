@@ -164,8 +164,6 @@ public class BangXepHang extends AppCompatActivity implements BookItemClickListe
         intent.putExtra(Constant.BOOK_DATETIME,book.getDateTime());
         intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
         intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
-
-
 //        startActivity(intent);
 
         //Animation

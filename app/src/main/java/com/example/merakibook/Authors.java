@@ -96,6 +96,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
         imvAuthor.setImageResource(authorImage);
 
         txtTenTacGia1.setText(authorName);
+        txtTenTacGia2.setText(authorName);
         txtNamSinh.setText(authorBirth);
         txtNamMat.setText(authorDeath);
         txtQueQuan.setText(authorPlaceOfBirth);
