@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.io.File;
 
 public class AccountLoginFragment extends Fragment  {
-    Button btnAcSaw, btnAcRate,btnAcCart, btnAccDangNhap, btnAccDangKy, btnDangNhap;
+    Button btnAcSaw, btnAcRate,btnAcCart, btnAccDangNhap, btnAccDangKy;
     ImageButton btnCaiDat;
     ConstraintLayout layoutChinhSach, layoutGioiThieu;
 
@@ -28,19 +28,20 @@ public class AccountLoginFragment extends Fragment  {
         view = inflater.inflate(R.layout.fragment_account_login, container, false);
         linkView();
         addEvent();
+
         return view;
     }
 
     private void linkView() {
         layoutChinhSach = view.findViewById(R.id.layoutChinhSach);
         layoutGioiThieu = view.findViewById(R.id.layoutGioiThieu);
+
         btnAcCart = view.findViewById(R.id.btnAcCart);
         btnAcSaw = view.findViewById(R.id.btnAcSaw);
         btnAcRate = view.findViewById(R.id.btnAcRate);
         btnCaiDat = view.findViewById(R.id.btnCaiDat);
         btnAccDangKy = view.findViewById(R.id.btnAccDangKy);
         btnAccDangNhap = view.findViewById(R.id.btnAccDangNhap);
-        btnDangNhap = view.findViewById(R.id.btnDangNhap);
 
     }
     private void addEvent() {

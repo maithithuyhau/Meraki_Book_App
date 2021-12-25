@@ -44,9 +44,9 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
     private ViewPager banner_page;
     private TabLayout indicator;
     private RecyclerView rcvSachMoiNhat, rcvSachHotNhat,rcvTop10, rcvDeXuat, rcvBookFree;
-    private EditText edtSearch;
+//  private EditText edtSearch;
     private DrawerLayout drawerLayout;
-    private ImageView imvDanhmuc, imvVip,imvCart;
+    private ImageView imvDanhmuc, imvVip,imvCart,edtSearch;
     private ActionBarDrawerToggle toggle;
     TextView txtXemAllNew,txtXemallHot,txtXemAllTop10,txtXemallFree,txtXemallDeXuat;
     NavigationView danhmuc;
@@ -227,7 +227,11 @@ public class HomePageFragment extends Fragment implements BookItemClickListener 
                         startActivity(intent7);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-
+                    case R.id.tacgia:
+                        Intent intent8 =new Intent(getActivity(),ListAuthorActivity.class);
+                        startActivity(intent8);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
                 }
                 return true;
             }

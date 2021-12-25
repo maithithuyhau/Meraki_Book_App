@@ -42,7 +42,6 @@ public class CartActivity extends AppCompatActivity {
     }
 
     private void linkView() {
-
         rcvGioHang = findViewById(R.id.rcvGioHang);
         btnMuaHang = findViewById(R.id.btnMuaHang);
         btnBack = findViewById(R.id.btnBack);
@@ -86,11 +85,9 @@ public class CartActivity extends AppCompatActivity {
                 if(!f.exists()){
                     Intent intent = new Intent(CartActivity.this, AddressActivity.class);
                     startActivity(intent);
-                    Toast.makeText(CartActivity.this, "paymentinfo ko tồn tại", Toast.LENGTH_SHORT).show();
                 }else if(f.exists()){
                     Intent intent = new Intent(CartActivity.this, PaymentActivity.class);
                     startActivity(intent);
-                    Toast.makeText(CartActivity.this, "paymentinfo tồn tại", Toast.LENGTH_SHORT).show();
                 }
 
             }

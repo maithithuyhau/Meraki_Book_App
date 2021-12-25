@@ -44,33 +44,35 @@ public class DeliveryActivity extends AppCompatActivity {
 
     private void addEvent() {
         checkEvent();
-
-        btnDvDongY.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                if(chkNgayNhanNhanh.isChecked()){
-                    editor.putString("giaohang","Giao hàng nhanh: " + txtNgayNhanNhanh.getText().toString());
-                }else if(chkNgayNhanTietKiem.isChecked()){
-                    editor.putString("giaohang","Giao hàng tiết kiệm: "+ txtNgayNhanTietKiem.getText().toString());
-                }else if(chkNgayNhanViettel.isChecked()){
-                    editor.putString("giaohang","Giao hàng Viettel: "+ txtNgayNhanViettel.getText().toString());
-                }
-                editor.commit();
-                Intent intent = new Intent(DeliveryActivity.this, PaymentOptionActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        btnDvDongY.setOnClickListener(myClick);
+        btnBack.setOnClickListener(myClick);
     }
 
+    View.OnClickListener myClick = new View.OnClickListener() {
+        Intent intent;
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.btnDvDongY:
+                    SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    if(chkNgayNhanNhanh.isChecked()){
+                        editor.putString("giaohang","Giao hàng nhanh: " + txtNgayNhanNhanh.getText().toString());
+                    }else if(chkNgayNhanTietKiem.isChecked()){
+                        editor.putString("giaohang","Giao hàng tiết kiệm: "+ txtNgayNhanTietKiem.getText().toString());
+                    }else if(chkNgayNhanViettel.isChecked()){
+                        editor.putString("giaohang","Giao hàng Viettel: "+ txtNgayNhanViettel.getText().toString());
+                    }
+                    editor.commit();
+                    intent = new Intent(DeliveryActivity.this, PaymentOptionActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btnBack:
+                    finish();
+                    break;
+            }
+        }
+    };
 
 
 

@@ -18,7 +18,6 @@ public class AddressActivity extends AppCompatActivity {
     Button btnDcLuuThongTin;
     ImageButton  btnBack;
     EditText edtDcAddress,edtDcName,edtDcPhone;
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,36 +29,23 @@ public class AddressActivity extends AppCompatActivity {
 
     private void linkView() {
         btnDcLuuThongTin = findViewById(R.id.btnDcLuuThongTin);
+        btnBack = findViewById(R.id.btnBack);
+
         edtDcAddress = findViewById(R.id.edtDcAddress);
         edtDcName = findViewById(R.id.edtDcName);
         edtDcPhone = findViewById(R.id.edtDcPhone);
-        btnBack = findViewById(R.id.btnBack);
     }
 
     private void addEvent() {
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-        btnDcLuuThongTin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("diachi", edtDcAddress.getText().toString());
-                editor.commit();
-                intent = new Intent(AddressActivity.this, DeliveryActivity.class);
-                startActivity(intent);
-            }
-        });
+        btnBack.setOnClickListener(myClick);
+        btnDcLuuThongTin.setOnClickListener(myClick);
 
         edtDcName.addTextChangedListener(checkEmpty);
         edtDcPhone.addTextChangedListener(checkEmpty);
         edtDcAddress.addTextChangedListener(checkEmpty);
 
     }
+
     private TextWatcher checkEmpty = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -86,7 +72,23 @@ public class AddressActivity extends AppCompatActivity {
         }
     };
 
-
-
-
+    View.OnClickListener myClick = new View.OnClickListener() {
+        Intent intent;
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.btnBack:
+                    finish();
+                    break;
+                case R.id.btnDcLuuThongTin:
+                    SharedPreferences preferences = getSharedPreferences(REFERENCE_NAME, MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("diachi", edtDcAddress.getText().toString());
+                    editor.commit();
+                    intent = new Intent(AddressActivity.this, DeliveryActivity.class);
+                    startActivity(intent);
+                    break;
+                }
+            }
+        };
 }
