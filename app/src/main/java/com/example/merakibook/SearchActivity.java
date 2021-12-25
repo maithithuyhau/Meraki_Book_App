@@ -76,7 +76,7 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         txtTacGiaView = findViewById(R.id.txtTacGiaView);
         rcvItemBook = findViewById(R.id.rcvBookItem);
         rcvTacGia = findViewById(R.id.rcvTacGia);
-//        svSearch = findViewById(R.id.svSearch);
+//      svSearch = findViewById(R.id.svSearch);
         edtSearch=findViewById(R.id.edtSearch);
         edtSearch.addTextChangedListener(new TextWatcher() {
             @Override
