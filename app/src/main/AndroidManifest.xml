@@ -19,7 +19,11 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".OrderConfirmDetailActivity"
@@ -53,7 +57,9 @@
             android:exported="true"/>
         <activity
             android:name=".Authors"
-            android:exported="true"/>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Intro3Activity"
             android:exported="true" />
@@ -69,10 +75,13 @@
             android:exported="true"/>
         <activity
             android:name=".Intro1Activity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".MyRatingActivity"
             android:exported="true" >
+
         </activity>
         <activity
             android:name=".ReturnAndRefundPolicyActivity"
@@ -112,12 +121,14 @@
         <activity
             android:name=".VipActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity
+            android:name=".BooksOfAuthorActivity"
+            android:exported="true" >
+
+        </activity>
+
     </application>
 
 </manifest>
