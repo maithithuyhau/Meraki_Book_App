@@ -7,47 +7,69 @@
     tools:context=".RecentlyBookActivity"
     android:background="@color/background">
 
-    <LinearLayout
-        android:id="@+id/navBar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/green"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:weightSum="10">
+        app:popupTheme="@style/Widget.AppCompat.PopupMenu.Overflow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/imbBackRecently"
-            android:layout_width="15dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_weight="0.5"
-            android:background="@drawable/icon_back" />
+            <ImageView
+                android:id="@+id/imvBackRecently"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_back" />
 
-        <TextView
-            android:id="@+id/txtCategory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:gravity="center"
-            android:text="@string/txt_recently_book"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtmenuDitailBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/txt_recently_book"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="24dp"
-            android:layout_weight="0.5"
-            android:src="@drawable/ic_search" />
-    </LinearLayout>
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/actionSearchRecently"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/green"
+                android:closeIcon="@drawable/ic_baseline_close_24"
+                android:gravity="right"
+                android:maxWidth="1000dp"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="@string/tim_kiem"
+                android:searchHintIcon="@drawable/ic_search"
+                android:searchIcon="@drawable/ic_search" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvRecentlyBook"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/navBar" />
+        android:layout_below="@id/toolbar" />
 
 
 </RelativeLayout>

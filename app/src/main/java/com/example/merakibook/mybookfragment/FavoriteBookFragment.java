@@ -82,9 +82,6 @@ public class FavoriteBookFragment extends Fragment implements BookItemClickListe
         intent.putExtra(Constant.BOOK_LOAI_BIA,book.getLoaiBia());
         intent.putExtra(Constant.BOOK_SIZE,book.getBookSize());
 
-
-//        startActivity(intent);
-
         //Animation
         ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(getActivity(), bookImageView,"sharedName");
         startActivity(intent,options.toBundle());
