@@ -16,6 +16,7 @@
         >
 
         <ImageView
+            android:id="@+id/imvBackSearch"
             android:layout_width="15dp"
             android:layout_height="20dp"
             android:src="@drawable/icon_back"
