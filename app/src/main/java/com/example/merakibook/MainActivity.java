@@ -32,8 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
         linkView();
         addEvent();
+        statusBar();
         getSupportFragmentManager().beginTransaction().replace(R.id.NavContent, new HomePageFragment()).commit();
 
+    }
+
+    public void statusBar(){
         if(Build.VERSION.SDK_INT >= 21){
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);

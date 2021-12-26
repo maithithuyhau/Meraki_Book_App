@@ -24,7 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="39dp"
             android:hint="@string/hint_email_sdt"
-            android:inputType="phone|textEmailAddress"
             android:textSize="14sp"
             android:paddingStart="50dp" />
 

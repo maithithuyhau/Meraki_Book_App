@@ -44,6 +44,7 @@ public class Authors extends AppCompatActivity implements BookItemClickListener,
         loadData();
         addEvent();
         intiData();
+
     }
 
 

@@ -60,7 +60,7 @@ public class ReadingBookFragment extends Fragment implements BookItemClickListen
 
     private void initData() {
         myBookReading = new ArrayList<>();
-        myBookReading.add(new Book("Becoming", " Michelle Obama", "448", "35,000", "579.000", "Penguin Books", "2021-07-14 11:36:27", "Hardback", "242 x 164 x 42 mm", R.string.sach_moi, R.drawable.becoming, R.string.sapiens));
+        myBookReading.add(new Book("Những quy tắc tư duy"," Richard Templar","336","45,000","129,000 ","Nhà Xuất Bản Lao Động","21/08/2021","Bìa mềm","15 x 23 cm",R.string.sach_moi,R.drawable.nhungquytactuduy,R.string.nhung_quy_tac_tu_duy));
         myBookReading.add(new Book("Không gia đình", "Hector Malot", "582", "45,000", "168,210", "NXB Văn Học", "14/01/2016", "Bìa mềm", "16 x 24 cm", R.string.sach_moi, R.drawable.khonggiadinh, R.string.khong_gia_dinh));
         myBookReading.add(new Book("Châu Âu có gì lạ không em?", "Misa Gjone", "192", "15,000", "69,000", "Saigon Books", "15/10/2019", "Bìa mềm", "14 x 20,5 cm", R.string.sach_moi, R.drawable.chauaucogilakhongem, R.string.chau_au_co_gi_la_khong_em));
 

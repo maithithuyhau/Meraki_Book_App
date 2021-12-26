@@ -43,7 +43,6 @@ public class PaymentActivity extends AppCompatActivity {
         initData();
         InfoRegis();
         addEvent();
-
     }
 
     private void linkView() {

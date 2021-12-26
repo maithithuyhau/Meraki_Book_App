@@ -23,6 +23,7 @@ public class ReturnAndRefundPolicyActivity extends AppCompatActivity {
 
         linkViews();
         addEvents();
+
     }
 
 

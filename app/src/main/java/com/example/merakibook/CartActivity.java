@@ -38,7 +38,6 @@ public class CartActivity extends AppCompatActivity {
         initData();
         addEvent();
         DeleteItem();
-
     }
 
     private void linkView() {

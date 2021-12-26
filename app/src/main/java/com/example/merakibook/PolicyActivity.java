@@ -26,7 +26,6 @@ Button btnCall;
         setContentView(R.layout.activity_policy);
         linkViews();
         addEvents();
-
     }
 
 

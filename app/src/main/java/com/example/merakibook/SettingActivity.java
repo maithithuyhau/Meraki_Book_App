@@ -24,6 +24,7 @@ public class SettingActivity extends AppCompatActivity {
 
         linkView();
         addEvent();
+
     }
 
     private void linkView() {

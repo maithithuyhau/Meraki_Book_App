@@ -119,9 +119,13 @@
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_book_list_catogory.xml" value="0.19537037037037036" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_cart.xml" value="0.18425925925925926" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_detail_book.xml" value="0.21203703703703702" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_intro1.xml" value="0.17777777777777778" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_intro2.xml" value="0.17777777777777778" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_intro3.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_main.xml" value="0.21851851851851853" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_my_book.xml" value="0.18796296296296297" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_my_rating.xml" value="0.25" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_notification.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_order_confirm_detail.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_payment.xml" value="0.1712962962962963" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_payment_option.xml" value="0.25" />
@@ -133,6 +137,7 @@
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/activity_setting.xml" value="0.25" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_home_page.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_login.xml" value="0.22447916666666667" />
+        <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/fragment_sign_up.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/item_book_horizontal.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/item_book_vertical.xml" value="0.19166666666666668" />
         <entry key="..\:/ProjectDD/Meraki_Book_App/app/src/main/res/layout/popup_order_successful.xml" value="0.22447916666666667" />

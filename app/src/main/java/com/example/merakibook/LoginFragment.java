@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -48,12 +49,17 @@ public class LoginFragment extends Fragment {
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(edtEmailOrSDT.getText().toString().isEmpty()){
+                    edtEmailOrSDT.setError("Vui lòng điền thông tin!");
+                }else if (edtMatKhau.getText().toString().isEmpty()){
+                    edtMatKhau.setError("Vui lòng điền thông tin!");
+                } else {
                     Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
+                }
             }
         });
     }
-
 
     private void linkView() {
         edtEmailOrSDT = view.findViewById(R.id.edtEmailOrSĐT);
@@ -61,4 +67,5 @@ public class LoginFragment extends Fragment {
         btnDangNhap =view.findViewById(R.id.btnDangNhap);
 
     }
+
 }

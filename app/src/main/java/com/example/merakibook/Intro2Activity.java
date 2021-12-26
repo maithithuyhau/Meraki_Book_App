@@ -18,6 +18,7 @@ public class Intro2Activity extends AppCompatActivity {
 
         linkViews();
         addEvent();
+
     }
 
     private void addEvent() {

@@ -20,7 +20,6 @@ public class TermsOfUseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_terms_of_use);
          linkViews();
          addEvents();
-
     }
 
 

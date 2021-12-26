@@ -34,8 +34,6 @@ public class QRcodeActivity extends AppCompatActivity {
 
         linkView();
         addEvent();
-//        getDataVisa();
-//        getDataATM();
         startTime();
     }
 
@@ -81,7 +79,6 @@ public class QRcodeActivity extends AppCompatActivity {
                 timeLeftInMillis = l;
                 updateCountDownText();
             }
-
             @Override
             public void onFinish() {
                 timerRunning = false;

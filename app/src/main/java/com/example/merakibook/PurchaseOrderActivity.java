@@ -34,8 +34,6 @@ public class PurchaseOrderActivity extends AppCompatActivity {
         linkViews();
         loadData();
         addEvents();
-
-
     }
 
 

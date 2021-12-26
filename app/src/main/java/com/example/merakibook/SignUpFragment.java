@@ -45,11 +45,15 @@ public class SignUpFragment extends Fragment {
         btnDangKi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                File f = new File(getActivity().getApplicationInfo().dataDir + ACCOUNT_STATUS_PATH);
-                if (f.exists()){
-                    Intent intent = new Intent(getActivity(), AccountActivity.class);
-                    startActivity(intent);
-                }else {
+                if(edtEmailOrSDT.getText().toString().isEmpty()){
+                    edtEmailOrSDT.setError("Vui lòng điền thông tin!");
+                }else if (edtMatKhau.getText().toString().isEmpty()){
+                    edtMatKhau.setError("Vui lòng nhập mật khẩu!");
+                }else if(edtNhapLaiMatKhau.getText().toString().isEmpty()) {
+                    edtNhapLaiMatKhau.setError("Vui lòng nhập mật khẩu!");
+                }else if(!edtNhapLaiMatKhau.getText().toString().equals(edtMatKhau.getText().toString())) {
+                    edtNhapLaiMatKhau.setError("Mật khẩu không trùng khớp! Vui lòng nhập lại!");
+                } else {
                     Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
                 }

@@ -27,6 +27,7 @@ public class MyRatingActivity extends AppCompatActivity {
 
         linkView();
         addEvent();
+
     }
 
     private void linkView() {

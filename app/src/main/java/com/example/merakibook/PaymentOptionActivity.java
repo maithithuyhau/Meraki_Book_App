@@ -120,8 +120,6 @@ public class PaymentOptionActivity extends AppCompatActivity {
         PaymentOptionActivity.this.startActivity(intent);
     }
 
-
-
     private void openQRActivityWithVisa(){
         String visa = "Sử dụng ứng dụng thẻ ghi nợ trên thiết bị di động quét mã QR bên dưới để thanh toán.";
         Intent intent = new Intent(PaymentOptionActivity.this, QRcodeActivity.class);

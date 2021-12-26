@@ -28,7 +28,6 @@ public class VipActivity extends AppCompatActivity implements View.OnClickListen
         linkView();
         vipOnClick();
         addEvent();
-
     }
 
     private void linkView() {

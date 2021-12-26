@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BangXepHang">
+    tools:context=".BangXepHang"
+    android:background="@color/background">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -40,7 +41,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerVertical="true"
                 android:gravity="center"
-                android:text="Bang xếp hang"
+                android:text="Bảng xếp hang"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
