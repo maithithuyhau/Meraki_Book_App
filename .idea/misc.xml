@@ -199,9 +199,12 @@
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/drawable/ic_search.xml" value="0.2169230769230769" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_book_list_catogory.xml" value="0.33" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_intro2.xml" value="0.12771739130434784" />
+        <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_notification.xml" value="0.2" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_purchase_order.xml" value="0.2" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_recently_book.xml" value="0.12771739130434784" />
+        <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_search.xml" value="0.12771739130434784" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/activity_setting.xml" value="0.12771739130434784" />
+        <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/fragment_delivered_.xml" value="0.12771739130434784" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/layout/fragment_my_ebook.xml" value="0.1" />
         <entry key="..\:/thuchanh/hetroi/app/src/main/res/menu/search.xml" value="0.20416666666666666" />
         <entry key="..\:/thuchanh/meraki/app/src/main/res/drawable-v24/ic_baseline_menu_book_24.xml" value="0.2203125" />
