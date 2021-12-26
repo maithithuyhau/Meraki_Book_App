@@ -39,7 +39,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class SearchActivity extends AppCompatActivity implements BookItemClickListener, AuthorItemClickListener {
     RecyclerView rcvItemBook;
     Search_BookList_Adapter adapter;
-    ImageView imvHinh;
+    ImageView imvHinh, imvBackSearch;
     CircleImageView imvTacGiaImage;
     TextView txtName, txtTacGia, txtTacGiaView;
     SearchView svSearch;
@@ -71,6 +71,7 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
     private void linkViews() {
         imvHinh = findViewById(R.id.imvHinh);
         imvTacGiaImage = findViewById(R.id.imvTacGiaImage);
+        imvBackSearch=findViewById(R.id.imvBackSearch);
         txtName = findViewById(R.id.txtName);
         txtTacGia = findViewById(R.id.txtTacGia);
         txtTacGiaView = findViewById(R.id.txtTacGiaView);
@@ -93,7 +94,6 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
         books.add(new Book("Bốn Mùa Cuộc Sống","Jim Rohn","164","25,000","75,000","Thái Hà","2018-05-07","Bìa mềm","13x19x2 cm",R.string.sach_moi,R.drawable.bonmuacuocsong,R.string.bon_mua_cuoc_song));
         books.add(new Book("Đắc nhân tâm","Dale Carnegie","320","15,000","45,000","First News - Trí Việt","2016-03-18","Bìa cứng","14.5 x 20.5 cm",R.string.sach_moi,R.drawable.dacnhantam,R.string.dat_nhan_tam));
         books.add(new Book("Dứt Tình","Vũ Trọng Phụng","162","15,000","45,000","NXB Văn Học","2016-03-18","Bìa cứng","13 x 20.5 cm",R.string.sach_moi,R.drawable.duttinh,R.string.dut_tinh));
-
         adapter = new Search_BookList_Adapter(this, books,this);
         rcvItemBook.setAdapter(adapter);
         rcvItemBook.setLayoutManager(new GridLayoutManager(this,2));
@@ -128,6 +128,12 @@ public class SearchActivity extends AppCompatActivity implements BookItemClickLi
             @Override
             public void afterTextChanged(Editable editable) {
 
+            }
+        });
+        imvBackSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
